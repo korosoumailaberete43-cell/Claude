@@ -31,6 +31,8 @@ const cue = (t, type, g = 1) => CUES.push({ t: +t.toFixed(3), type, g });
 const SHAKES = [];
 const shakeAt = (t, a) => SHAKES.push([t, a]);
 
+// Mode de fusion des halos, étincelles et anneaux ('lighter' sur fond sombre, 'source-over' sur fond clair)
+let FX_BLEND = 'lighter';
 // Plages de tremblement croissant (tension avant un noir)
 const TENSION = [];
 
@@ -164,7 +166,7 @@ function glow(x, y, r, color, a) {
   if (a <= 0) return;
   const g = ctx.createRadialGradient(x, y, 0, x, y, r);
   g.addColorStop(0, rgba(color, a)); g.addColorStop(.35, rgba(color, a * .35)); g.addColorStop(1, rgba(color, 0));
-  ctx.save(); ctx.globalCompositeOperation = 'lighter'; ctx.fillStyle = g;
+  ctx.save(); ctx.globalCompositeOperation = FX_BLEND; ctx.fillStyle = g;
   ctx.fillRect(x - r, y - r, 2 * r, 2 * r); ctx.restore();
 }
 function shake(t) {
@@ -191,7 +193,7 @@ function drawSymbol(tr, o) {
   ctx.lineCap = 'butt'; ctx.lineJoin = 'round'; ctx.lineWidth = 20;
   ctx.globalAlpha = o.alpha == null ? 1 : o.alpha;
   if (o.bar > 0) {
-    ctx.strokeStyle = COL.chaux;
+    ctx.strokeStyle = o.barColor || COL.chaux;
     if (o.bar < 1) ctx.setLineDash([LEN_BAR * o.bar, LEN_BAR + 10]);
     if (o.glowBar) { ctx.shadowColor = rgba(COL.chaux, .6); ctx.shadowBlur = o.glowBar * tr.s; }
     ctx.stroke(P_BAR); ctx.setLineDash([]); ctx.shadowBlur = 0;
@@ -229,7 +231,7 @@ function drawPolyPartial(pts, L, p) {
 function sparks(t, t0, n, x, y, seed, colors, spd = 1) {
   const dt = t - t0;
   if (dt <= 0 || dt > 2.2) return;
-  ctx.save(); ctx.globalCompositeOperation = 'lighter'; ctx.lineCap = 'round';
+  ctx.save(); ctx.globalCompositeOperation = FX_BLEND; ctx.lineCap = 'round';
   for (let i = 0; i < n; i++) {
     const life = .5 + rnd(seed + i * 3) * 1.3;
     if (dt > life) continue;
@@ -248,14 +250,14 @@ function sparks(t, t0, n, x, y, seed, colors, spd = 1) {
 function ring(t, t0, x, y, maxR, dur, color, w) {
   const k = prog(t, t0, t0 + dur);
   if (k <= 0 || k >= 1) return;
-  ctx.save(); ctx.globalCompositeOperation = 'lighter';
+  ctx.save(); ctx.globalCompositeOperation = FX_BLEND;
   ctx.strokeStyle = rgba(color, (1 - k) * .9); ctx.lineWidth = w * (1 - k) + 1;
   ctx.beginPath(); ctx.arc(x, y, maxR * eo3(k), 0, Math.PI * 2); ctx.stroke();
   ctx.restore();
 }
 function flare(x, y, a, len = 1500, color = COL.signal) {
   if (a <= 0) return;
-  ctx.save(); ctx.globalCompositeOperation = 'lighter';
+  ctx.save(); ctx.globalCompositeOperation = FX_BLEND;
   const g = ctx.createLinearGradient(x - len / 2, 0, x + len / 2, 0);
   g.addColorStop(0, rgba(color, 0)); g.addColorStop(.5, rgba(color, a)); g.addColorStop(1, rgba(color, 0));
   ctx.fillStyle = g;
@@ -281,7 +283,7 @@ function boot(renderFrame, dur) {
   window.CUES = CUES; window.DUR = dur; window.FPS = FPS;
   window.renderFrame = renderFrame;
   window.ready = (async () => {
-    const specs = ['300 20px Sora', '600 20px Sora', '700 20px Sora', '500 20px Manrope', 'italic 400 20px Serif', '400 20px Mono', '500 20px Mono'];
+    const specs = ['300 20px Sora', '600 20px Sora', '700 20px Sora', '500 20px Manrope', '700 20px Manrope', 'italic 400 20px Serif', '400 20px Mono', '500 20px Mono'];
     await Promise.all(specs.map(s => document.fonts.load(s, 'AÔé…·²×Ø■')));
     await document.fonts.ready;
     renderFrame(0);

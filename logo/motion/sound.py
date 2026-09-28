@@ -182,14 +182,28 @@ def draw_fx(d=1.6):
     return s * np.sin(np.pi * t / d) * .8
 
 
+def scratch():
+    d = .7
+    t = tt(d)
+    f = 900 * (1 - t / d) ** 2 + 40
+    s = np.sin(2 * np.pi * np.cumsum(f) / SR) * .6 + lowpass(noise(d), 1500) * .5
+    return s * (1 - t / d)
+
+
+def pop():
+    d = .12
+    return sine_sweep(300, 900, d) * env_ad(d, .002, .03)
+
+
 INSTR = {
     "heart": (heart, 0, .12), "key": (key, None, .05), "tick": (tick, None, .15), "blip": (blip, None, .2),
     "whoosh": (whoosh, None, .3), "slam": (slam, 0, .25), "impact": (impact, 0, .5), "boom": (boom, 0, .55),
     "clang": (clang, .15, .5), "chime": (chime, 0, .6), "swell": (swell, 0, .4), "glitch": (glitch, None, .1),
     "suck": (suck, 0, .6), "shine": (shine, .1, .5), "draw": (draw_fx, 0, .3),
+    "scratch": (scratch, 0, .2), "pop": (pop, None, .2),
 }
 GAIN = {"heart": .9, "key": .14, "tick": .22, "blip": .35, "whoosh": .45, "slam": .75, "impact": .8, "boom": .95,
-        "clang": .55, "chime": .28, "swell": .3, "glitch": .35, "suck": .55, "shine": .35, "draw": .3}
+        "clang": .55, "chime": .28, "swell": .3, "glitch": .35, "suck": .55, "shine": .35, "draw": .3, "scratch": .6, "pop": .4}
 
 for c in info["cues"]:
     ty = c["type"]
@@ -217,34 +231,38 @@ def midi(m):
 M = info["music"]
 
 
-def span(key):
-    a, b = M[key]
-    return a, b, b - a
+def spans(key):
+    """Plages [a, b] d'une clé du plan musical (une seule ou une liste ; absente → aucune)."""
+    v = M.get(key) or []
+    return [v] if v and not isinstance(v[0], list) else v
 
 
 # Tension : bourdon grave qui monte, coupé net au noir
-a, b, d = span("drone")
-t = tt(d)
-drone = (np.sin(2 * np.pi * 36.7 * t) * .6 + np.sin(2 * np.pi * 73.4 * t + .5) * .25 + lowpass(noise(d), 120) * 1.5)
-drone *= (.25 + .75 * (t / d) ** 1.5) * np.minimum(t / 2, 1) * np.minimum((d - t) / .01, 1)
-put(drone, a, .45, 0, .2)
+for a, b in spans("drone"):
+    d = b - a
+    t = tt(d)
+    drone = (np.sin(2 * np.pi * 36.7 * t) * .6 + np.sin(2 * np.pi * 73.4 * t + .5) * .25 + lowpass(noise(d), 120) * 1.5)
+    drone *= (.25 + .75 * (t / d) ** 1.5) * np.minimum(t / 2, 1) * np.minimum((d - t) / .01, 1)
+    put(drone, a, .45, 0, .2)
 # pédale aiguë inquiétante
-a, b, d = span("pedal")
-put(note(midi(74), d, a=3, r=.01, bright=2) * (tt(d) / d) ** 1.2, a, .06, .3, .6)
+for a, b in spans("pedal"):
+    d = b - a
+    put(note(midi(74), d, a=3, r=.01, bright=2) * (tt(d) / d) ** 1.2, a, .06, .3, .6)
 # Montée
-a, b, d = span("riser")
-t = tt(d)
-k = t / d
-rate = 3 + 22 * k ** 2
-trem = .6 + .4 * np.sin(2 * np.pi * np.cumsum(rate) / SR)
-riser = (sine_sweep(110, 1100, d) * .5 + sine_sweep(165, 1650, d) * .25 + highpass(noise(d), 800 + 6000 * k) * .6) * trem
-riser *= k ** 2.2 * np.minimum((d - t) / .01, 1)
-put(riser, a, .38, 0, .3)
+for a, b in spans("riser"):
+    d = b - a
+    t = tt(d)
+    k = t / d
+    rate = 3 + 22 * k ** 2
+    trem = .6 + .4 * np.sin(2 * np.pi * np.cumsum(rate) / SR)
+    riser = (sine_sweep(110, 1100, d) * .5 + sine_sweep(165, 1650, d) * .25 + highpass(noise(d), 800 + 6000 * k) * .6) * trem
+    riser *= k ** 2.2 * np.minimum((d - t) / .01, 1)
+    put(riser, a, .38, 0, .3)
 
 # Après la révélation : accords en ré mineur
 CH = {"Dm": [50, 57, 62, 65, 69], "Bb": [46, 53, 58, 62, 65], "F": [41, 53, 57, 60, 65], "C": [48, 55, 60, 64, 67]}
-chords = M["chords"]
-first = chords[0][1]
+chords = M.get("chords", [])
+first = chords[0][1] if chords else 0
 for name, a, b in chords:
     for i, m in enumerate(CH[name]):
         put(note(midi(m), b - a + .6, a=1.2 if a > first + .5 else .3, r=.8), a, .09 if i else .12, (i - 2) * .25, .6)
@@ -259,7 +277,7 @@ for name, a, b in chords:
     root = CH[name][0] - 12 if CH[name][0] > 45 else CH[name][0]
     tb = a
     while tb < b - .01:
-        if inside(tb, M["bass"]):
+        if inside(tb, M.get("bass", [])):
             dd = .45
             s = np.sin(2 * np.pi * midi(root) * tt(dd)) + .3 * np.sin(4 * np.pi * midi(root) * tt(dd))
             put(np.tanh(1.5 * s) * env_ad(dd, .005, .12), tb, .32, 0, .05)
@@ -268,7 +286,7 @@ for name, a, b in chords:
     seq = tones + tones[::-1][1:-1]
     ta, j = a, 0
     while ta < b - .01:
-        if inside(ta, M["arp"]):
+        if inside(ta, M.get("arp", [])):
             dd = .3
             f = midi(seq[j % len(seq)])
             s = (np.sin(2 * np.pi * f * tt(dd)) + .35 * np.sin(4 * np.pi * f * tt(dd))) * env_ad(dd, .002, .07)
@@ -276,29 +294,43 @@ for name, a, b in chords:
         ta += .125
         j += 1
 # grosse caisse (noires)
-for a, b, g in M["kick"]:
+for a, b, g in M.get("kick", []):
     tb = a
     while tb < b - .01:
         dd = .4
         kk = sine_sweep(140, 45, dd) * env_ad(dd, .002, .09)
         put(np.tanh(2 * kk), tb, g, 0, .05)
         tb += .5
+# claquements (temps 2 et 4) et charleston (croches)
+for a, b, g in M.get("clap", []):
+    tb = a + .5
+    while tb < b - .01:
+        d = .25
+        put(highpass(noise(d), 900) * env_ad(d, .002, .05) * .8, tb, g, .1, .35)
+        tb += 1.0
+for a, b, g in M.get("hat", []):
+    tb = a + .25
+    while tb < b - .01:
+        d = .06
+        put(highpass(noise(d), 6000) * env_ad(d, .001, .015), tb, g, -.2, .1)
+        tb += .5
 # Suspense : tic-tac + cœur + note tenue
-a, b = M["suspense"]
-tb = a + .5
-while tb < b - .3:
-    put(tick(), tb, .18, -.3 if int(tb * 2) % 2 else .3, .4)
-    tb += .5
-for h in M["suspenseHearts"]:
+for a, b in spans("suspense"):
+    tb = a + .5
+    while tb < b - .3:
+        put(tick(), tb, .18, -.3 if int(tb * 2) % 2 else .3, .4)
+        tb += .5
+    d = b - a
+    put(note(midi(38), d, a=1.5, r=.3, bright=1.5) * np.linspace(.4, 1, int(d * SR)), a, .22, 0, .4)
+for h in M.get("suspenseHearts", []):
     put(heart(), h, .7, 0, .1)
     put(heart(), h + .24, .45, 0, .1)
-d = b - a
-put(note(midi(38), d, a=1.5, r=.3, bright=1.5) * np.linspace(.4, 1, int(d * SR)), a, .22, 0, .4)
 # Accord final (ré mineur ouvert) → fin
-fin = M["final"]
-d = DUR - fin + .5
-for i, m in enumerate([38, 50, 57, 62, 65, 69, 74]):
-    put(note(midi(m), d, a=.05 if i < 2 else .6, r=3.5, bright=6), fin, .1 if i else .18, (i - 3) * .2, .7)
+if "final" in M:
+    fin = M["final"]
+    d = DUR - fin + .5
+    for i, m in enumerate([38, 50, 57, 62, 65, 69, 74]):
+        put(note(midi(m), d, a=.05 if i < 2 else .6, r=3.5, bright=6), fin, .1 if i else .18, (i - 3) * .2, .7)
 
 # ---------------------------------------------------------------- réverbération, mixage
 L = int(2.8 * SR)
