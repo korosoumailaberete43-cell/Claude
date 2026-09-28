@@ -1,5 +1,5 @@
 """Gabarit commun des pages du dossier (A4 paysage, 1123 × 794 px)."""
-from brand import NUIT, ACIER, CUIVRE, CUIVRE_CLAIR, SIGNAL, BETON, CHAUX, BLANC, font_css
+from brand import NUIT, ACIER, CUIVRE, CUIVRE_CLAIR, CUIVRE_TEXTE, SIGNAL, BETON, CHAUX, BLANC, font_css
 
 _FONTS = font_css()
 
@@ -11,8 +11,9 @@ body{{font-family:Manrope;color:{NUIT};-webkit-font-smoothing:antialiased}}
 .page{{width:1123px;height:794px;position:relative;overflow:hidden;padding:54px 64px}}
 .light{{background:{CHAUX}}} .dark{{background:{NUIT};color:{CHAUX}}}
 .folio{{position:absolute;left:64px;right:64px;bottom:30px;display:flex;justify-content:space-between;
-  font:400 9.5px Mono;letter-spacing:2.2px;text-transform:uppercase;color:#8a929c}}
-.dark .folio{{color:#5f6b79}}
+  font:400 9.5px Mono;letter-spacing:2.2px;text-transform:uppercase;color:#6b7480}}
+.dark .folio{{color:#7c8896}}
+.light .kicker,.light .num{{color:{CUIVRE_TEXTE}!important}}
 .kicker{{font:500 11px Mono;letter-spacing:3px;text-transform:uppercase;color:{CUIVRE}}}
 h1{{font:600 40px/1.08 Sora;letter-spacing:-1px}}
 h2{{font:600 26px/1.15 Sora;letter-spacing:-.5px}}

@@ -9,7 +9,7 @@ from PIL import Image
 from pypdf import PdfWriter
 
 from brand import NUIT, ACIER, CUIVRE, SIGNAL, CHAUX, BETON
-from lockup import logo_horizontal, logo_vertical, symbol
+from lockup import logo_horizontal, logo_vertical, symbol, symbol_small
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PAGES = ROOT / "out" / "pages"
@@ -61,8 +61,10 @@ def export(svg, folder, name, jpeg_bg, png_w=3000, margin=40):
 def main():
     # ---- manuel fusionné
     docs = PACK / "04_Documents"
-    if PACK.exists():
-        shutil.rmtree(PACK)
+    # 05_Supports_numeriques est produit par supports.py avant la charte : on le conserve.
+    for sub in ("01_Logo_principal_avec_nom", "02_Symbole_seul", "03_Versions_sur_fond_couleur", "04_Documents"):
+        if (PACK / sub).exists():
+            shutil.rmtree(PACK / sub)
     docs.mkdir(parents=True)
     wr = PdfWriter()
     for f in sorted(PAGES.glob("page_*.pdf")):
@@ -90,12 +92,17 @@ def main():
     export(sym(bar=CHAUX), d2, "CivRebar_AI_symbole_couleur_pour_fond_sombre", NUIT, 2000)
     icon = sym(bg=NUIT, bar=CHAUX, rx=52)
     export(icon, d2, "CivRebar_AI_icone_application", NUIT, 1024, margin=0)
+    # version petites tailles (≤ 32 px) : ruban AutoCAD, favicons
+    export(symbol_small(), d2, "CivRebar_AI_symbole_petites_tailles_couleur", W, 512)
+    export(symbol_small(bar=CHAUX), d2, "CivRebar_AI_symbole_petites_tailles_pour_fond_sombre", NUIT, 512)
+    icon_small = symbol_small(bg=NUIT, bar=CHAUX, rx=52)
     fav = d2 / "favicons"
     fav.mkdir()
     for s in (16, 32, 48, 64, 180, 192, 512):
-        cairosvg.svg2png(bytestring=icon.encode(), output_width=s, write_to=str(fav / f"favicon_{s}.png"))
+        src = icon_small if s <= 32 else icon
+        cairosvg.svg2png(bytestring=src.encode(), output_width=s, write_to=str(fav / f"favicon_{s}.png"))
     ims = [Image.open(fav / f"favicon_{s}.png") for s in (16, 32, 48)]
-    ims[0].save(fav / "favicon.ico", sizes=[(16, 16), (32, 32), (48, 48)], append_images=ims[1:])
+    ims[2].save(fav / "favicon.ico", sizes=[(16, 16), (32, 32), (48, 48)], append_images=ims[:2])
 
     # ---- 03 versions sur fond couleur (fond intégré, marge de protection 2x = 40 u)
     d3 = PACK / "03_Versions_sur_fond_couleur"
@@ -110,6 +117,15 @@ def main():
         export(with_bg(pad(h, 80), bg), d3, f"CivRebar_AI_logo_{name}", bg, margin=0)
         s = sym(bar=kw.get("bar", NUIT), accent=kw.get("accent", CUIVRE), noeud=kw.get("noeud", SIGNAL))
         export(with_bg(pad(s, 40), bg), d3, f"CivRebar_AI_symbole_{name}", bg, 2000, margin=0)
+
+    # ---- 06 modèles bureautiques (produits par deck.js et word.js dans out/)
+    d6 = PACK / "06_Modeles_bureautiques"
+    if d6.exists():
+        shutil.rmtree(d6)
+    d6.mkdir()
+    for f in [*(ROOT / "out" / "deck").glob("*.pptx"), *(ROOT / "out" / "word").glob("*.docx")]:
+        shutil.copy(f, d6 / f.name)
+    shutil.copy(ROOT / "mockups" / "PROMPTS_ChatGPT.md", docs / "CivRebar_AI_Prompts_mises_en_situation.md")
 
     shutil.copy(ROOT / "LISEZ-MOI.txt", PACK / "LISEZ-MOI.txt")
     print("ok", manual)

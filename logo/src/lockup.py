@@ -3,7 +3,7 @@ from fontTools.ttLib import TTFont
 from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.boundsPen import BoundsPen
 
-from brand import FONTS, NUIT, CUIVRE, SIGNAL, CHAUX, mark
+from brand import FONTS, NUIT, CUIVRE, SIGNAL, CHAUX, mark, mark_small
 
 _fonts = {}
 
@@ -99,6 +99,11 @@ def logo_vertical(bar=NUIT, text=NUIT, accent=CUIVRE, noeud=SIGNAL, bg=None):
 def symbol(bar=NUIT, accent=CUIVRE, noeud=SIGNAL, bg=None, rx=48):
     back = f'<rect x="5" y="10" width="240" height="240" rx="{rx}" fill="{bg}"/>' if bg else ""
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="5 10 240 240">{back}{_inner_mark(bar, accent, noeud)}</svg>"""
+
+
+def symbol_small(bar=NUIT, accent=CUIVRE, noeud=SIGNAL, bg=None, rx=48):
+    """Symbole optimisé pour 32 px et moins (favicons, icônes du ruban)."""
+    return mark_small(bar, accent, noeud, bg=bg, rx=rx)
 
 
 if __name__ == "__main__":

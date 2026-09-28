@@ -13,6 +13,8 @@ CONTENU
 02_Symbole_seul/
    Le « R façonné » sans le nom : icône du plugin, avatar, tampon sur les plans.
    icone_application : symbole sur carré arrondi Nuit.
+   symbole_petites_tailles : dessin optimisé pour 32 px et moins
+   (icônes du ruban AutoCAD, favicons). Ne pas l'utiliser en grand.
    favicons/ : 16 à 512 px + favicon.ico pour un site web.
 
 03_Versions_sur_fond_couleur/
@@ -20,7 +22,12 @@ CONTENU
    marge de protection comprise. Prêts pour les réseaux sociaux et les diaporamas.
 
 04_Documents/
-   CivRebar_AI_Charte_graphique.pdf : manuel d'identité complet (12 pages).
+   CivRebar_AI_Charte_graphique.pdf : manuel d'identité complet (14 pages).
+
+05_Supports_numeriques/
+   Photo de profil, bannière LinkedIn, couverture Facebook, posts
+   (annonce et citation) et écran de démarrage du plugin, en PNG aux
+   dimensions exactes de chaque plateforme.
 
 FORMATS
 -------
@@ -39,6 +46,10 @@ COULEURS
    Béton coulé      #B9BEC4   RVB 185 190 196   CMJN 28 18 15 0
    Blanc chaux      #F3F0EA   RVB 243 240 234   CMJN 3 4 7 0
    (CMJN indicatifs : à valider sur épreuve avec l'imprimeur.)
+
+   Couleurs de TEXTE sur fond clair (contraste conforme WCAG AA) :
+   Cuivre texte     #9A5526   pour tout texte cuivre de moins de 24 px
+   Signal texte     #0B7480   pour tout texte cyan de moins de 24 px
 
 TYPOGRAPHIE (polices libres, licence SIL Open Font)
 -----------

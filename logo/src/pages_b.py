@@ -1,6 +1,6 @@
 """Pages 5 à 12 : logo, protection, couleurs, typo, déclinaisons, interdits, applications, trajectoire."""
 from brand import *
-from lockup import logo_horizontal, logo_vertical, symbol, _inner_mark
+from lockup import logo_horizontal, logo_vertical, symbol, symbol_small, _inner_mark
 from shell import page_shell
 from pages_a import sized
 
@@ -45,7 +45,10 @@ def p06():
 </svg>"""
     sizes = ""
     for px in (48, 32, 24, 16):
-        sizes += f'<div class="sz">{sized(symbol(), w=px)}<span>{px} px</span></div>'
+        s = symbol() if px > 32 else symbol_small()
+        sizes += f'<div class="sz">{sized(s, w=px)}<span>{px} px</span></div>'
+    compare = "".join(f'<div class="sz">{sized(fn(), w=16)}<span>{lab}</span></div>'
+                      for fn, lab in ((symbol, "standard"), (symbol_small, "optimisée")))
     inner = f"""
 <div class="kicker">05 — Protection et tailles minimales</div>
 <h1 style="margin-top:10px">Laisser respirer l'armature.</h1>
@@ -61,7 +64,12 @@ def p06():
       <div class="minlogo">{sized(h, w=150)}<span>Horizontal : 35 mm · 150 px</span></div>
     </div>
     <div class="sizes">{sizes}</div>
-    <p>Sous 24 px, le crochet et le nœud se simplifient : utiliser le symbole seul, jamais le logo complet.</p>
+    <div class="small">
+      <div class="big">{sized(symbol_small(), w=92)}</div>
+      <div><h3>Version petites tailles</h3>
+        <p>À 32 px et moins (icônes du ruban AutoCAD, favicons), on utilise un dessin optimisé : trait épaissi à 1,4x, panse refermée sur le fût, nœud Signal agrandi au cœur de la boucle.</p>
+        <div class="cmp">{compare}</div></div>
+    </div>
   </div>
 </div>"""
     css = f"""
@@ -75,6 +83,10 @@ def p06():
 .sizes{{display:flex;gap:18px;align-items:flex-end;background:#fff;border-radius:6px;padding:18px;margin:14px 0}}
 .sz{{display:flex;flex-direction:column;align-items:center;gap:8px}}
 .side p{{font-size:12.5px}}
+.small{{display:flex;gap:18px;background:#fff;border-radius:6px;padding:18px}}
+.small .big{{flex:none;background:{CHAUX};border-radius:6px;padding:10px}}
+.small h3{{margin-bottom:6px}} .small p{{font-size:11.5px;line-height:1.5}}
+.cmp{{display:flex;gap:22px;margin-top:10px}}
 """
     return page_shell(inner, 6, "Protection", "light", css)
 
@@ -100,16 +112,26 @@ def p07():
   <div class="codes"><div><span>HEX</span>{hx.upper()}</div><div><span>RVB</span>{rgb}</div><div><span>CMJN</span>{cmyk}</div></div>
   <div class="use">{use}</div></div>"""
     bar = "".join(f'<div style="flex:{pct};background:{hx}" title="{name}"></div>' for name, hx, *_, pct in COLORS)
+    acc = ""
+    for name, hx, ok in [("Cuivre de forge", CUIVRE, False), ("Cuivre texte", CUIVRE_TEXTE, True),
+                         ("Signal IA", SIGNAL, False), ("Signal texte", SIGNAL_TEXTE, True)]:
+        r = contrast(hx, CHAUX)
+        rs = f"{r:.1f}".replace(".", ",")
+        verdict = "texte courant ✓" if r >= 4.5 else "titres et graphisme seulement"
+        acc += (f'<div class="ac{" ok" if ok else ""}"><i style="background:{hx}"></i>'
+                f'<div><b style="color:{hx}">{name}</b><span>{hx.upper()} · {rs}:1 · {verdict}</span></div></div>')
     inner = f"""
 <div class="kicker">06 — Couleurs</div>
 <h1 style="margin-top:10px">Le béton, le cuivre, le signal.</h1>
 <div class="grid">{cards}</div>
 <div class="prop"><div class="lab">Proportions dans une composition type</div><div class="bar">{bar}</div>
 <div class="legend">{"".join(f'<span><i style="background:{hx}"></i>{name.split()[0] if name != "Signal IA" else "Signal"} {pct} %{" max" if hx == SIGNAL else ""}</span>' for name, hx, *_, pct in COLORS)}</div></div>
-<p class="note">Valeurs CMJN indicatives : à valider sur épreuve avec l'imprimeur. Le Signal IA ne sert jamais de fond ni de couleur de texte courant.</p>"""
+<div class="acc"><div class="lab">Couleurs de texte sur fond clair — contraste vérifié (norme WCAG AA ≥ 4,5:1)</div>
+<div class="accrow">{acc}</div></div>
+<p class="note">Valeurs CMJN indicatives : à valider sur épreuve avec l'imprimeur. Sur fond clair, tout texte de moins de 24 px utilise la version « texte ».</p>"""
     css = f"""
 .grid{{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}}
-.sw{{height:168px;border-radius:6px;padding:18px 20px;display:flex;flex-direction:column;justify-content:space-between}}
+.sw{{height:148px;border-radius:6px;padding:18px 20px;display:flex;flex-direction:column;justify-content:space-between}}
 .sw[style*="{CHAUX}"]{{border:1px solid #ddd8ce}}
 .nm{{font:600 17px Sora}}
 .codes{{font:400 10.5px/1.7 Mono}} .codes span{{display:inline-block;width:44px;opacity:.6}}
@@ -117,7 +139,13 @@ def p07():
 .prop{{margin-top:22px}} .lab{{font:500 10px Mono;letter-spacing:2px;text-transform:uppercase;color:#7b8591;margin-bottom:8px}}
 .bar{{display:flex;height:22px;border-radius:4px;overflow:hidden;border:1px solid #ddd8ce}}
 .legend{{display:flex;gap:26px;font:400 10px Mono;color:#6b7684;margin-top:8px}} .legend i{{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:6px;border:1px solid #ccc;vertical-align:-1px}}
-.note{{font-size:11px;margin-top:10px;color:#6b7684}}
+.note{{font-size:11px;margin-top:10px;color:#5b6572}}
+.acc{{margin-top:18px}}
+.accrow{{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}}
+.ac{{display:flex;gap:10px;align-items:center;background:#fff;border-radius:6px;padding:10px 12px;border:1px solid transparent}}
+.ac.ok{{border-color:#ddd8ce}}
+.ac i{{flex:none;width:26px;height:26px;border-radius:4px}}
+.ac b{{display:block;font:600 13px Sora}} .ac span{{font:400 9.5px Mono;color:#5b6572}}
 """
     return page_shell(inner, 7, "Couleurs", "light", css)
 
@@ -150,7 +178,7 @@ def p08():
 .f{{background:#fff;border-radius:6px;padding:18px 20px;display:flex;flex-direction:column;gap:10px}}
 .f.big{{grid-row:1 / 3}} .f.ser{{grid-column:2 / 4}} .sr{{display:flex;align-items:baseline;gap:30px}}
 .w{{display:flex;flex-direction:column;gap:6px;font:24px Sora;color:{NUIT};margin-top:auto;padding-top:14px;border-top:1px solid #eee9e1}}
-.lab{{font:500 10px Mono;letter-spacing:2px;text-transform:uppercase;color:{CUIVRE}}}
+.lab{{font:500 10px Mono;letter-spacing:2px;text-transform:uppercase;color:{CUIVRE_TEXTE}}}
 .alpha{{line-height:1.5;color:{NUIT};letter-spacing:.5px;margin-top:8px}}
 .f p{{font-size:12px;margin:0}}
 pre{{font:400 11px/1.5 Mono;background:{NUIT};color:{CHAUX};padding:10px 12px;border-radius:4px}}
@@ -300,7 +328,7 @@ def p11():
 .front{{background:{NUIT};display:flex;align-items:center;justify-content:center}}
 .back{{background:#fff;padding:18px 20px;position:relative}}
 .back svg{{position:absolute;right:18px;bottom:18px}}
-.nm{{font:600 16px Sora}} .rl{{font-size:11px;color:{CUIVRE};margin-top:2px}}
+.nm{{font:600 16px Sora}} .rl{{font-size:11px;color:{CUIVRE_TEXTE};margin-top:2px}}
 .ct{{font:400 10.5px/1.6 Mono;color:#3a4553;margin-top:26px}}
 .cart{{display:grid;grid-template-columns:1.3fr 1fr .6fr;border:1.5px solid {NUIT};background:#fff;height:92px}}
 .cart>div{{padding:10px;border-right:1px solid {NUIT};font:500 10px/1.5 Manrope;color:{NUIT}}}
@@ -326,7 +354,7 @@ def p12():
     stirrups = "".join(f'<line x1="{x}" y1="44" x2="{x}" y2="76" stroke="#2a3b50" stroke-width="3"/>' for x in range(14, 1000, 32))
     cols = "".join(f'<div class="st"><div class="n">{n}</div><h2>{t}</h2><p>{d}</p></div>' for n, t, d in steps)
     inner = f"""
-<div class="kicker">11 — La trajectoire</div>
+<div class="kicker">13 — La trajectoire</div>
 <h1 style="margin-top:10px;color:{CHAUX}">On construit CivRebar comme on ferraille :<br><span style="color:{CUIVRE_CLAIR}">barre après barre.</span></h1>
 <svg class="road" viewBox="0 0 1000 120" width="995">{stirrups}{line}{nodes}<text x="0" y="24" font-family="Mono" font-size="11" fill="{SIGNAL}" letter-spacing="2">NOUS SOMMES ICI</text></svg>
 <div class="steps">{cols}</div>
@@ -340,7 +368,98 @@ def p12():
 .end{{position:absolute;left:64px;right:64px;bottom:70px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid #1f2f42;padding-top:24px}}
 .end .serif{{font-size:26px;color:{CUIVRE_CLAIR}}}
 """
-    return page_shell(inner, 12, "Trajectoire", "dark", css)
+    return page_shell(inner, 14, "Trajectoire", "dark", css)
 
 
-PAGES = [p05, p06, p07, p08, p09, p10, p11, p12]
+# ------------------------------------------------------------ images embarquées
+import base64 as _b64
+import io as _io
+import pathlib as _pl
+
+_ROOT = _pl.Path(__file__).resolve().parent.parent
+
+
+def img_uri(path, max_w):
+    """Image redimensionnée (~300 DPI à sa taille d'affichage) et encodée en JPEG base64."""
+    from PIL import Image
+    im = Image.open(path).convert("RGB")
+    if im.width > max_w:
+        im = im.resize((max_w, round(im.height * max_w / im.width)), Image.LANCZOS)
+    buf = _io.BytesIO()
+    im.save(buf, "JPEG", quality=86)
+    return "data:image/jpeg;base64," + _b64.b64encode(buf.getvalue()).decode()
+
+
+# ------------------------------------------------------------ 12. Supports numériques
+def p_supports():
+    d = _ROOT / "CivRebar_AI_Pack_Logo" / "05_Supports_numeriques"
+    def im(name, w):
+        f = d / f"{name}.png"
+        return f'<img src="{img_uri(f, w)}">' if f.exists() else '<div class="miss">à générer</div>'
+    inner = f"""
+<div class="kicker">11 — Supports numériques</div>
+<h1 style="margin-top:10px">Prêts à publier, dès aujourd'hui.</h1>
+<div class="g">
+  <figure class="li">{im("Banniere_LinkedIn_1584x396", 1400)}<figcaption>Bannière LinkedIn · 1584 × 396</figcaption></figure>
+  <div class="row">
+    <figure>{im("Photo_de_profil_1080x1080", 500)}<figcaption>Photo de profil · 1080²</figcaption></figure>
+    <figure>{im("Post_annonce_1080x1350", 500)}<figcaption>Post annonce</figcaption></figure>
+    <figure>{im("Ecran_demarrage_plugin_1280x720", 900)}<figcaption>Écran de démarrage du plugin · 1280 × 720</figcaption></figure>
+    <figure>{im("Post_citation_1080x1080", 500)}<figcaption>Post citation · 1080²</figcaption></figure>
+  </div>
+</div>"""
+    css = f"""
+.g{{margin-top:22px}}
+figure{{margin:0}} figure img{{display:block;border-radius:6px;box-shadow:0 6px 18px rgba(11,22,36,.18)}}
+.li img{{width:100%}}
+figcaption{{font:400 9.5px Mono;letter-spacing:1px;color:#5b6572;margin-top:6px;text-transform:uppercase}}
+.row{{display:flex;justify-content:space-between;margin-top:16px}}
+.row img{{height:208px;width:auto}}
+.miss{{height:120px;border:1px dashed #b9bec4;border-radius:6px;display:flex;align-items:center;justify-content:center;font:400 11px Mono;color:#5b6572}}
+"""
+    return page_shell(inner, 12, "Supports", "light", css)
+
+
+# ------------------------------------------------------------ 13. Mises en situation (grille bento)
+BENTO = [
+    ("01", "Casque de chantier", "a"),
+    ("02", "Poste de travail AutoCAD", "b"),
+    ("03", "Plaque en cuivre", "c"),
+    ("04", "Étiquette de fagot", "d"),
+    ("05", "Cartes de visite", "e"),
+    ("06", "Polo brodé", "f"),
+]
+
+
+def p_bento():
+    d = _ROOT / "mockups" / "images"
+    cells = ""
+    for n, title, area in BENTO:
+        found = next(iter(sorted(d.glob(f"{n}*.*"))), None) if d.exists() else None
+        if found:
+            content = f'<img src="{img_uri(found, 1300)}">'
+        else:
+            content = (f'<div class="ph">{sized(symbol(bar="#23364d", accent="#23364d", noeud="#23364d"), w=70)}'
+                       f'<span>Image {n} à venir</span></div>')
+        cells += f'<div class="t {area}">{content}<div class="cap"><b>{n}</b>{title}</div></div>'
+    inner = f"""
+<div class="kicker">12 — Mises en situation</div>
+<h1 style="margin-top:10px;color:{CHAUX}">La marque, sur le terrain.</h1>
+<div class="bento">{cells}</div>"""
+    css = f"""
+.bento{{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(3,172px);gap:10px;margin-top:22px;
+  grid-template-areas:'a a b b' 'a a c d' 'e f f d'}}
+.a{{grid-area:a}} .b{{grid-area:b}} .c{{grid-area:c}} .d{{grid-area:d}} .e{{grid-area:e}} .f{{grid-area:f}}
+.t{{position:relative;border-radius:8px;overflow:hidden;background:{ACIER}}}
+.t img{{width:100%;height:100%;object-fit:cover;display:block}}
+.ph{{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+  font:400 10px Mono;letter-spacing:2px;text-transform:uppercase;color:#56677b;
+  background:repeating-linear-gradient(90deg,transparent 0 23px,#15253a 23px 24px)}}
+.cap{{position:absolute;left:10px;bottom:10px;background:rgba(11,22,36,.82);color:{CHAUX};font:500 10px Manrope;
+  padding:5px 9px;border-radius:4px;display:flex;gap:7px}}
+.cap b{{font:500 10px Mono;color:{CUIVRE_CLAIR}}}
+"""
+    return page_shell(inner, 13, "Mises en situation", "dark", css)
+
+
+PAGES = [p05, p06, p07, p08, p09, p10, p11, p_supports, p_bento, p12]
