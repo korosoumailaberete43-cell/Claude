@@ -396,9 +396,8 @@ function scene4(t) {
     const sc = 1 + .05 * eo3(prog(t, T.intel, T.black));
     glow(CX, 930, 620, COL.signal, .10 + .05 * Math.sin(t * 6));
     ctx.save(); ctx.translate(CX, 930); ctx.scale(sc, sc); ctx.translate(-CX, -930);
-    const f = F('700 # Sora', 150, -4), al = clamp((t - T.intel) * 10);
-    glitchText(t, 'intelli-', CX, 900, f, COL.signal, g, 3, al);
-    glitchText(t, 'gente ?', CX, 1060, f, COL.signal, g, 4, al);
+    const f = F('700 # Sora', 140, -4), al = clamp((t - T.intel) * 10);
+    glitchText(t, 'intelligente\u202f?', CX, 980, f, COL.signal, g, 3, al);
     ctx.restore();
   }
 }
