@@ -127,6 +127,14 @@ def main():
         shutil.copy(f, d6 / f.name)
     shutil.copy(ROOT / "mockups" / "PROMPTS_ChatGPT.md", docs / "CivRebar_AI_Prompts_mises_en_situation.md")
 
+    # ---- 07 mises en situation (images générées à partir des prompts)
+    d7 = PACK / "07_Mises_en_situation"
+    if d7.exists():
+        shutil.rmtree(d7)
+    d7.mkdir()
+    for f in sorted((ROOT / "mockups" / "images").glob("0*_*.jpg")):
+        shutil.copy(f, d7 / f"CivRebar_AI_{f.name}")
+
     shutil.copy(ROOT / "LISEZ-MOI.txt", PACK / "LISEZ-MOI.txt")
     print("ok", manual)
 

@@ -29,6 +29,14 @@ CONTENU
    (annonce et citation) et écran de démarrage du plugin, en PNG aux
    dimensions exactes de chaque plateforme.
 
+06_Modeles_bureautiques/
+   Modèle PowerPoint (8 diapositives), papier à en-tête et modèle de
+   note de calcul Word. Installer d'abord les polices ci-dessous.
+
+07_Mises_en_situation/
+   Six photos de la marque en situation (casque, poste AutoCAD, plaque,
+   étiquette de fagot, cartes de visite, polo), en JPEG.
+
 FORMATS
 -------
 Chaque version existe en SVG, PDF, EPS, PNG et JPEG.
