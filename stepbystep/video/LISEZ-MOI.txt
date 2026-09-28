@@ -1,0 +1,46 @@
+STEP BY STEP ACADEMY — HABILLAGE VIDÉO YOUTUBE (INTRO + OUTRO)
+================================================================
+
+LIVRABLES (dossier livrables/)
+------------------------------
+   StepByStep_Intro_generique.mp4            6,2 s  — logo animé + slogan
+   StepByStep_Intro_titre_exemple.mp4        7,6 s  — logo animé + titre du cours (exemple AutoCAD)
+   StepByStep_Outro_ecran_de_fin.mp4        20,0 s  — Bravo / 3 gestes / écran de fin YouTube
+   …_sans_son.mp4                            mêmes vidéos, sans aucun son (pour mettre votre musique)
+                                             (envoyées à part, non versionnées : ./make.sh les régénère)
+   …_son_seul.wav                            la bande-son seule (48 kHz, stéréo)
+
+   Format : 1920 × 1080 (Full HD), 30 images/s, H.264 haute qualité, son AAC 320 kb/s.
+   Le logo est animé à partir des fichiers vectoriels officiels : il n'a pas été redessiné.
+   La musique et les bruitages ont été entièrement créés pour la marque, donc pas de
+   réclamation de droits d'auteur (Content ID).
+
+DANS LE MONTAGE
+---------------
+   1. Placez l'intro au tout début, puis coupez franchement sur votre première image
+      (l'intro se termine par une transition « escalier » sur fond noir).
+   2. Placez l'outro à la toute fin : ce doivent être les 20 dernières secondes de la vidéo.
+
+ÉCRAN DE FIN YOUTUBE (YouTube Studio → Vidéo → Écran de fin)
+------------------------------------------------------------
+   L'écran de fin fixe commence 8,6 s après le début de l'outro, soit 11,4 s avant la fin.
+   Réglez les éléments pour qu'ils apparaissent à ce moment-là, puis placez-les sur les cadres :
+     • Cadre de gauche « VIDÉO SUIVANTE »          → élément Vidéo (la leçon suivante)
+     • Cadre de droite « TOUTE LA FORMATION »      → élément Playlist (la formation complète)
+     • Rond central avec la cloche                  → élément S'abonner
+   Le bandeau WhatsApp reste visible sous les éléments.
+
+CHANGER LE TITRE DU COURS (version « titre »)
+---------------------------------------------
+   Demandez simplement une nouvelle version avec : le sur-titre (ex. « Cours en ligne · Niveau 2 »),
+   le titre sur 1 ou 2 lignes, et la leçon (ex. « Leçon 04 · La cotation »).
+   Pour la régénérer vous-même (technique) :
+     cd src && CFG_JSON='{"kicker":"…","titre":["Revit","niveau 2"],"lecon":"Leçon 01 · …"}' ./make.sh intro_titre_exemple
+
+SOURCES (dossier src/)
+----------------------
+   lib.js / intro.js / outro.js  animation (chaque image est une fonction du temps)
+   build_html.py                 assemble logo officiel + polices + animation en pages HTML
+   render.js                     rendu image par image (Chromium) avec flou de mouvement (4 sous-images)
+   audio.py                      synthèse du logo sonore et de la musique (numpy)
+   make.sh                       chaîne complète → livrables/
