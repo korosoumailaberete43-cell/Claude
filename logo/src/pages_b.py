@@ -421,23 +421,34 @@ figcaption{{font:400 9.5px Mono;letter-spacing:1px;color:#5b6572;margin-top:6px;
 
 
 # ------------------------------------------------------------ 13. Mises en situation (grille bento)
-BENTO = [
-    ("01", "Casque de chantier", "a"),
-    ("02", "Poste de travail AutoCAD", "b"),
-    ("03", "Plaque en cuivre", "c"),
-    ("04", "Étiquette de fagot", "d"),
-    ("05", "Cartes de visite", "e"),
-    ("06", "Polo brodé", "f"),
-]
+# (numéro, titre, cadrage object-position) — le cadrage garde le logo visible une fois l'image recadrée
+BENTO = {
+    "01": ("Casque de chantier", "50% 50%"),
+    "02": ("Poste de travail AutoCAD", "50% 12%"),
+    "03": ("Plaque en cuivre", "50% 50%"),
+    "04": ("Étiquette de fagot", "50% 50%"),
+    "05": ("Cartes de visite", "50% 40%"),
+    "06": ("Polo brodé", "50% 55%"),
+}
 
 
 def p_bento():
     d = _ROOT / "mockups" / "images"
+    img = {n: next(iter(sorted(d.glob(f"{n}_*.*"))), None) if d.exists() else None for n in BENTO}
+    # grande case : le casque ; à défaut, le poste AutoCAD, et une case de marque comble la grille
+    if img["01"]:
+        order = [("a", "01"), ("b", "06"), ("c", "03"), ("d", "04"), ("e", "05"), ("f", "02")]
+    else:
+        order = [("a", "02"), ("b", "06"), ("c", "03"), ("d", "04"), ("e", "05"), ("f", None)]
     cells = ""
-    for n, title, area in BENTO:
-        found = next(iter(sorted(d.glob(f"{n}*.*"))), None) if d.exists() else None
-        if found:
-            content = f'<img src="{img_uri(found, 1300)}">'
+    for area, n in order:
+        if n is None:
+            cells += (f'<div class="t {area} brand">{sized(logo_horizontal(bar=CHAUX, text=CHAUX)[0], w=250)}'
+                      '<span class="serif">L&#8217;intelligence de l&#8217;armature.</span></div>')
+            continue
+        title, pos = BENTO[n]
+        if img[n]:
+            content = f'<img src="{img_uri(img[n], 1300)}" style="object-position:{pos}">'
         else:
             content = (f'<div class="ph">{sized(symbol(bar="#23364d", accent="#23364d", noeud="#23364d"), w=70)}'
                        f'<span>Image {n} à venir</span></div>')
@@ -458,6 +469,8 @@ def p_bento():
 .cap{{position:absolute;left:10px;bottom:10px;background:rgba(11,22,36,.82);color:{CHAUX};font:500 10px Manrope;
   padding:5px 9px;border-radius:4px;display:flex;gap:7px}}
 .cap b{{font:500 10px Mono;color:{CUIVRE_CLAIR}}}
+.brand{{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:12px;padding:0 34px}}
+.brand .serif{{font-size:22px;color:{CUIVRE_CLAIR}}}
 """
     return page_shell(inner, 13, "Mises en situation", "dark", css)
 
