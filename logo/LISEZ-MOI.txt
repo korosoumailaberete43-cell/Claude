@@ -1,0 +1,55 @@
+CIVREBAR AI — PACK LOGO ET CHARTE GRAPHIQUE
+Édition 1.0 · 2026
+L'intelligence de l'armature.
+=============================================
+
+CONTENU
+-------
+01_Logo_principal_avec_nom/
+   Logo horizontal (version principale) et logo vertical,
+   en couleur, en noir et en blanc.
+   « couleur_pour_fond_sombre » : logo couleur à poser sur un fond Nuit.
+
+02_Symbole_seul/
+   Le « R façonné » sans le nom : icône du plugin, avatar, tampon sur les plans.
+   icone_application : symbole sur carré arrondi Nuit.
+   favicons/ : 16 à 512 px + favicon.ico pour un site web.
+
+03_Versions_sur_fond_couleur/
+   Logo et symbole avec leur fond intégré (Nuit, Acier, Cuivre, Chaux),
+   marge de protection comprise. Prêts pour les réseaux sociaux et les diaporamas.
+
+04_Documents/
+   CivRebar_AI_Charte_graphique.pdf : manuel d'identité complet (12 pages).
+
+FORMATS
+-------
+Chaque version existe en SVG, PDF, EPS, PNG et JPEG.
+   SVG / PDF / EPS : vectoriels, pour l'impression et les imprimeurs.
+   PNG             : fond transparent, pour le web et les documents.
+   JPEG            : fond plein (blanc, ou Nuit pour les versions blanches).
+Les textes du logo sont vectorisés : aucune police n'est nécessaire pour les ouvrir.
+
+COULEURS
+--------
+   Nuit d'acier     #0B1624   RVB 11 22 36      CMJN 95 75 45 65
+   Cuivre de forge  #C8773F   RVB 200 119 63    CMJN 15 60 85 5
+   Signal IA        #35D0DE   RVB 53 208 222    CMJN 65 0 15 0
+   Acier trempé     #1C2B3D   RVB 28 43 61      CMJN 88 70 45 45
+   Béton coulé      #B9BEC4   RVB 185 190 196   CMJN 28 18 15 0
+   Blanc chaux      #F3F0EA   RVB 243 240 234   CMJN 3 4 7 0
+   (CMJN indicatifs : à valider sur épreuve avec l'imprimeur.)
+
+TYPOGRAPHIE (polices libres, licence SIL Open Font)
+-----------
+   Sora            : titres et logotype (SemiBold, capitales espacées +160)
+   Manrope         : texte courant
+   JetBrains Mono  : cotes, nomenclatures, code AutoLISP
+   Instrument Serif: citations, en italique
+   Téléchargement : fonts.google.com
+
+RÈGLES ESSENTIELLES
+-------------------
+   - Marge de protection : 2x autour du logo (x = épaisseur de la barre).
+   - Taille minimale : logo horizontal 35 mm / 150 px ; en dessous, symbole seul.
+   - Ne jamais déformer, recolorer, incliner, ombrer ni recomposer le logo.
