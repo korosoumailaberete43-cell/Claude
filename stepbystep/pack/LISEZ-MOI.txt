@@ -22,9 +22,8 @@ CONTENU
    graphite, or) et marge de protection comprise.
 
 04_Documents/
-   StepByStep_Academy_Charte_graphique.pdf : la charte complète (16 pages).
-   StepByStep_Prompts_mises_en_situation.md : prompts pour ChatGPT.
-   Exemple_attestation.png : aperçu de l'attestation (sert au prompt 04).
+   StepByStep_Academy_Charte_graphique.pdf : la charte complète (15 pages).
+   Apercu_attestation.png : aperçu de l'attestation de réussite.
 
 05_Supports_numeriques/
    Photo de profil, couverture Facebook, bannière LinkedIn, annonce de

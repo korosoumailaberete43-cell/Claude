@@ -60,14 +60,13 @@ def main():
     wr.add_metadata({"/Title": "Step by Step Academy — Charte graphique", "/Author": "Step by Step Academy"})
     with open(d4 / "StepByStep_Academy_Charte_graphique.pdf", "wb") as fh:
         wr.write(fh)
-    shutil.copy(ROOT / "mockups" / "PROMPTS_ChatGPT.md", d4 / "StepByStep_Prompts_mises_en_situation.md")
-    # exemple d'attestation en image (sert au prompt 04)
+    # aperçu de l'attestation en image
     html = ROOT / "out" / "attestation_exemple.html"
     html.write_text(f'<!doctype html><html><head><meta charset="utf-8"><style>{font_css()}*{{margin:0;padding:0;box-sizing:border-box}}'
                     f'body{{width:842px;height:595px;font-family:Nunito}}{ATT_CSS}</style></head><body>{attestation_html()}</body></html>', encoding="utf-8")
     env = dict(os.environ, NODE_PATH=subprocess.check_output(["npm", "root", "-g"], text=True).strip())
     subprocess.run(["node", str(pathlib.Path(__file__).parent / "render_png.js"),
-                    f"{html}|{d4 / 'Exemple_attestation.png'}|842|595"], check=True, env=env)
+                    f"{html}|{d4 / 'Apercu_attestation.png'}|842|595"], check=True, env=env)
 
     d6 = PACK / "06_Modeles_bureautiques"
     if (ROOT / "out" / "office").exists():
@@ -75,13 +74,6 @@ def main():
         for f in (ROOT / "out" / "office").glob("*.*x"):
             shutil.copy(f, d6 / f.name)
 
-    d7 = PACK / "07_Mises_en_situation"
-    imgs = sorted((ROOT / "mockups" / "images").glob("0*_*.jpg")) if (ROOT / "mockups" / "images").exists() else []
-    if imgs:
-        shutil.rmtree(d7, ignore_errors=True)
-        d7.mkdir()
-        for f in imgs:
-            shutil.copy(f, d7 / f"StepByStep_{f.name}")
     shutil.copy(ROOT / "LISEZ-MOI.txt", PACK / "LISEZ-MOI.txt")
     print("ok")
 

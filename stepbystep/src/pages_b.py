@@ -1,5 +1,5 @@
-"""Pages 6 à 16 : versions, protection, couleurs, typo, fonds, interdits, univers, applications,
-supports numériques, mises en situation, contact."""
+"""Pages 6 à 15 : versions, protection, couleurs, typo, fonds, interdits, univers, applications,
+supports numériques, contact."""
 import base64
 import io
 import pathlib
@@ -400,49 +400,7 @@ figcaption{{font:700 8.5px Comfortaa;letter-spacing:1.2px;color:{GRIS};margin-to
     return page_shell(inner_, 14, "Supports", "light", css)
 
 
-# ------------------------------------------------------------ 15. Mises en situation (bento)
-BENTO = {
-    "01": ("Salle de formation", "50% 50%"),
-    "02": ("Cours en ligne", "50% 30%"),
-    "03": ("Enseigne de façade", "50% 50%"),
-    "04": ("Attestation remise", "50% 45%"),
-    "05": ("Cours à domicile", "50% 50%"),
-    "06": ("Polo du formateur", "50% 45%"),
-}
-
-
-def p15():
-    d = ROOT / "mockups" / "images"
-    img = {n: next(iter(sorted(d.glob(f"{n}_*.*"))), None) if d.exists() else None for n in BENTO}
-    order = [("a", "01"), ("b", "02"), ("c", "03"), ("d", "04"), ("e", "05"), ("f", "06")]
-    cells = ""
-    for area, n in order:
-        title, pos = BENTO[n]
-        if img[n]:
-            content = f'<img src="{img_uri(img[n], 1300)}" style="object-position:{pos}">'
-        else:
-            content = f'<div class="ph">{sized(compact("sombre"), w=80)}<span>Image {n} à venir</span></div>'
-        cells += f'<div class="t {area}">{content}<div class="cap"><b>{n}</b>{title}</div></div>'
-    inner_ = f"""
-<div class="kicker">14 — Mises en situation</div>
-<h1 style="margin-top:10px;color:{IVOIRE}">La marque, là où l'on apprend.</h1>
-<div class="bento">{cells}</div>"""
-    css = f"""
-.bento{{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(3,172px);gap:10px;margin-top:22px;
-  grid-template-areas:'a a b b' 'a a c d' 'e f f d'}}
-.a{{grid-area:a}} .b{{grid-area:b}} .c{{grid-area:c}} .d{{grid-area:d}} .e{{grid-area:e}} .f{{grid-area:f}}
-.t{{position:relative;border-radius:10px;overflow:hidden;background:{GRAPHITE}}}
-.t img{{width:100%;height:100%;object-fit:cover;display:block}}
-.ph{{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
-  font:700 9.5px Comfortaa;letter-spacing:2px;text-transform:uppercase;color:#6d665c;opacity:.9}}
-.ph svg{{opacity:.25}}
-.cap{{position:absolute;left:10px;bottom:10px;background:rgba(17,17,17,.82);color:{IVOIRE};font:700 10px Nunito;padding:5px 9px;border-radius:5px;display:flex;gap:7px}}
-.cap b{{font:700 10px Comfortaa;color:{OR}}}
-"""
-    return page_shell(inner_, 15, "Mises en situation", "dark", css)
-
-
-# ------------------------------------------------------------ 16. Contact (fin)
+# ------------------------------------------------------------ 15. Contact (fin)
 def p16():
     inner_ = f"""
 <svg class="mt" viewBox="0 0 560 280" width="560">{marches_motif(0, 0, 560, 44, 14)}</svg>
@@ -458,7 +416,7 @@ def p16():
 .ct{{margin-top:34px;display:flex;flex-direction:column;gap:14px;font:600 17px Nunito;color:{IVOIRE}}}
 .ct span{{display:block;font:700 9px Comfortaa;letter-spacing:2px;text-transform:uppercase;color:{OR};margin-bottom:3px}}
 """
-    return page_shell(inner_, 16, "Contact", "dark", css)
+    return page_shell(inner_, 15, "Contact", "dark", css)
 
 
-PAGES = [p06, p07, p08, p09, p10, p11, p12, p13, p14, p15, p16]
+PAGES = [p06, p07, p08, p09, p10, p11, p12, p13, p14, p16]
