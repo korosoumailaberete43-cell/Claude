@@ -5,11 +5,17 @@
   sans signification (les commandes CRP / CRPT / CIVREBAR_... restent) ;
 - compacte le code (plus d'indentation, plus de mise en page) ;
 - ajoute une date d'expiration de la version de test.
-Usage : python3 proteger.py source.lsp sortie.lsp AAAAMMJJ
+Usage : python3 proteger.py source.lsp sortie.lsp [jours] [nb_essais]
+  jours     : duree de validite apres le 1er lancement (defaut 3)
+  nb_essais : nombre d'executions autorisees (defaut 2)
+Au-dela de la duree OU du nombre d'essais, le fichier .lsp s'efface lui-meme.
 """
-import re, sys, random
+import re, sys, random, os
 
-src, dst, expire = sys.argv[1], sys.argv[2], sys.argv[3]
+src, dst = sys.argv[1], sys.argv[2]
+jours    = float(sys.argv[3]) if len(sys.argv) > 3 else 3.0
+essais   = int(sys.argv[4])   if len(sys.argv) > 4 else 2
+basename = os.path.basename(dst)
 text = open(src, encoding="utf-8").read().replace("\r\n", "\n")
 
 # --- 1. Decoupage en jetons : chaine / commentaire / code -------------------
@@ -80,14 +86,37 @@ for part in re.split(r'("(?:\\.|[^"\\])*")', "".join(out)):
 res.append(line.strip())
 code = "\n".join(l for l in res if l)
 
-# --- 4. Date d'expiration ---------------------------------------------------
+# --- 4. Garde : duree de validite + nombre d'essais + auto-effacement ------
 lanceur = table["CRP_LANCER"]
-garde = ('(defun _lIlIlIlIlI nil (if (> (fix (getvar "CDATE")) %s)'
-         '(progn (alert "Version de test expiree.") nil) T))' % expire)
+garde = (
+ '(defun _lIlIlIlIlI ( / K now d0 n fp)'
+ '(setq K "HKEY_CURRENT_USER\\\\Software\\\\CivRebarTest\\\\%%FN%%")'
+ '(setq now (getvar "DATE"))'
+ '(setq fp (findfile "%%BN%%"))'
+ '(setq d0 (vl-registry-read K "d"))'
+ '(if (null d0)(progn (vl-registry-write K "d" (rtos now 2 8))(setq d0 (rtos now 2 8))))'
+ '(setq d0 (atof d0))'
+ '(setq n (vl-registry-read K "n"))'
+ '(setq n (if n (1+ (atoi n)) 1))'
+ '(vl-registry-write K "n" (itoa n))'
+ '(cond'
+ '((> (- now d0) %%J%%.0)'
+ '(alert "Version de test expiree (delai de %%J%% jours depasse).")'
+ '(if fp (vl-file-delete fp)) nil)'
+ '((> n %%E%%)'
+ '(alert "Version de test : nombre d essais atteint.")'
+ '(if fp (vl-file-delete fp)) nil)'
+ '(T (if (>= n %%E%%) (if fp (vl-file-delete fp))) T)))'
+).replace("%%FN%%", "".join(c for c in basename if c.isalnum()))\
+ .replace("%%BN%%", basename)\
+ .replace("%%J%%", ("%g" % jours))\
+ .replace("%%E%%", str(essais))
+
 code = garde + "\n" + code.replace("(defun %s(" % lanceur,
                                    "(defun %s_(" % lanceur, 1)
 code += "\n(defun %s(m)(if (_lIlIlIlIlI)(%s_ m))(princ))" % (lanceur, lanceur)
 code += "\n(princ)\n"
 
 open(dst, "w", encoding="utf-8", newline="\r\n").write(code)
-print("%d symboles renommes, %d caracteres -> %d" % (len(table), len(text), len(code)))
+print("%d symboles renommes, %d essais, %g jours, %d -> %d caracteres"
+      % (len(table), essais, jours, len(text), len(code)))
