@@ -11,12 +11,12 @@ cd "$(dirname "$0")"
 case "$1" in
   "")        PAGE=teaser;    OUT=CivRebar_AI_Teaser_1080p ;;
   vertical)  PAGE=teaser_v;  OUT=CivRebar_AI_Teaser_vertical_1080x1920 ;;
-  manifeste) PAGE=manifeste; OUT=CivRebar_AI_Manifeste_vertical ;;
+  manifeste) PAGE=manifeste; OUT=CivRebar_AI_Manifeste_vertical; RATE="-maxrate 6M -bufsize 12M" ;;
   pov)       PAGE=pov;       OUT=CivRebar_AI_POV_vertical ;;
   cage3d)    PAGE=cage3d;    OUT=CivRebar_AI_Construction3D_vertical ;;
   *) echo "vidéo inconnue : $1"; exit 1 ;;
 esac
-if [ "$PAGE" = teaser ]; then Q="-crf 17"; AB=256k; else Q="-crf 20 -maxrate 9M -bufsize 18M"; AB=192k; fi
+if [ "$PAGE" = teaser ]; then Q="-crf 17"; AB=256k; else Q="-crf 20 ${RATE:--maxrate 9M -bufsize 18M}"; AB=192k; fi
 AUDIO=out/${PAGE}_audio.wav
 [ "$PAGE" = teaser ] && AUDIO=out/teaser_audio.wav
 [ "$PAGE" = teaser_v ] && AUDIO=out/teaser_vertical_audio.wav
