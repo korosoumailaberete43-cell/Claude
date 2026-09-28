@@ -1,14 +1,17 @@
-"""Bande-son du teaser CivRebar AI, entièrement synthétisée (numpy).
-Lit cues.json (exporté par render.js) et écrit out/teaser_audio.wav (48 kHz, stéréo)."""
+"""Bande-son des teasers CivRebar AI, entièrement synthétisée (numpy).
+usage : python3 sound.py [cues.json] [out/teaser_audio.wav]
+Les repères et le plan musical viennent du fichier exporté par render.js."""
 import json
 import pathlib
+import sys
 import wave
 
 import numpy as np
 
 HERE = pathlib.Path(__file__).resolve().parent
 SR = 48000
-info = json.loads((HERE / "cues.json").read_text())
+ARGS = sys.argv[1:] + [None, None]
+info = json.loads(pathlib.Path(ARGS[0] or HERE / "cues.json").read_text())
 DUR = info["dur"]
 N = int(DUR * SR) + SR
 rng = np.random.default_rng(7)
@@ -211,72 +214,91 @@ def midi(m):
     return 440 * 2 ** ((m - 69) / 12)
 
 
-# Tension 0 → 25 s : bourdon grave qui monte, coupé net au noir
-d = 25.0
+M = info["music"]
+
+
+def span(key):
+    a, b = M[key]
+    return a, b, b - a
+
+
+# Tension : bourdon grave qui monte, coupé net au noir
+a, b, d = span("drone")
 t = tt(d)
 drone = (np.sin(2 * np.pi * 36.7 * t) * .6 + np.sin(2 * np.pi * 73.4 * t + .5) * .25 + lowpass(noise(d), 120) * 1.5)
 drone *= (.25 + .75 * (t / d) ** 1.5) * np.minimum(t / 2, 1) * np.minimum((d - t) / .01, 1)
-put(drone, 0, .45, 0, .2)
-# pédale aiguë inquiétante (scène 3-4)
-d = 25 - 12.5
-put(note(midi(74), d, a=3, r=.01, bright=2) * (tt(d) / d) ** 1.2, 12.5, .06, .3, .6)
-# Montée 16.5 → 25
-d = 25 - 16.5
+put(drone, a, .45, 0, .2)
+# pédale aiguë inquiétante
+a, b, d = span("pedal")
+put(note(midi(74), d, a=3, r=.01, bright=2) * (tt(d) / d) ** 1.2, a, .06, .3, .6)
+# Montée
+a, b, d = span("riser")
 t = tt(d)
 k = t / d
 rate = 3 + 22 * k ** 2
 trem = .6 + .4 * np.sin(2 * np.pi * np.cumsum(rate) / SR)
 riser = (sine_sweep(110, 1100, d) * .5 + sine_sweep(165, 1650, d) * .25 + highpass(noise(d), 800 + 6000 * k) * .6) * trem
 riser *= k ** 2.2 * np.minimum((d - t) / .01, 1)
-put(riser, 16.5, .38, 0, .3)
+put(riser, a, .38, 0, .3)
 
 # Après la révélation : accords en ré mineur
 CH = {"Dm": [50, 57, 62, 65, 69], "Bb": [46, 53, 58, 62, 65], "F": [41, 53, 57, 60, 65], "C": [48, 55, 60, 64, 67]}
-prog = [("Dm", 26.4, 30.5), ("Bb", 30.5, 34.5), ("F", 34.5, 38.5), ("C", 38.5, 43.2)]
-for name, a, b in prog:
+chords = M["chords"]
+first = chords[0][1]
+for name, a, b in chords:
     for i, m in enumerate(CH[name]):
-        put(note(midi(m), b - a + .6, a=1.2 if a > 27 else .3, r=.8), a, .09 if i else .12, (i - 2) * .25, .6)
-# basse pulsée (croches, 120 bpm) + arpège (doubles croches)
-for name, a, b in prog[1:]:
+        put(note(midi(m), b - a + .6, a=1.2 if a > first + .5 else .3, r=.8), a, .09 if i else .12, (i - 2) * .25, .6)
+
+
+def inside(x, spans):
+    return any(a <= x < b for a, b, *_ in spans)
+
+
+# basse pulsée (croches, 120 bpm) + arpège (doubles croches), sur les plages demandées
+for name, a, b in chords:
     root = CH[name][0] - 12 if CH[name][0] > 45 else CH[name][0]
     tb = a
     while tb < b - .01:
-        dd = .45
-        s = np.sin(2 * np.pi * midi(root) * tt(dd)) + .3 * np.sin(4 * np.pi * midi(root) * tt(dd))
-        put(np.tanh(1.5 * s) * env_ad(dd, .005, .12), tb, .32, 0, .05)
+        if inside(tb, M["bass"]):
+            dd = .45
+            s = np.sin(2 * np.pi * midi(root) * tt(dd)) + .3 * np.sin(4 * np.pi * midi(root) * tt(dd))
+            put(np.tanh(1.5 * s) * env_ad(dd, .005, .12), tb, .32, 0, .05)
         tb += .25
-    if a >= 34.5:
-        tones = [m + 12 for m in CH[name][1:]]
-        seq = tones + tones[::-1][1:-1]
-        ta, j = a, 0
-        while ta < b - .01:
+    tones = [m + 12 for m in CH[name][1:]]
+    seq = tones + tones[::-1][1:-1]
+    ta, j = a, 0
+    while ta < b - .01:
+        if inside(ta, M["arp"]):
             dd = .3
             f = midi(seq[j % len(seq)])
             s = (np.sin(2 * np.pi * f * tt(dd)) + .35 * np.sin(4 * np.pi * f * tt(dd))) * env_ad(dd, .002, .07)
             put(s, ta, .1, .45 * np.sin(j), .5)
-            ta += .125
-            j += 1
-# grosse caisse (noires) 36 → 43.2
-tb = 34.5
-while tb < 43.1:
-    dd = .4
-    kk = sine_sweep(140, 45, dd) * env_ad(dd, .002, .09)
-    put(np.tanh(2 * kk), tb, .45 if tb >= 38.5 else .28, 0, .05)
-    tb += .5
-# Suspense 43.2 → 47.6 : tic-tac + cœur
-tb = 43.7
-while tb < 47.3:
+        ta += .125
+        j += 1
+# grosse caisse (noires)
+for a, b, g in M["kick"]:
+    tb = a
+    while tb < b - .01:
+        dd = .4
+        kk = sine_sweep(140, 45, dd) * env_ad(dd, .002, .09)
+        put(np.tanh(2 * kk), tb, g, 0, .05)
+        tb += .5
+# Suspense : tic-tac + cœur + note tenue
+a, b = M["suspense"]
+tb = a + .5
+while tb < b - .3:
     put(tick(), tb, .18, -.3 if int(tb * 2) % 2 else .3, .4)
     tb += .5
-for b in (44.0, 45.5, 47.0):
-    put(heart(), b, .7, 0, .1)
-    put(heart(), b + .24, .45, 0, .1)
-d = 47.6 - 43.2
-put(note(midi(38), d, a=1.5, r=.3, bright=1.5) * np.linspace(.4, 1, int(d * SR)), 43.2, .22, 0, .4)
-# Accord final (ré mineur ouvert) 47.6 → fin
-d = DUR - 47.6 + .5
+for h in M["suspenseHearts"]:
+    put(heart(), h, .7, 0, .1)
+    put(heart(), h + .24, .45, 0, .1)
+d = b - a
+put(note(midi(38), d, a=1.5, r=.3, bright=1.5) * np.linspace(.4, 1, int(d * SR)), a, .22, 0, .4)
+# Accord final (ré mineur ouvert) → fin
+fin = M["final"]
+d = DUR - fin + .5
 for i, m in enumerate([38, 50, 57, 62, 65, 69, 74]):
-    put(note(midi(m), d, a=.05 if i < 2 else .6, r=3.5, bright=6), 47.6, .1 if i else .18, (i - 3) * .2, .7)
+    put(note(midi(m), d, a=.05 if i < 2 else .6, r=3.5, bright=6), fin, .1 if i else .18, (i - 3) * .2, .7)
 
 # ---------------------------------------------------------------- réverbération, mixage
 L = int(2.8 * SR)
@@ -298,10 +320,10 @@ mix *= np.clip(tm / .05, 0, 1) * np.clip((DUR - tm) / 1.2, 0, 1)
 mix /= np.max(np.abs(mix)) + 1e-9
 mix = np.tanh(1.6 * mix) / np.tanh(1.6)
 mix *= 10 ** (-1 / 20)
-out = HERE / "out"
-out.mkdir(exist_ok=True)
+dest = pathlib.Path(ARGS[1] or HERE / "out" / "teaser_audio.wav")
+dest.parent.mkdir(exist_ok=True)
 pcm = (mix.T * 32767).astype("<i2")
-with wave.open(str(out / "teaser_audio.wav"), "wb") as w:
+with wave.open(str(dest), "wb") as w:
     w.setnchannels(2)
     w.setsampwidth(2)
     w.setframerate(SR)
