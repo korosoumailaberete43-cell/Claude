@@ -92,13 +92,13 @@ def coche(vert):
 </g>"""
 
 
-def fil(or_, fin):
+def fil(or_, fin, uid="a"):
     """Fil doré : part de sous la toque, tourne, redescend le long des marches et s'estompe."""
-    return f"""<defs><linearGradient id="g_fil" gradientUnits="userSpaceOnUse" x1="0" y1="400" x2="0" y2="790">
+    return f"""<defs><linearGradient id="g_fil_{uid}" gradientUnits="userSpaceOnUse" x1="0" y1="400" x2="0" y2="790">
   <stop offset="0" stop-color="{or_}"/><stop offset=".55" stop-color="{or_}" stop-opacity=".55"/>
   <stop offset="1" stop-color="{or_}" stop-opacity="0"/></linearGradient></defs>
 <path d="M503 192.5 H1010 A70 70 0 0 1 1080 262.5 V420" fill="none" stroke="{or_}" stroke-width="13"/>
-<path d="M1080 419 V790" fill="none" stroke="url(#g_fil)" stroke-width="13"/>
+<path d="M1080 419 V790" fill="none" stroke="url(#g_fil_{uid})" stroke-width="13"/>
 <path d="M1071 770 H1087 A8 8 0 0 1 1071 770 Z" fill="{fin}"/>"""
 
 
@@ -114,8 +114,12 @@ def livre(col):
     return f'<path d="{g}" fill="{col}"/><path d="{d}" fill="{col}"/>'
 
 
-def logo(fond=None, texte=BLANC, or_=OR, vert=VERT, toque_col=None, detail=True):
-    """detail=False retire tildes et livre (version épurée optionnelle)."""
+_n = [0]
+
+
+def parts(texte=BLANC, or_=OR, vert=VERT, toque_col=None, detail=True):
+    """Fragments SVG du logo dans le repère 1280 de l'original."""
+    _n[0] += 1
     toque_col = toque_col or texte
     marches = "".join(f'<rect x="{x}" y="{y}" width="{MARCHE_DROITE - x}" height="{MARCHE_H}" fill="{or_}"/>' for x, y in MARCHES)
     # polices identifiées par superposition sur l'original : Quicksand SemiBold + Comfortaa
@@ -123,16 +127,22 @@ def logo(fond=None, texte=BLANC, or_=OR, vert=VERT, toque_col=None, detail=True)
     txt = (glyph_fit(bold, STEP1, "S") + glyph_fit(bold, STEP2, "S")
            + glyph_fit("comfortaa-latin-400-normal.woff2", BY, "B")
            + glyph_fit("comfortaa-latin-300-normal.woff2", ACADEMY, "D"))
-    extras = (tilde(210, 1008, texte) + tilde(1065, 1008, texte) + livre(texte)) if detail else ""
+    return {
+        "fil": fil(or_, texte, _n[0]),
+        "marches": marches,
+        "coche": coche(vert),
+        "toque": toque(toque_col, None),
+        "texte": f'<g fill="{texte}">{txt}</g>',
+        "extras": (tilde(210, 1008, texte) + tilde(1065, 1008, texte) + livre(texte)) if detail else "",
+    }
+
+
+def logo(fond=None, texte=BLANC, or_=OR, vert=VERT, toque_col=None, detail=True):
+    """Logo complet dans le repère 1280 × 1280 de l'original."""
+    p = parts(texte, or_, vert, toque_col, detail)
     bg = f'<rect width="1280" height="1280" fill="{fond}"/>' if fond else ""
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 1280">{bg}
-{fil(or_, texte)}
-{marches}
-{coche(vert)}
-{toque(toque_col, fond)}
-<g fill="{texte}">{txt}</g>
-{extras}
-</svg>"""
+{p["fil"]}{p["marches"]}{p["coche"]}{p["toque"]}{p["texte"]}{p["extras"]}</svg>"""
 
 
 if __name__ == "__main__":

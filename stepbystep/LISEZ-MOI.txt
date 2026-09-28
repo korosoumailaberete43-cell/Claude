@@ -1,0 +1,74 @@
+STEP BY STEP ACADEMY — PACK D'IDENTITÉ VISUELLE
+Édition 2.0 · 2026 · « La progression, étape par étape. »
+=========================================================
+
+IMPORTANT : le logo a été remasterisé à l'identique (vectoriel, fond transparent).
+L'ancien fichier JPEG à fond noir ne doit plus être utilisé.
+
+CONTENU
+-------
+01_Logo_principal/
+   Logo principal et déclinaison horizontale, en 4 couleurs :
+   clair (sur fond clair — version de référence), sombre (sur fond noir),
+   noir (monochrome), blanc (monochrome inversé).
+   « sans_tildes_ni_livre » : variante allégée pour les très petits formats.
+
+02_Symbole_et_icone/
+   Symbole (toque + fil + marches, sans le nom), icône d'application
+   (marches + coche sur carré noir), marches seules, favicons/ pour le site.
+
+03_Versions_sur_fond/
+   Logo et déclinaison horizontale avec fond intégré (ivoire, blanc, noir,
+   graphite, or) et marge de protection comprise.
+
+04_Documents/
+   StepByStep_Academy_Charte_graphique.pdf : la charte complète (16 pages).
+   StepByStep_Prompts_mises_en_situation.md : prompts pour ChatGPT.
+   Exemple_attestation.png : aperçu de l'attestation (sert au prompt 04).
+
+05_Supports_numeriques/
+   Photo de profil, couverture Facebook, bannière LinkedIn, annonce de
+   formation, statut WhatsApp, miniature de cours en ligne, post
+   « Félicitations », aux dimensions exactes de chaque plateforme.
+
+06_Modeles_bureautiques/
+   Modèle PowerPoint de support de cours, papier à en-tête Word,
+   attestation de réussite Word (à compléter pour chaque apprenant).
+
+FORMATS
+-------
+Chaque logo existe en SVG, PDF, EPS, PNG et JPEG.
+   SVG / PDF / EPS : vectoriels, pour l'imprimeur et les grands formats.
+   PNG             : fond transparent, pour le web et les documents.
+   JPEG            : fond plein (blanc, ou noir pour les versions claires sur sombre).
+
+COULEURS
+--------
+   Noir fondateur   #111111   RVB 17 17 17       CMJN 0 0 0 93
+   Or excellence    #F5C518   RVB 245 197 24     CMJN 0 18 90 4
+   Ivoire           #FAF7F0   RVB 250 247 240    CMJN 0 1 4 2
+   Vert réussite    #5DB12E   RVB 93 177 46      CMJN 47 0 74 31   (validation uniquement)
+   Sable            #EFE8D8   RVB 239 232 216    CMJN 0 3 10 6
+   Graphite         #2A2A2A   RVB 42 42 42       CMJN 0 0 0 84
+   Couleurs de TEXTE sur fond clair (contraste conforme) :
+   Or bronze        #8A6A00   (à la place de l'or pour tout petit texte)
+   Vert texte       #437F21
+   (CMJN indicatifs : à valider sur épreuve avec l'imprimeur.)
+
+POLICES (gratuites, fonts.google.com — à installer avant d'ouvrir les modèles)
+-------
+   Quicksand   : titres (c'est la police de « Step » dans le logo)
+   Comfortaa   : sur-titres et étiquettes (c'est la police de « ACADEMY »)
+   Nunito      : texte courant
+
+RÈGLES ESSENTIELLES
+-------------------
+   - Zone de protection : la hauteur d'une marche du logo, tout autour.
+   - Taille minimale : 25 mm / 120 px de large ; en dessous, symbole ou icône.
+   - Fond préféré : ivoire ou blanc. Le noir est réservé aux moments forts.
+   - Sur l'or : logo monochrome noir. Sur photo : voile sombre + logo blanc.
+   - Ne jamais déformer, recolorer, ombrer, ni réécrire le nom dans une autre police.
+
+CONTACT
+-------
+   step.by.step.academy4@gmail.com · +223 89 48 33 27 · Mali

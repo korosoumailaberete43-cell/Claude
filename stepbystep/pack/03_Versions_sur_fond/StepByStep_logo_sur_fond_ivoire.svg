@@ -1,9 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 1280"><rect width="1280" height="1280" fill="#FAF7F0"/>
-<defs><linearGradient id="g_fil_2" gradientUnits="userSpaceOnUse" x1="0" y1="400" x2="0" y2="790">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-9.0 -61.0 1250.0 1351.0"><rect x="-9.0" y="-61.0" width="1250.0" height="1351.0" fill="#FAF7F0"/><defs><linearGradient id="g_fil_17" gradientUnits="userSpaceOnUse" x1="0" y1="400" x2="0" y2="790">
   <stop offset="0" stop-color="#F5C518"/><stop offset=".55" stop-color="#F5C518" stop-opacity=".55"/>
   <stop offset="1" stop-color="#F5C518" stop-opacity="0"/></linearGradient></defs>
 <path d="M503 192.5 H1010 A70 70 0 0 1 1080 262.5 V420" fill="none" stroke="#F5C518" stroke-width="13"/>
-<path d="M1080 419 V790" fill="none" stroke="url(#g_fil_2)" stroke-width="13"/>
+<path d="M1080 419 V790" fill="none" stroke="url(#g_fil_17)" stroke-width="13"/>
 <path d="M1071 770 H1087 A8 8 0 0 1 1071 770 Z" fill="#111111"/><rect x="731" y="333" width="296" height="67" fill="#F5C518"/><rect x="642" y="422" width="385" height="67" fill="#F5C518"/><rect x="536" y="514" width="491" height="67" fill="#F5C518"/><rect x="407" y="603" width="620" height="67" fill="#F5C518"/><rect x="260" y="690" width="767" height="67" fill="#F5C518"/><g>
   <circle cx="889.5" cy="277.5" r="45" fill="none" stroke="#5DB12E" stroke-width="9.5"/>
   <path d="M851 284 Q855 276 863 277 L876.5 293 Q902 256 940 233 Q906 266 882 307 Q877 314 870 309 Z" fill="#5DB12E"/>
