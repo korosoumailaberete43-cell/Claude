@@ -344,4 +344,29 @@ Ce qui tient un ouvrage ne se voit pas. Mais c'est lui qui porte tout.
 
 L'intelligence de l'armature arrive bientôt dans AutoCAD. 🔩""",
     },
+    # ------------------------------------------------------------------ J15 (série « Trouve l'erreur », n° 1)
+    {
+        "id": "J15_trouve_erreur_01", "titre": "Trouve l'erreur n° 1 : les cadres", "objectif": "Faire commenter, montrer l'expertise", "theme": "nuit",
+        "kicker": "Trouve l'erreur · n° 1",
+        "slides": [
+            {"t": "cover", "title": "Trouve **l'erreur** / sur ce plan.", "sub": "Poutre sur deux appuis, charge répartie. Un seul détail cloche. Réponds en commentaire avant de glisser."},
+            {"t": "plan", "mode": "erreur", "tag": "Poutre P1 — 30 × 60", "title": "Le plan", "body": "Regarde bien les cadres. Tu as trouvé ? Écris ta réponse en commentaire."},
+            {"t": "text", "title": "Un indice ?", "body": "Demande-toi où l'**effort tranchant** est le plus fort sur cette poutre."},
+            {"t": "plan", "mode": "reponse", "tag": "Réponse", "title": "Les cadres sont serrés / au **mauvais endroit**.", "body": "Espacés de 25 cm près des appuis, serrés à 10 cm au milieu : c'est l'inverse qu'il faut."},
+            {"t": "plan", "mode": "tranchant", "tag": "Pourquoi ?", "title": "L'effort tranchant", "body": "Sur une poutre sur deux appuis, il est **maximal aux appuis** et presque nul au milieu. Or ce sont les cadres qui le reprennent."},
+            {"t": "plan", "mode": "correct", "tag": "Le bon plan", "title": "Serrés aux **appuis**, / plus espacés au milieu.", "body": "Exemple de principe : les espacements réels se calculent selon les charges et la norme."},
+            {"t": "text", "title": "Ce genre de détail, / CivRebar AI t'aidera / à le **repérer**.", "body": "Les vérifications font partie de notre feuille de route. Un nouveau « Trouve l'erreur » chaque semaine."},
+            dict(CTA, title="Tu avais **trouvé** ?", body="Dis-le en commentaire, et abonne-toi pour le prochain défi.", actions=["Commente", "Partage", "Abonne-toi"]),
+        ],
+        "court": "🔍 TROUVE L'ERREUR n° 1 : un seul détail cloche sur ce plan de poutre. Réponds en commentaire AVANT de glisser 👀",
+        "legende": """🔍 TROUVE L'ERREUR — n° 1
+
+Poutre sur deux appuis, charge répartie. Un seul détail cloche sur ce plan.
+
+💬 Écris ta réponse en commentaire AVANT de regarder la solution (images 4 à 6) 👀
+
+Indice : où l'effort tranchant est-il le plus fort ?
+
+Un nouveau « Trouve l'erreur » chaque semaine. Abonne-toi pour ne pas le rater 🔩""",
+    },
 ]

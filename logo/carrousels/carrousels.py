@@ -120,6 +120,62 @@ def icon(kind, t, w=260):
     return f'<svg width="{w}" viewBox="0 0 200 200">{body}</svg>'
 
 
+ALERTE = "#D64545"  # rouge fonctionnel, réservé aux erreurs des séries « Trouve l'erreur »
+
+
+def plan_svg(t, mode, w=900):
+    """Plan de poutre sur deux appuis (5,40 m), zones de cadres cotées.
+    mode : "erreur" (cadres serrés au milieu), "reponse" (erreur entourée), "correct", "tranchant"."""
+    ink, m = t["ink"], t["muted"]
+    X0, X1, Y0, Y1 = 40, 960, 110, 260
+    k = (X1 - X0) / 540                       # unités par cm
+    za, zb = X0 + 135 * k, X1 - 135 * k       # zones d'appui : 1,35 m de chaque côté
+    dense, large = 10 * k, 25 * k
+    bad = mode in ("erreur", "reponse")
+    if mode == "tranchant":
+        yb = 190
+        body = (f'<line x1="{X0}" y1="{yb}" x2="{X1}" y2="{yb}" stroke="{m}" stroke-width="3"/>'
+                f'<path d="M{X0} {yb} L{X0} {yb - 110} L{X1} {yb + 110} L{X1} {yb} Z" fill="{t["si"]}" opacity=".18"/>'
+                f'<path d="M{X0} {yb - 110} L{X1} {yb + 110}" stroke="{t["si"]}" stroke-width="6"/>'
+                f'<text x="{X0 + 14}" y="{yb - 120}" font-family="Mono" font-size="28" fill="{t["si"]}">V max</text>'
+                f'<text x="{X1 - 14}" y="{yb + 150}" text-anchor="end" font-family="Mono" font-size="28" fill="{t["si"]}">V max</text>'
+                f'<text x="500" y="{yb - 22}" text-anchor="middle" font-family="Mono" font-size="28" fill="{m}">V ≈ 0</text>'
+                f'<path d="M{X0 + 30} 390 L{X0} 410 L{X0 + 60} 410 Z M{X1 - 30} 390 L{X1 - 60} 410 L{X1} 410 Z" fill="{m}"/>'
+                f'<text x="500" y="408" text-anchor="middle" font-family="Mono" font-size="24" fill="{m}">APPUI ←  effort tranchant  → APPUI</text>')
+        return f'<svg width="{w}" viewBox="0 0 1000 430">{body}</svg>'
+    xs, x = [], X0 + 12
+    while x < X1 - 10:
+        xs.append(x)
+        mid = za <= x < zb
+        x += (dense if mid else large) if bad else (large if mid else dense)
+    st = "".join(f'<line x1="{x:.1f}" y1="{Y0 + 8}" x2="{x:.1f}" y2="{Y1 - 8}" stroke="{ink}" stroke-width="3" opacity=".85"/>' for x in xs)
+    e_ap, e_mid = ("25", "10") if bad else ("10", "25")
+    lab = lambda x, s, c=m: f'<text x="{x:.0f}" y="84" text-anchor="middle" font-family="Mono" font-size="26" fill="{c}">e = {s} cm</text>'
+    ticks = "".join(f'<line x1="{x:.1f}" y1="60" x2="{x:.1f}" y2="96" stroke="{m}" stroke-width="2"/>' for x in (X0, za, zb, X1))
+    extra = ""
+    if mode == "reponse":
+        for cx in ((X0 + za) / 2, (zb + X1) / 2):
+            extra += (f'<ellipse cx="{cx:.0f}" cy="{(Y0 + Y1) / 2:.0f}" rx="{(za - X0) / 2 + 26:.0f}" ry="{(Y1 - Y0) / 2 + 16:.0f}" '
+                      f'fill="none" stroke="{ALERTE}" stroke-width="7" stroke-dasharray="18 10"/>')
+        extra += (f'<text x="{(X0 + za) / 2:.0f}" y="372" text-anchor="middle" font-family="Sora" font-weight="600" font-size="30" fill="{ALERTE}">trop espacés</text>'
+                  f'<text x="{(zb + X1) / 2:.0f}" y="372" text-anchor="middle" font-family="Sora" font-weight="600" font-size="30" fill="{ALERTE}">trop espacés</text>')
+    elif mode == "correct":
+        for x0, x1 in ((X0, za), (zb, X1)):
+            extra += f'<rect x="{x0:.0f}" y="{Y0 - 6}" width="{x1 - x0:.0f}" height="{Y1 - Y0 + 12}" fill="{SIGNAL}" opacity=".12"/>'
+    dim = (f'<line x1="{X0}" y1="330" x2="{X1}" y2="330" stroke="{m}" stroke-width="2"/>'
+           f'<path d="M{X0 - 6} 338 L{X0 + 6} 322 M{X1 - 6} 338 L{X1 + 6} 322" stroke="{m}" stroke-width="2"/>'
+           f'<rect x="420" y="312" width="160" height="36" fill="{t["bg"]}"/>'
+           f'<text x="500" y="339" text-anchor="middle" font-family="Mono" font-size="28" fill="{ink}">L = 5,40 m</text>') if mode != "reponse" else ""
+    return f"""<svg width="{w}" viewBox="0 20 1000 400">
+{ticks}{lab((X0 + za) / 2, e_ap, ALERTE if mode == "reponse" else m)}{lab(500, e_mid)}{lab((zb + X1) / 2, e_ap, ALERTE if mode == "reponse" else m)}
+<rect x="{X0}" y="{Y0}" width="{X1 - X0}" height="{Y1 - Y0}" fill="none" stroke="{m}" stroke-width="3"/>
+{st}
+<path d="M{X0 + 16} {Y0 + 50} V{Y0 + 20} H{X1 - 16} V{Y0 + 50}" fill="none" stroke="{CUIVRE}" stroke-width="8" stroke-linejoin="round"/>
+<path d="M{X0 + 16} {Y1 - 50} V{Y1 - 20} H{X1 - 16} V{Y1 - 50}" fill="none" stroke="{CUIVRE}" stroke-width="10" stroke-linejoin="round"/>
+<path d="M{X0 + 30} {Y1} L{X0} {Y1 + 36} L{X0 + 60} {Y1 + 36} Z M{X1 - 30} {Y1} L{X1 - 60} {Y1 + 36} L{X1} {Y1 + 36} Z" fill="{m}"/>
+{dim}{extra}</svg>"""
+
+
 def rebar_band(t, i, n, h):
     """Barre cuivre continue d'une affiche à l'autre : elle invite à glisser et relie tout le carrousel."""
     y = 40
@@ -186,6 +242,11 @@ def slide_html(post, s, i, n, fmt):
         items = "".join(f'<div class="step{" on" if j == len(s["steps"]) - 1 else ""}"><i></i><div><b>{esc(a)}</b><p>{esc(b)}</p></div></div>'
                         for j, (a, b) in enumerate(s["steps"]))
         main = f"""<h2 class="small">{esc(s["title"])}</h2><div class="steps">{items}</div>"""
+    elif kind == "plan":
+        tag = f'<div class="kick" style="color:{ALERTE if s["mode"] == "reponse" else t["si"]}">{esc(s["tag"])}</div>' if s.get("tag") else ""
+        main = f"""{tag}<h2 class="small">{esc(s["title"])}</h2>
+<div class="ill wide">{plan_svg(t, s["mode"])}</div>
+{f'<p class="body">{esc(s["body"])}</p>' if s.get("body") else ""}"""
     elif kind == "cta":
         acts = "".join(f"<span>{esc(a)}</span>" for a in s.get("actions", ["Abonne-toi", "Partage", "Enregistre"]))
         main = f"""<div class="logo">{logo_vertical(s.get("theme", post["theme"]), 360)}</div>

@@ -18,6 +18,7 @@ Une publication par jour. Publier le même carrousel sur tous les réseaux le m�
 | J12 | Le ferraillage en 6 mots | 8 | Éduquer, élargir l'audience |
 | J13 | Nos 3 valeurs | 6 | Créer la confiance |
 | J14 | Sois parmi les premiers | 6 | Convertir (abonnés, contacts) |
+| J15 | Trouve l'erreur n° 1 : les cadres | 8 | Faire commenter, montrer l'expertise |
 
 Formats : `4x5/` pour Instagram, Facebook et LinkedIn ; `9x16/` pour TikTok (mode photo) et les Statuts WhatsApp ;
 `LinkedIn.pdf` à publier comme « document » sur LinkedIn. Textes prêts à coller dans `legendes.txt`.
