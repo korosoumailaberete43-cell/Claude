@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><title>Tonton Ferraille — fiche personnage</title>
+<style>
+@font-face{font-family:Sora;src:url(../fonts/sora-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:Sora;src:url(../fonts/sora-latin-300-normal.woff2);font-weight:300}
+@font-face{font-family:Manrope;src:url(../fonts/manrope-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:Mono;src:url(../fonts/jetbrains-mono-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:Serif;src:url(../fonts/instrument-serif-latin-400-italic.woff2);font-style:italic}
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1920px;height:1350px;background:#0B1624;color:#F3F0EA;font-family:Manrope;position:relative;overflow:hidden}
+.grid{position:absolute;inset:0;background-image:linear-gradient(#15243a 1px,transparent 1px),linear-gradient(90deg,#15243a 1px,transparent 1px);background-size:48px 48px}
+.head{position:absolute;left:70px;top:50px}
+.kick{font:500 20px Mono;letter-spacing:.25em;color:#35D0DE;text-transform:uppercase}
+h1{font:600 76px Sora;letter-spacing:-2px;margin-top:10px}
+h1 span{color:#C8773F}
+.tag{font:italic 34px Serif;color:#B9BEC4;margin-top:6px}
+.views{position:absolute;left:40px;top:250px;display:flex;gap:0}
+.v{position:relative;width:390px;text-align:center}
+.v img{width:390px;height:620px;object-fit:cover}
+.lab{font:500 18px Mono;letter-spacing:.2em;color:#B9BEC4;text-transform:uppercase;margin-top:-6px}
+.expr{position:absolute;left:70px;top:960px;display:flex;gap:26px}
+.e{width:260px;text-align:center}
+.e img{width:260px;height:260px;border-radius:24px;background:#13233A;object-fit:cover}
+.side{position:absolute;right:60px;top:960px;width:560px}
+.side h3{font:600 26px Sora;color:#C8773F;margin-bottom:10px}
+.side li{font:500 21px/1.5 Manrope;color:#d8dde2;list-style:none;padding-left:24px;position:relative}
+.side li:before{content:"";position:absolute;left:0;top:13px;width:10px;height:10px;border-radius:50%;background:#35D0DE}
+.logo{position:absolute;right:70px;top:60px;font:500 18px Mono;letter-spacing:.25em;color:#B9BEC4;text-align:right}
+</style>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+</head><body>
+<div class="grid"></div>
+<div class="head"><div class="kick">Mascotte officielle · fiche personnage</div><h1>Tonton <span>Ferraille</span></h1><div class="tag">« Mon petit, rien n'y est décoratif ! »</div></div>
+<div class="logo">CIVREBAR AI<br>CHEF DE CHANTIER</div>
+<div class="views" id="views"></div>
+<div class="expr" id="expr"></div>
+<div class="side"><h3>Signes distinctifs</h3><ul>
+<li>Casque bleu nuit frappé du « R » CivRebar</li>
+<li>Gilet cuivre « CIVREBAR » à bandes réfléchissantes</li>
+<li>Plan roulé sous le bras, crayon sur l'oreille, mètre à la ceinture</li>
+<li>Signal, la petite lumière cyan : l'IA qui l'assiste</li></ul></div>
+<script type="module">
+import { createStudio } from './studio.js';
+await document.fonts.load('600 40px Sora');
+const st = createStudio(780, 1240);
+const { tonton, shot } = st;
+const views = [['Face', 0], ['Trois-quarts', 0.72], ['Profil', 1.5708], ['Dos', Math.PI]];
+const V = document.getElementById('views');
+for (const [lab, az] of views) {
+  tonton.setPose({}); tonton.setExpression({});
+  const src = shot({ az, el: 0.1, dist: 7.0, target: [0, 1.3, 0] });
+  V.insertAdjacentHTML('beforeend', `<div class="v"><img src="${src}"><div class="lab">${lab}</div></div>`);
+}
+const st2 = createStudio(520, 520, { ground: false });
+const E = [
+  ['Content', {}, { headTilt: 0.05 }],
+  ['Fâché', { brow: -0.4, browAngle: 0.45, mouth: 'frown', lid: 0.35 }, { headNod: 0.08 }],
+  ['Surpris', { brow: 0.9, mouth: 'open', open: 1.3, lid: -0.2 }, { headNod: -0.08 }],
+  ['Pensif', { brow: 0.3, browAngle: -0.2, mouth: 'frown', lookX: 0.8, lookY: 0.6 }, { headTilt: 0.18, headTurn: 0.25 }],
+];
+const X = document.getElementById('expr');
+for (const [lab, ex, pose] of E) {
+  st2.tonton.setPose(pose); st2.tonton.setExpression(ex);
+  st2.tonton.parts.signal.visible = false;
+  const src = st2.shot({ az: 0.25, el: 0.04, dist: 2.9, target: [0, 2.3, 0], fov: 26 });
+  X.insertAdjacentHTML('beforeend', `<div class="e"><img src="${src}"><div class="lab" style="margin-top:10px">${lab}</div></div>`);
+}
+window.ready = true;
+</script>
+</body></html>
