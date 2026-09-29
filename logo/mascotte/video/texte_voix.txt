@@ -1,0 +1,23 @@
+Eh ! Toi là… oui, toi, l'ingénieur !
+
+Moi, c'est Tonton Ferraille. Trente ans de chantier… et aujourd'hui, je vais te parler de CivRebar.
+
+Sur un plan de ferraillage, chaque barre, chaque cadre, chaque cote… on les dessine à la main. Trait par trait. Poutre après poutre.
+
+Résultat ? Des heures perdues… et des erreurs qui finissent sur le chantier.
+
+Alors voilà la solution : CivRebar AI. Un outil de ferraillage, directement dans AutoCAD.
+
+Tu donnes la section, la portée, les armatures… et lui, il dessine les barres, les cadres, les cotes et les repères.
+
+On commence par la poutre. Ensuite viendront les poteaux, les dalles, les semelles… et les escaliers.
+
+Et puis, il y a Signal, mon petit assistant : l'intelligence artificielle.
+
+À terme, elle vérifiera tes plans et calculera les quantités… mais attention : c'est toujours l'ingénieur qui décide, et qui signe le plan !
+
+Rien n'y est décoratif… tout y est calculé.
+
+CivRebar AI. L'intelligence de l'armature. Bientôt dans AutoCAD.
+
+Abonne-toi… et on se retrouve sur le chantier !
