@@ -1,11 +1,14 @@
 """Voix off de Tonton Ferraille, générée hors ligne (Piper « fr_FR-tom-medium » via sherpa-onnx).
 
-python3 voix.py → voix.wav + voix.json (segments horodatés, mots, enveloppe pour la bouche)
+python3 voix.py                      → voix.wav + voix.json de la présentation
+python3 voix.py episodes/<nom>       → idem pour un épisode, à partir de episodes/<nom>/texte.json
+  texte.json : {"segments": [["id", "texte"], ...], "pauses": {"id": secondes après}, "fin": secondes}
 Si un fichier « voix_remy.mp3 » est fourni plus tard, il suffira de refaire le calage.
 """
 import json
 import pathlib
 import re
+import sys
 import wave
 
 import numpy as np
@@ -37,6 +40,13 @@ PRONONCE = [("CivRebar AI", "Civ Rébar A. I."), ("CivRebar", "Civ Rébar"), ("A
 
 
 def main():
+    global SEGMENTS
+    dest, pauses, fin = HERE, {}, 3.2
+    if len(sys.argv) > 1:
+        dest = (HERE / sys.argv[1]).resolve()
+        cfg_ep = json.loads((dest / "texte.json").read_text())
+        SEGMENTS = [tuple(x) for x in cfg_ep["segments"]]
+        pauses, fin = cfg_ep.get("pauses", {}), cfg_ep.get("fin", 3.2)
     cfg = sherpa_onnx.OfflineTtsConfig(model=sherpa_onnx.OfflineTtsModelConfig(
         vits=sherpa_onnx.OfflineTtsVitsModelConfig(model=str(MODEL / "fr_FR-tom-medium.onnx"), tokens=str(MODEL / "tokens.txt"),
                                                    data_dir=str(MODEL / "espeak-ng-data")), num_threads=4))
@@ -65,14 +75,14 @@ def main():
             acc += p
         segs.append({"id": key, "text": txt, "t0": round(t, 3), "t1": round(t + dur, 3), "words": words})
         parts.append(x)
-        t += dur + PAUSE
-    total = t + 3.2     # fin : logo et appel à l'action
+        t += dur + pauses.get(key, PAUSE)
+    total = t + fin     # fin : logo et appel à l'action
     audio = np.zeros(int(total * sr), dtype=np.float32)
     for s, x in zip(segs, parts):
         i = int(s["t0"] * sr)
         audio[i:i + len(x)] += x
     audio *= 0.95 / (np.max(np.abs(audio)) + 1e-9)
-    with wave.open(str(HERE / "voix.wav"), "wb") as w:
+    with wave.open(str(dest / "voix.wav"), "wb") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(sr)
         w.writeframes((audio * 32767).astype("<i2").tobytes())
     # enveloppe (ouverture de bouche) : RMS par image, lissée
@@ -80,7 +90,7 @@ def main():
     rms = np.array([np.sqrt(np.mean(audio[k * hop:(k + 1) * hop] ** 2)) for k in range(int(total * FPS))])
     rms = rms / (np.percentile(rms[rms > 0.01], 95) + 1e-9)
     rms = np.convolve(np.clip(rms, 0, 1.2), np.ones(2) / 2, mode="same")
-    (HERE / "voix.json").write_text(json.dumps({"dur": round(total, 2), "fps": FPS, "segments": segs,
+    (dest / "voix.json").write_text(json.dumps({"dur": round(total, 2), "fps": FPS, "segments": segs,
                                                 "mouth": [round(float(v), 3) for v in rms]}, ensure_ascii=False))
     print(f"voix : {total:.1f} s, {len(segs)} phrases")
 

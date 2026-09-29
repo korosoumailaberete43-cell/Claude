@@ -1,0 +1,10 @@
+{"segments": [
+ ["accroche", "Vrai ou faux ?"],
+ ["affirmation", "Plus on met d'acier dans une poutre… plus elle est solide."],
+ ["attente", "Réfléchis bien…"],
+ ["reponse", "Faux !"],
+ ["explication", "Trop d'acier, et le béton passe mal entre les barres. Pire : la poutre peut casser d'un coup… sans prévenir."],
+ ["regle", "Le bon ferraillage, c'est la bonne quantité… au bon endroit."],
+ ["civrebar", "Et c'est exactement ce que CivRebar AI t'aide à dessiner."],
+ ["fin", "Abonne-toi… et teste-toi au prochain vrai ou faux !"]
+], "pauses": {"attente": 2.4, "reponse": 0.5}, "fin": 2.8}

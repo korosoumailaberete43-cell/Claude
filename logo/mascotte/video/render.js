@@ -1,5 +1,6 @@
 // Rendu image par image de la présentation (workers Playwright en parallèle).
 //   node video/render.js frames/ [workers] [t1,t2,...]   (liste de temps = captures de test)
+//   PAGE='episode.html?e=corrige' node video/render.js …   pour un épisode
 const { chromium } = require('playwright');
 const http = require('http');
 const fs = require('fs');
@@ -17,7 +18,7 @@ const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.woff2': 'font/
     res.writeHead(200, { 'Content-Type': TYPES[path.extname(f)] || 'application/octet-stream' });
     fs.createReadStream(f).pipe(res);
   }).listen(0);
-  const url = `http://localhost:${server.address().port}/mascotte/video/presentation.html`;
+  const url = `http://localhost:${server.address().port}/mascotte/video/${process.env.PAGE || 'presentation.html'}`;
   const browser = await chromium.launch({ args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
   const open = async () => {
     const p = await browser.newPage({ viewport: { width: 1080, height: 1920 } });

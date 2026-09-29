@@ -1,3 +1,5 @@
 node_modules/
 voix/
 video/presentation_audio.wav
+video/episodes/*/audio.wav
+video/episodes/*/frames/

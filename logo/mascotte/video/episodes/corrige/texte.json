@@ -1,0 +1,8 @@
+{"segments": [
+ ["accroche", "Stop ! Regarde bien ce plan…"],
+ ["question", "Il y a une erreur. Tu la vois ? Je te laisse trois secondes."],
+ ["reponse", "Les barres touchent le coffrage : il n'y a pas d'enrobage !"],
+ ["regle", "Sans enrobage, l'acier rouille… et le béton éclate. En général, on laisse deux et demi à trois centimètres, selon l'exposition."],
+ ["civrebar", "Avec CivRebar AI, l'enrobage est appliqué automatiquement… sur chaque barre."],
+ ["fin", "Abonne-toi… et on corrige ensemble le prochain plan !"]
+], "pauses": {"question": 3.3}, "fin": 2.8}
