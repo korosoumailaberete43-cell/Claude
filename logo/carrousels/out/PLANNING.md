@@ -18,7 +18,25 @@ Une publication par jour. Publier le même carrousel sur tous les réseaux le m�
 | J12 | Le ferraillage en 6 mots | 8 | Éduquer, élargir l'audience |
 | J13 | Nos 3 valeurs | 6 | Créer la confiance |
 | J14 | Sois parmi les premiers | 6 | Convertir (abonnés, contacts) |
-| J15 | Trouve l'erreur n° 1 : les cadres | 8 | Faire commenter, montrer l'expertise |
+
+## Série « Trouve l'erreur » — un défi chaque soir à 20 h
+
+| N° | Erreur | Affiches |
+|---|---|---|
+| 01 | cadres | 8 |
+| 02 | barres haut | 8 |
+| 03 | console | 8 |
+| 04 | enrobage | 8 |
+| 05 | crochets | 8 |
+| 06 | recouvrement | 8 |
+| 07 | attentes | 8 |
+| 08 | semelle | 8 |
+| 09 | dalle | 8 |
+| 10 | serrees | 8 |
+| 11 | chapeaux | 8 |
+| 12 | escalier | 8 |
+| 13 | ancrage | 8 |
+| 14 | semelle sol | 8 |
 
 Formats : `4x5/` pour Instagram, Facebook et LinkedIn ; `9x16/` pour TikTok (mode photo) et les Statuts WhatsApp ;
 `LinkedIn.pdf` à publier comme « document » sur LinkedIn. Textes prêts à coller dans `legendes.txt`.

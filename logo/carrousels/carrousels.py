@@ -22,6 +22,8 @@ HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "src"))
 from brand import NUIT, ACIER, CUIVRE, CUIVRE_CLAIR, SIGNAL, BETON, CHAUX, CUIVRE_TEXTE, SIGNAL_TEXTE, font_css  # noqa: E402
 from contenu import POSTS, HASHTAGS  # noqa: E402
+from serie_erreurs import ERREURS  # noqa: E402
+from defauts import scenario_svg  # noqa: E402
 
 PACK = HERE.parent / "CivRebar_AI_Pack_Logo"
 OUT = HERE / "out"
@@ -247,6 +249,11 @@ def slide_html(post, s, i, n, fmt):
         main = f"""{tag}<h2 class="small">{esc(s["title"])}</h2>
 <div class="ill wide">{plan_svg(t, s["mode"])}</div>
 {f'<p class="body">{esc(s["body"])}</p>' if s.get("body") else ""}"""
+    elif kind == "scn":
+        tag = f'<div class="kick" style="color:{ALERTE if s["mode"] == "reponse" else t["si"]}">{esc(s["tag"])}</div>' if s.get("tag") else ""
+        main = f"""{tag}<h2 class="small">{esc(s["title"])}</h2>
+<div class="ill wide">{scenario_svg(t, s["key"], s["mode"])}</div>
+{f'<p class="body">{esc(s["body"])}</p>' if s.get("body") else ""}"""
     elif kind == "cta":
         acts = "".join(f"<span>{esc(a)}</span>" for a in s.get("actions", ["Abonne-toi", "Partage", "Enregistre"]))
         main = f"""<div class="logo">{logo_vertical(s.get("theme", post["theme"]), 360)}</div>
@@ -381,6 +388,8 @@ def build(posts):
             "| Jour | Publication | Affiches | Objectif |", "|---|---|---|---|"]
     for p in POSTS:
         plan.append(f'| {p["id"][:3]} | {p["titre"]} | {len(p["slides"])} | {p["objectif"]} |')
+    plan += ["", "## Série « Trouve l'erreur » — un défi chaque soir à 20 h", "", "| N° | Erreur | Affiches |", "|---|---|---|"]
+    plan += [f'| {p["id"][2:4]} | {p["id"][5:].replace("_", " ")} | {len(p["slides"])} |' for p in ERREURS]
     plan += ["", "Formats : `4x5/` pour Instagram, Facebook et LinkedIn ; `9x16/` pour TikTok (mode photo) et les Statuts WhatsApp ;",
              "`LinkedIn.pdf` à publier comme « document » sur LinkedIn. Textes prêts à coller dans `legendes.txt`."]
     (OUT / "PLANNING.md").write_text("\n".join(plan) + "\n")
@@ -388,4 +397,4 @@ def build(posts):
 
 if __name__ == "__main__":
     ids = sys.argv[1:]
-    build([p for p in POSTS if not ids or p["id"][:3] in ids])
+    build([p for p in POSTS + ERREURS if not ids or any(p["id"].startswith(a) for a in ids)])
