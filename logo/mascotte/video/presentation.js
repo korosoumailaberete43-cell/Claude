@@ -159,7 +159,7 @@ function updateCamera(t) {
 function font(w, size, fam = 'Sora') { return `${w} ${size}px ${fam}`; }
 function txt(s, x, y, f, color, { align = 'center', track = 0, alpha = 1, stroke = 0, strokeColor = COL.nuit } = {}) {
   if (alpha <= 0) return;
-  ctx.save(); ctx.globalAlpha = alpha; ctx.font = f; ctx.letterSpacing = track + 'px'; ctx.textAlign = align; ctx.textBaseline = 'alphabetic';
+  ctx.save(); ctx.globalAlpha *= alpha; ctx.font = f; ctx.letterSpacing = track + 'px'; ctx.textAlign = align; ctx.textBaseline = 'alphabetic';
   if (stroke) { ctx.lineJoin = 'round'; ctx.lineWidth = stroke; ctx.strokeStyle = strokeColor; ctx.strokeText(s, x, y); }
   ctx.fillStyle = color; ctx.fillText(s, x, y); ctx.restore();
 }
@@ -252,15 +252,15 @@ function beam(t, x0, y0, w, h, prog1, a, manual = false) {
 function scenes(t, front) {
   // --- accroche
   if (!front) {
-    const a = win(t, beg('accroche') - 0.1, beg('intro') + 0.2, 0.1, 0.35);
+    const a = win(t, beg('accroche') - 0.1, beg('intro') + 0.05, 0.1, 0.3);
     slam(t, beg('accroche'), 'EH ! TOI LÀ !', W / 2, 420, font(700, 118), COL.chaux, { alpha: a, stroke: 0 });
     slam(t, wt('accroche', 'oui'), 'OUI, TOI, L’INGÉNIEUR !', W / 2, 540, font(600, 54), COL.cuivreC, { alpha: a });
   }
   // --- intro : carte de nom
   if (!front) {
-    const a = win(t, beg('intro'), beg('probleme'), 0.35, 0.3);
+    const a = win(t, beg('intro') + 0.1, beg('probleme'), 0.3, 0.3);
     if (a > 0) {
-      const k = eoX(prog(t, beg('intro'), beg('intro') + 0.5));
+      const k = eoX(prog(t, beg('intro') + 0.1, beg('intro') + 0.6));
       const x = lerp(-700, 90, k);
       ctx.save(); ctx.globalAlpha = a;
       roundRect(x, 300, 900, 200, 26, COL.cuivre);
@@ -292,14 +292,14 @@ function scenes(t, front) {
       // erreurs : compteur d'heures + croix rouges
       const ke = prog(t, beg('erreurs'), beg('erreurs') + 0.3);
       if (ke > 0) {
-        ctx.save(); ctx.globalAlpha = a * 0.55 * ke; ctx.fillStyle = COL.nuit; ctx.fillRect(82, 232, W - 164, 436); ctx.restore();
+        ctx.save(); ctx.globalAlpha = a * 0.94 * ke; ctx.fillStyle = COL.nuit; ctx.fillRect(84, 234, W - 168, 432); ctx.restore();
         const h = Math.floor(lerp(1, 6, eo3(prog(t, beg('erreurs'), wt('erreurs', 'perdues') + 0.2))));
-        slam(t, beg('erreurs'), `+ ${h} HEURES`, W / 2, 440, font(700, 104), COL.chaux, { alpha: a });
-        [[240, 400], [800, 470], [520, 560]].forEach(([x, y], i) => {
+        slam(t, beg('erreurs'), `+ ${h} HEURES`, W / 2, 400, font(700, 104), COL.chaux, { alpha: a });
+        [[380, 510], [540, 510], [700, 510]].forEach(([x, y], i) => {
           const k = prog(t, wt('erreurs', 'erreurs') + i * 0.18, wt('erreurs', 'erreurs') + i * 0.18 + 0.2);
-          if (k > 0) { ctx.save(); ctx.globalAlpha = a; ctx.translate(x, y); ctx.scale(eoB(k) * 1.1, eoB(k) * 1.1); ctx.strokeStyle = COL.rouge; ctx.lineWidth = 16; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(-34, -34); ctx.lineTo(34, 34); ctx.moveTo(34, -34); ctx.lineTo(-34, 34); ctx.stroke(); ctx.restore(); }
+          if (k > 0) { ctx.save(); ctx.globalAlpha = a; ctx.translate(x, y); ctx.scale(eoB(k) * 0.75, eoB(k) * 0.75); ctx.strokeStyle = COL.rouge; ctx.lineWidth = 16; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(-34, -34); ctx.lineTo(34, 34); ctx.moveTo(34, -34); ctx.lineTo(-34, 34); ctx.stroke(); ctx.restore(); }
         });
-        slam(t, wt('erreurs', 'erreurs'), 'ERREURS SUR LE CHANTIER', W / 2, 610, font(700, 44), COL.rouge, { alpha: a });
+        slam(t, wt('erreurs', 'erreurs'), 'ERREURS SUR LE CHANTIER', W / 2, 625, font(700, 44), COL.rouge, { alpha: a });
       }
     }
   }
@@ -311,13 +311,13 @@ function scenes(t, front) {
       const k = eoB(prog(t, t0, t0 + 0.6));
       ctx.save(); ctx.globalAlpha = a;
       // rayons
-      ctx.translate(W / 2, 420); ctx.rotate(t * 0.25);
+      ctx.translate(W / 2, 340); ctx.rotate(t * 0.25);
       for (let i = 0; i < 16; i++) { ctx.rotate(Math.PI / 8); ctx.fillStyle = rgba(COL.cuivre, 0.06); ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(-40, -700); ctx.lineTo(40, -700); ctx.fill(); }
       ctx.restore();
-      glow(W / 2, 420, 380, COL.signal, 0.25 * a);
-      ctx.save(); ctx.translate(W / 2, 430); ctx.scale(k, k); ctx.translate(-W / 2, -430); lockup(W / 2, 430, 1, a); ctx.restore();
+      glow(W / 2, 340, 380, COL.signal, 0.25 * a);
+      ctx.save(); ctx.translate(W / 2, 340); ctx.scale(k, k); ctx.translate(-W / 2, -340); lockup(W / 2, 340, 1, a); ctx.restore();
       const kb = prog(t, wt('solution', 'AutoCAD') - 0.2, wt('solution', 'AutoCAD') + 0.1);
-      if (kb > 0) { ctx.save(); ctx.globalAlpha = a * kb; roundRect(W / 2 - 260, 640, 520, 64, 32, COL.signal); txt('DIRECTEMENT DANS AUTOCAD', W / 2, 683, font(700, 30), COL.nuit, { track: 2 }); ctx.restore(); }
+      if (kb > 0) { ctx.save(); ctx.globalAlpha = a * kb; roundRect(W / 2 - 330, 555, 660, 64, 32, COL.signal); txt('DIRECTEMENT DANS AUTOCAD', W / 2, 598, font(700, 30), COL.nuit, { track: 2 }); ctx.restore(); }
     }
   }
   // --- démo : fiche + poutre automatique
@@ -398,7 +398,7 @@ function scenes(t, front) {
       const ts = wt('promesse', 'signe');
       const ks = prog(t, ts, ts + 0.22);
       if (ks > 0) {
-        ctx.save(); ctx.globalAlpha = a; ctx.translate(800, 470); ctx.rotate(-0.22); ctx.scale(lerp(2.4, 1, eoX(ks)), lerp(2.4, 1, eoX(ks)));
+        ctx.save(); ctx.globalAlpha = a; ctx.translate(850, 555); ctx.rotate(-0.18); ctx.scale(lerp(2, 0.72, eoX(ks)), lerp(2, 0.72, eoX(ks)));
         roundRect(-150, -58, 300, 116, 16, null, COL.rouge, 8);
         txt('SIGNÉ', 0, 22, font(700, 64), COL.rouge, { track: 6 });
         ctx.restore();
@@ -422,12 +422,12 @@ function scenes(t, front) {
     const a = win(t, t0, DUR + 1, 0.3, 0.3);
     if (a > 0) {
       const k = eoB(prog(t, t0, t0 + 0.6));
-      glow(W / 2, 430, 420, COL.signal, 0.18 * a);
-      ctx.save(); ctx.translate(W / 2, 420); ctx.scale(k * 0.95, k * 0.95); ctx.translate(-W / 2, -420); lockup(W / 2, 420, 1, a); ctx.restore();
+      glow(W / 2, 340, 420, COL.signal, 0.18 * a);
+      ctx.save(); ctx.translate(W / 2, 330); ctx.scale(k * 0.95, k * 0.95); ctx.translate(-W / 2, -330); lockup(W / 2, 330, 1, a); ctx.restore();
       const kt = prog(t, wt('logo', 'intelligence') - 0.1, wt('logo', 'intelligence') + 0.4);
-      txt('L’intelligence de l’armature.', W / 2, 660, font('italic 400', 54, 'Serif'), COL.beton, { alpha: a * kt });
+      txt('L’intelligence de l’armature.', W / 2, 565, font('italic 400', 54, 'Serif'), COL.beton, { alpha: a * kt });
       const kb = prog(t, wt('logo', 'Bientôt'), wt('logo', 'Bientôt') + 0.3);
-      if (kb > 0) { ctx.save(); ctx.globalAlpha = a * kb; roundRect(W / 2 - 270, 700, 540, 62, 31, null, COL.cuivre, 3); txt('BIENTÔT DANS AUTOCAD', W / 2, 742, font(700, 30), COL.cuivreC, { track: 3 }); ctx.restore(); }
+      if (kb > 0) { ctx.save(); ctx.globalAlpha = a * kb; roundRect(W / 2 - 270, 600, 540, 62, 31, null, COL.cuivre, 3); txt('BIENTÔT DANS AUTOCAD', W / 2, 642, font(700, 30), COL.cuivreC, { track: 3 }); ctx.restore(); }
     }
   }
   if (front) {
@@ -435,13 +435,13 @@ function scenes(t, front) {
     const k = prog(t, tb, tb + 0.35);
     if (k > 0) {
       const press = decay(t, tb + 0.9, 7);
-      ctx.save(); ctx.translate(W / 2, 1560); ctx.scale(eoB(k) * (1 - press * 0.08), eoB(k) * (1 - press * 0.08));
+      ctx.save(); ctx.translate(W / 2, 1420); ctx.scale(eoB(k) * (1 - press * 0.08), eoB(k) * (1 - press * 0.08));
       roundRect(-250, -60, 500, 120, 60, t > tb + 0.9 ? COL.acier : COL.cuivre);
       txt(t > tb + 0.9 ? '✓ ABONNÉ' : '+ ABONNE-TOI', 0, 16, font(700, 46), t > tb + 0.9 ? COL.chaux : COL.nuit, { track: 1 });
       ctx.restore();
       if (t > tb + 0.5 && t < tb + 1.4) { // main-curseur qui tape
         const kk = eio(prog(t, tb + 0.5, tb + 0.9));
-        const x = lerp(W / 2 + 320, W / 2 + 120, kk), y = lerp(1720, 1590, kk);
+        const x = lerp(W / 2 + 320, W / 2 + 120, kk), y = lerp(1560, 1450, kk);
         ctx.save(); ctx.fillStyle = COL.chaux; ctx.strokeStyle = COL.nuit; ctx.lineWidth = 4;
         ctx.beginPath(); ctx.arc(x, y, 26 - press * 6, 0, 7); ctx.fill(); ctx.stroke(); ctx.restore();
       }
