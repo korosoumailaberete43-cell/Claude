@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><title>Charte Tonton Ferraille</title>
+<style>
+@font-face{font-family:Sora;src:url(../../fonts/sora-latin-300-normal.woff2);font-weight:300}
+@font-face{font-family:Sora;src:url(../../fonts/sora-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:Sora;src:url(../../fonts/sora-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:Manrope;src:url(../../fonts/manrope-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:Manrope;src:url(../../fonts/manrope-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:Mono;src:url(../../fonts/jetbrains-mono-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:Serif;src:url(../../fonts/instrument-serif-latin-400-italic.woff2);font-style:italic}
+@page{size:210mm 297mm;margin:0}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#0B1624}
+body{color:#F3F0EA;font:500 12.5px/1.55 Manrope;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:794px;height:1123px;position:relative;overflow:hidden;background:#0B1624;page-break-after:always;padding:52px 56px 70px}
+.page:before{content:"";position:absolute;inset:0;background-image:linear-gradient(#13223a 1px,transparent 1px),linear-gradient(90deg,#13223a 1px,transparent 1px);background-size:32px 32px;opacity:.7;z-index:0}
+.page>*{position:relative;z-index:1}
+.foot{position:absolute;left:60px;right:60px;bottom:30px;display:flex;justify-content:space-between;font:500 9px Mono;letter-spacing:.2em;color:#6f7c8b;text-transform:uppercase}
+.kick{font:500 10px Mono;letter-spacing:.28em;color:#35D0DE;text-transform:uppercase;margin-bottom:10px}
+h1{font:700 44px/1.05 Sora;letter-spacing:-1px}
+h2{font:700 30px/1.1 Sora;letter-spacing:-.5px;margin-bottom:6px}
+h2 span,h1 span{color:#C8773F}
+h3{font:600 15px Sora;color:#E3A56C;margin:14px 0 6px}
+.lead{font:italic 20px/1.3 Serif;color:#B9BEC4;margin:4px 0 14px}
+p{color:#d6dbe0;margin-bottom:8px}
+ul{list-style:none}
+li{padding-left:16px;position:relative;color:#d6dbe0;margin-bottom:4px}
+li:before{content:"";position:absolute;left:0;top:7px;width:7px;height:7px;border-radius:50%;background:#35D0DE}
+.no li:before{background:#D64545}
+.card{background:rgba(19,35,58,.85);border:1px solid #22354e;border-radius:14px;padding:16px 18px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cols3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+code,.mono{font:500 10.5px/1.5 Mono;color:#9fe8f0}
+pre{font:500 10px/1.55 Mono;color:#cfeff3;background:#07101b;border:1px solid #22354e;border-radius:10px;padding:12px 14px;white-space:pre-wrap;margin:6px 0 10px}
+table{width:100%;border-collapse:collapse;font-size:11.5px}
+td,th{padding:4px 8px;border-bottom:1px solid #22354e;text-align:left;vertical-align:top}
+th{font:500 9.5px Mono;letter-spacing:.14em;color:#8fa0b2;text-transform:uppercase}
+td.k{color:#E3A56C;font-weight:700;white-space:nowrap}
+.sw{display:flex;gap:10px;align-items:center;margin-bottom:8px}
+.sw i{width:38px;height:38px;border-radius:9px;border:1px solid #2c4058;flex:none}
+.sw b{display:block;font:600 12.5px Sora}
+.sw small{font:500 10px Mono;color:#9aa8b6}
+.shot{background:radial-gradient(circle at 50% 40%,#1a3150,#0f1d31 70%);border-radius:14px;border:1px solid #22354e;text-align:center;overflow:hidden}
+.shot img{display:block;width:100%}
+.shot div{font:500 9.5px Mono;letter-spacing:.14em;color:#B9BEC4;text-transform:uppercase;padding:6px 4px 8px}
+.shot div em{display:block;font:500 8.5px Mono;letter-spacing:0;color:#6f8296;text-transform:none;font-style:normal}
+.quote{font:italic 26px/1.25 Serif;color:#E3A56C}
+.pill{display:inline-block;font:700 10px Sora;letter-spacing:.12em;padding:5px 12px;border-radius:20px;border:1.5px solid #C8773F;color:#E3A56C;margin:0 6px 6px 0}
+</style>
+<script type="importmap">{"imports":{"three":"../node_modules/three/build/three.module.js","three/addons/":"../node_modules/three/examples/jsm/"}}</script>
+</head><body>
+
+<!-- 1. COUVERTURE -->
+<section class="page" style="padding:0">
+  <div style="position:absolute;inset:0;background:radial-gradient(circle at 50% 58%,rgba(53,208,222,.18),transparent 55%)"></div>
+  <div style="position:absolute;left:60px;top:64px">
+    <div class="kick">CivRebar AI · Charte officielle</div>
+    <h1 style="font-size:64px">Tonton<br><span>Ferraille</span></h1>
+    <div class="lead" style="font-size:26px">La mascotte et sa voix.</div>
+  </div>
+  <div style="position:absolute;right:60px;top:70px;text-align:right" class="mono">Version 1.0<br>Septembre 2026</div>
+  <img id="cover" style="position:absolute;left:97px;top:250px;width:600px">
+  <div style="position:absolute;left:60px;right:60px;bottom:70px;display:flex;justify-content:space-between;align-items:flex-end">
+    <div class="quote">« Mon petit, rien n'y est<br>décoratif ! »</div>
+    <div class="mono" style="text-align:right;color:#8fa0b2">Ce document permet de reproduire<br>à l'identique le personnage et la voix.</div>
+  </div>
+</section>
+
+<!-- 2. IDENTITÉ -->
+<section class="page">
+  <div class="kick">01 · Identité</div>
+  <h2>Qui est <span>Tonton Ferraille</span> ?</h2>
+  <div class="lead">Le chef de chantier que tout ingénieur aimerait avoir à côté de lui.</div>
+  <div class="cols">
+    <div class="card">
+      <h3 style="margin-top:0">Fiche</h3>
+      <table>
+        <tr><td class="k">Nom</td><td>Tonton Ferraille</td></tr>
+        <tr><td class="k">Rôle</td><td>Chef de chantier, porte-parole de CivRebar AI</td></tr>
+        <tr><td class="k">Origine</td><td>Ivoirien, 30 ans de chantier</td></tr>
+        <tr><td class="k">Âge apparent</td><td>55–60 ans : moustache et sourcils grisonnants</td></tr>
+        <tr><td class="k">Compagnon</td><td><b>Signal</b>, petite lumière cyan qui l'accompagne : l'intelligence artificielle</td></tr>
+        <tr><td class="k">Réplique</td><td>« Mon petit, rien n'y est décoratif ! »</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">Personnalité</h3>
+      <ul>
+        <li><b>Bienveillant mais exigeant</b> : il gronde les erreurs, jamais les gens.</li>
+        <li><b>Drôle et direct</b> : phrases courtes, images du chantier.</li>
+        <li><b>Fier du métier</b> : l'ingénieur décide et signe, l'outil l'aide.</li>
+        <li><b>Pédagogue</b> : il explique un point à la fois, avec un exemple concret.</li>
+      </ul>
+    </div>
+  </div>
+  <h3>Sa manière de parler</h3>
+  <div class="cols">
+    <div class="card">
+      <ul>
+        <li>Il <b>tutoie</b> : « Eh ! Toi là… », « mon petit ».</li>
+        <li>Il interpelle dès la première seconde.</li>
+        <li>Il respire : les <b>« … »</b> marquent une pause dans le texte.</li>
+        <li>Vocabulaire du chantier : barre, cadre, cote, repère, poutre, HA, enrobage.</li>
+        <li>Il termine par un appel : « Abonne-toi… et on se retrouve sur le chantier ! »</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">Phrases types</h3>
+      <p class="mono" style="color:#cfeff3">« Eh ! Toi là… oui, toi, l'ingénieur ! »<br>« Trait par trait. Poutre après poutre. »<br>« Résultat ? Des heures perdues… »<br>« C'est toujours l'ingénieur qui décide, et qui signe le plan ! »<br>« Rien n'y est décoratif… tout y est calculé. »<br>« Et on se retrouve sur le chantier ! »</p>
+    </div>
+  </div>
+  <h3>À faire / à éviter</h3>
+  <div class="cols">
+    <div class="card"><ul>
+      <li>Toujours le casque bleu nuit avec le « R », et le gilet cuivre CIVREBAR.</li>
+      <li>Des fonds sombres bleu nuit, avec du cuivre et du cyan en accent.</li>
+      <li>Signal toujours près de lui quand on parle d'IA.</li>
+      <li>Des messages vrais : CivRebar est en développement, commence par la poutre.</li>
+    </ul></div>
+    <div class="card no"><ul>
+      <li>Ne pas changer ses couleurs, sa moustache ou son casque.</li>
+      <li>Ne pas le rendre ridicule ou incompétent : il est l'expert.</li>
+      <li>Ne pas dire que l'IA remplace l'ingénieur.</li>
+      <li>Ne pas promettre de fonctions pas encore disponibles comme si elles l'étaient.</li>
+    </ul></div>
+  </div>
+  <div class="foot"><span>Tonton Ferraille · Charte</span><span>02</span></div>
+</section>
+
+<!-- 3. APPARENCE -->
+<section class="page">
+  <div class="kick">02 · Apparence</div>
+  <h2>Le <span>personnage</span> sous tous les angles</h2>
+  <div class="lead">Figurine 3D stylisée : formes rondes et simples, matières douces.</div>
+  <div class="cols3" id="views" style="grid-template-columns:repeat(4,1fr);gap:10px"></div>
+  <div class="cols" style="margin-top:16px;grid-template-columns:1.1fr 1fr">
+    <div class="card">
+      <h3 style="margin-top:0">Signes distinctifs</h3>
+      <ul>
+        <li><b>Casque</b> bleu nuit brillant, logo « R façonné » blanc et cuivre devant.</li>
+        <li><b>Gilet</b> cuivre à bandes réfléchissantes, « CIVREBAR » au dos, badge « R » sur la poitrine.</li>
+        <li><b>Chemise</b> blanc chaux, <b>pantalon</b> bleu acier, <b>bottes</b> brunes.</li>
+        <li><b>Visage</b> : peau brun chaud, grands yeux ronds, sourcils et moustache gris.</li>
+        <li><b>Accessoires</b> : plan roulé sous le bras gauche, crayon jaune sur l'oreille, mètre ruban jaune à la ceinture.</li>
+        <li><b>Signal</b> : sphère cyan lumineuse avec un halo, qui flotte près de son épaule droite.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">Palette du personnage</h3>
+      <div id="swatches"></div>
+    </div>
+  </div>
+  <div class="foot"><span>Tonton Ferraille · Charte</span><span>03</span></div>
+</section>
+
+<!-- 4. POSES -->
+<section class="page">
+  <div class="kick">03 · Poses officielles</div>
+  <h2>13 <span>poses</span> prêtes à l'emploi</h2>
+  <div class="lead">Chaque vidéo pioche dans ce répertoire (fichier <code>mascotte/poses.js</code>).</div>
+  <div id="poses" style="display:grid;grid-template-columns:repeat(5,1fr);gap:9px"></div>
+  <div class="foot"><span>Tonton Ferraille · Charte</span><span>04</span></div>
+</section>
+
+<!-- 5. EXPRESSIONS + SIGNAL -->
+<section class="page">
+  <div class="kick">04 · Expressions</div>
+  <h2>6 <span>expressions</span> de base</h2>
+  <div class="lead">Elles se combinent librement avec les poses. La bouche bouge toute seule avec la voix.</div>
+  <div id="expr" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px"></div>
+  <div class="cols" style="margin-top:18px">
+    <div class="card">
+      <h3 style="margin-top:0">Quand utiliser quoi</h3>
+      <table>
+        <tr><td class="k">Content</td><td>Accueil, présentation, fin de vidéo</td></tr>
+        <tr><td class="k">Surpris</td><td>Accroche, révélation, découverte d'une erreur</td></tr>
+        <tr><td class="k">Fâché</td><td>Le problème, les erreurs sur chantier</td></tr>
+        <tr><td class="k">Pensif</td><td>Question, calcul, « trouve l'erreur »</td></tr>
+        <tr><td class="k">Sérieux</td><td>Règle technique, mise en garde</td></tr>
+        <tr><td class="k">Fier</td><td>La solution, le logo, la citation</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">Vie à l'écran</h3>
+      <ul>
+        <li>Clignement des yeux toutes les 3,4 s.</li>
+        <li>Respiration du buste et léger rebond permanent.</li>
+        <li>Hochements de tête pendant qu'il parle.</li>
+        <li>Transitions entre poses : 0,35 s, adoucies.</li>
+        <li>Entrée : il surgit du sol avec un rebond (0,6 s).</li>
+        <li>Signal flotte ; il fait le tour de Tonton quand on le présente.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>Tonton Ferraille · Charte</span><span>05</span></div>
+</section>
+
+<!-- 6. VOIX -->
+<section class="page">
+  <div class="kick">05 · La voix</div>
+  <h2>La <span>voix</span> de Tonton</h2>
+  <div class="lead">Une voix d'homme, grave et chaleureuse, un peu lente, qui prend le temps de respirer.</div>
+  <div class="cols">
+    <div class="card">
+      <h3 style="margin-top:0">Voix actuelle (gratuite, hors ligne)</h3>
+      <table>
+        <tr><td class="k">Moteur</td><td>Piper, via <b>sherpa-onnx 1.13.8</b> (Python)</td></tr>
+        <tr><td class="k">Voix</td><td><b>fr_FR-tom-medium</b> (homme, français)</td></tr>
+        <tr><td class="k">Locuteur</td><td>sid = 0</td></tr>
+        <tr><td class="k">Vitesse</td><td><b>0,94</b> (soit un débit d'environ −6 %)</td></tr>
+        <tr><td class="k">Échantillonnage</td><td>44,1 kHz mono, normalisé à 0,95</td></tr>
+        <tr><td class="k">Silence au début</td><td>1,2 s (le temps que Tonton apparaisse)</td></tr>
+        <tr><td class="k">Pause entre phrases</td><td>0,38 s</td></tr>
+        <tr><td class="k">Respirations</td><td>écrire « … » dans le texte</td></tr>
+      </table>
+      <p style="margin-top:8px">Modèle à télécharger (gratuit) :</p>
+      <pre>https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-fr_FR-tom-medium.tar.bz2</pre>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">Voix « premium » recommandée</h3>
+      <table>
+        <tr><td class="k">Voix</td><td><b>fr-FR-RemyMultilingualNeural</b> (Microsoft)</td></tr>
+        <tr><td class="k">Débit</td><td><b>−6 %</b></td></tr>
+        <tr><td class="k">Hauteur</td><td>normale</td></tr>
+        <tr><td class="k">Respirations</td><td>« … » dans le texte</td></tr>
+      </table>
+      <p style="margin-top:8px">Avec edge-tts, sur un ordinateur connecté :</p>
+      <pre>pip install edge-tts
+edge-tts --voice fr-FR-RemyMultilingualNeural \
+  --rate=-6% --file texte.txt \
+  --write-media voix.mp3 --write-subtitles voix.srt</pre>
+      <p>Envoie le MP3 (et le SRT) : la vidéo se recale automatiquement sur cette voix.</p>
+    </div>
+  </div>
+  <h3>Prononciation (le texte à l'écran garde l'orthographe normale)</h3>
+  <div class="card">
+    <table>
+      <tr><th>Écrit</th><th>Dit à la voix</th></tr>
+      <tr><td class="k">CivRebar AI</td><td>« Civ Rébar A. I. »</td></tr>
+      <tr><td class="k">CivRebar</td><td>« Civ Rébar »</td></tr>
+      <tr><td class="k">AutoCAD</td><td>« Auto Cade »</td></tr>
+      <tr><td class="k">HA20, HA14</td><td>« H A vingt », « H A quatorze » (à écrire en lettres si la voix bute)</td></tr>
+    </table>
+  </div>
+  <h3>Règles d'écriture pour la voix</h3>
+  <div class="cols">
+    <div class="card"><ul>
+      <li>Une idée par phrase, 8 à 15 mots maximum.</li>
+      <li>60 à 70 secondes, c'est environ 150 mots.</li>
+      <li>Commencer par une interpellation, finir par un appel à l'action.</li>
+    </ul></div>
+    <div class="card"><ul>
+      <li>Les « … » créent la respiration et le suspense.</li>
+      <li>Les nombres s'écrivent en lettres : « trente ans ».</li>
+      <li>Les « ! » et « ? » donnent l'intonation.</li>
+    </ul></div>
+  </div>
+  <div class="foot"><span>Tonton Ferraille · Charte</span><span>06</span></div>
+</section>
+
+<!-- 7. REPRODUIRE -->
+<section class="page">
+  <div class="kick">06 · Reproduire</div>
+  <h2>Refaire Tonton <span>à l'identique</span></h2>
+  <div class="lead">Tout est dans le dépôt GitHub : le personnage est du code, il ne peut pas se perdre.</div>
+  <div class="card">
+    <h3 style="margin-top:0">Où sont les fichiers</h3>
+    <table>
+      <tr><td class="k">Dépôt</td><td>github.com/korosoumailaberete43-cell/Claude, dossier <code>logo/mascotte/</code></td></tr>
+      <tr><td class="k">tonton.js</td><td>Le personnage 3D : formes, couleurs, matières, logo, articulations</td></tr>
+      <tr><td class="k">poses.js</td><td>Les 13 poses et 6 expressions officielles</td></tr>
+      <tr><td class="k">studio.js</td><td>Lumières, ombres et caméra de référence</td></tr>
+      <tr><td class="k">video/voix.py</td><td>Génération de la voix + minutage mot à mot + mouvement de la bouche</td></tr>
+      <tr><td class="k">video/presentation.js</td><td>Modèle de vidéo : chorégraphie, textes animés, sous-titres</td></tr>
+      <tr><td class="k">video/render.js</td><td>Rendu image par image (navigateur Chromium)</td></tr>
+      <tr><td class="k">video/mix.py</td><td>Musique + bruitages + voix, la musique baisse sous la voix</td></tr>
+    </table>
+  </div>
+  <h3>Outils nécessaires (tous gratuits)</h3>
+  <pre>Node.js 18+ · three 0.169.0 · playwright (Chromium)
+Python 3 · numpy · sherpa-onnx==1.13.8 · ffmpeg</pre>
+  <h3>Fabriquer une nouvelle vidéo en 6 étapes</h3>
+  <pre>cd logo/mascotte && npm install three@0.169.0 playwright
+# 1. Voix : télécharger le modèle dans voix/, écrire le texte dans video/voix.py
+python3 video/voix.py                 # → voix.wav + voix.json
+# 2. Mise en scène : copier presentation.js, changer KEYS (poses) et scenes()
+# 3. Images (1080×1920, 30 i/s)
+node video/render.js frames/ 6
+# 4. Son
+python3 video/mix.py frames/cues.json # → presentation_audio.wav
+# 5. Montage final
+ffmpeg -framerate 30 -i frames/f%05d.jpg -i video/presentation_audio.wav \
+  -c:v libx264 -crf 20 -maxrate 6M -bufsize 12M -pix_fmt yuv420p \
+  -af loudnorm=I=-14:TP=-1.5 -c:a aac -b:a 192k -shortest video.mp4
+# 6. Vérifier : < 30 Mo pour WhatsApp, format 9:16 pour TikTok</pre>
+  <h3>Description pour un outil d'IA (image ou vidéo)</h3>
+  <pre>3D stylized figurine character, "Tonton Ferraille", friendly Ivorian construction
+site chief in his late 50s, warm brown skin, big round glossy eyes, thick grey
+eyebrows and a bushy grey moustache, round chubby body. Glossy navy-blue hard hat
+(#0B1624) with a white and copper "R" logo on the front, copper-orange safety vest
+(#C8773F) with silver reflective stripes and "CIVREBAR" on the back, off-white
+shirt (#F3F0EA), steel-blue trousers (#1C2B3D), brown boots, rolled blueprint under
+his left arm, yellow pencil behind the ear, yellow tape measure on the belt.
+A small glowing cyan orb (#35D0DE) named "Signal" floats near his right shoulder.
+Soft studio lighting, dark navy background, Pixar-like toy look, clean shapes.</pre>
+  <div class="foot"><span>Tonton Ferraille · Charte</span><span>07</span></div>
+</section>
+
+<!-- 8. FORMATS -->
+<section class="page">
+  <div class="kick">07 · Formats vidéo</div>
+  <h2>Ce que Tonton peut <span>raconter</span></h2>
+  <div class="lead">Des idées de séries, toutes au format vertical 9:16, toutes ramènent vers CivRebar AI.</div>
+  <div class="cols">
+    <div class="card"><h3 style="margin-top:0">Présentation du projet</h3><p>Tonton explique CivRebar AI en 60 à 70 s : le problème, la solution, la feuille de route, Signal.</p><span class="pill">FAIT</span></div>
+    <div class="card"><h3 style="margin-top:0">Tonton corrige</h3><p>Il montre un plan avec une erreur (enrobage, crochet, espacement), puis la bonne pratique. Suite animée de la série « Trouve l'erreur ».</p></div>
+    <div class="card"><h3 style="margin-top:0">Le mot du chantier</h3><p>15 à 25 s : un terme technique expliqué simplement (cadre, épingle, recouvrement…).</p></div>
+    <div class="card"><h3 style="margin-top:0">Vrai ou faux ?</h3><p>Une idée reçue, un suspense, puis la réponse de Tonton, avec un compte à rebours.</p></div>
+    <div class="card"><h3 style="margin-top:0">Tonton & Signal</h3><p>Petits dialogues : Signal propose, Tonton vérifie. Montre que l'ingénieur garde la main.</p></div>
+    <div class="card"><h3 style="margin-top:0">Journal de bord</h3><p>Avancement du développement : « Cette semaine, la poutre sait dessiner ses cadres ».</p></div>
+  </div>
+  <h3>Règles de mise en page (vidéo verticale 1080 × 1920)</h3>
+  <div class="card"><ul>
+    <li>Tonton occupe la moitié basse de l'écran ; les panneaux et les titres vont dans le tiers haut (y = 230–670).</li>
+    <li>Les sous-titres se placent à y = 1610, mot à mot, et le mot prononcé est en cuivre.</li>
+    <li>Aucun élément ne doit en recouvrir un autre : un panneau disparaît avant l'arrivée du suivant.</li>
+    <li>Garder 250 px libres en bas pour l'interface TikTok.</li>
+    <li>Polices : Sora (titres), Manrope (texte), JetBrains Mono (données), Instrument Serif italique (citations).</li>
+  </ul></div>
+  <div class="foot"><span>Tonton Ferraille · Charte</span><span>08</span></div>
+</section>
+
+<script type="module">
+import { createStudio } from '../studio.js';
+import { C } from '../tonton.js';
+import { POSES, EXPR } from '../poses.js';
+await document.fonts.ready;
+const hex = n => '#' + n.toString(16).padStart(6, '0').toUpperCase();
+const sw = [['nuit', 'Bleu nuit', 'Casque, fonds'], ['acier', 'Bleu acier', 'Pantalon, panneaux'], ['cuivre', 'Cuivre', 'Gilet, accents'], ['cuivreC', 'Cuivre clair', 'Textes accentués'],
+  ['signal', 'Cyan Signal', "Signal, l'IA"], ['chaux', 'Blanc chaux', 'Chemise, textes'], ['beton', 'Gris béton', 'Textes secondaires'], ['peau', 'Peau', 'Visage, mains'], ['gris', 'Gris moustache', 'Sourcils, moustache']];
+document.getElementById('swatches').innerHTML = sw.map(([k, n, u]) => `<div class="sw"><i style="background:${hex(C[k])}"></i><div><b>${n}</b><small>${hex(C[k])} · ${u}</small></div></div>`).join('');
+
+const big = createStudio(900, 1050);
+big.tonton.setPose({ ...POSES.idle, ...POSES.wave }); big.tonton.setExpression(EXPR.happy);
+document.getElementById('cover').src = big.shot({ az: 0.35, el: 0.08, dist: 7.4, target: [0, 1.42, 0] });
+
+const st = createStudio(340, 520);
+const V = document.getElementById('views');
+for (const [lab, az] of [['Face', 0], ['Trois-quarts', 0.72], ['Profil', 1.5708], ['Dos', Math.PI]]) {
+  st.tonton.setPose(POSES.idle); st.tonton.setExpression(EXPR.happy);
+  V.insertAdjacentHTML('beforeend', `<div class="shot"><img src="${st.shot({ az, el: 0.1, dist: 7.0, target: [0, 1.3, 0] })}"><div>${lab}</div></div>`);
+}
+const NOMS = { idle: 'Repos', point: 'Désigne', explain: 'Explique', think: 'Réfléchit', angry: 'Fâché', cheer: 'Victoire', pointUp: 'Montre en haut', count: 'Compte', lookSignal: 'Regarde Signal', finger: 'Attention !', cross: 'Bras croisés', salute: 'Salut', wave: 'Coucou' };
+const EX = { idle: 'happy', point: 'happy', explain: 'proud', think: 'think', angry: 'angry', cheer: 'happy', pointUp: 'happy', count: 'happy', lookSignal: 'surprised', finger: 'serious', cross: 'proud', salute: 'proud', wave: 'happy' };
+const sp = createStudio(300, 400);
+const Pz = document.getElementById('poses');
+for (const k of Object.keys(POSES)) {
+  sp.tonton.setPose({ ...POSES.idle, ...POSES[k] }); sp.tonton.setExpression(EXPR[EX[k]]);
+  Pz.insertAdjacentHTML('beforeend', `<div class="shot"><img src="${sp.shot({ az: 0.3, el: 0.08, dist: 6.6, target: [0, 1.5, 0] })}"><div>${NOMS[k]}<em>POSES.${k}</em></div></div>`);
+}
+const ENOMS = { happy: 'Content', surprised: 'Surpris', angry: 'Fâché', think: 'Pensif', serious: 'Sérieux', proud: 'Fier' };
+const se = createStudio(420, 420, { ground: false });
+const Ez = document.getElementById('expr');
+for (const k of Object.keys(EXPR)) {
+  se.tonton.setPose({ ...POSES.idle, headTilt: k === 'think' ? 0.15 : 0.03 }); se.tonton.setExpression(EXPR[k]);
+  se.tonton.parts.signal.visible = false;
+  Ez.insertAdjacentHTML('beforeend', `<div class="shot"><img src="${se.shot({ az: 0.22, el: 0.04, dist: 3.5, target: [0, 2.35, 0], fov: 26 })}"><div>${ENOMS[k]}<em>EXPR.${k}</em></div></div>`);
+}
+await Promise.all([...document.images].map(i => i.decode().catch(() => {})));
+window.ready = true;
+</script>
+</body></html>

@@ -1,5 +1,5 @@
 // Capture une page de la mascotte (modules ES → servis par un petit serveur local).
-//   node shoot.js fiche.html out/fiche.png 1920 1350
+//   node shoot.js fiche.html out/fiche.png 1920 1350  (ou .pdf → document imprimable)
 const { chromium } = require('playwright');
 const http = require('http');
 const fs = require('fs');
@@ -24,6 +24,6 @@ const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.woff2': 'font/
   await p.goto(`http://localhost:${port}/mascotte/${page}`);
   await p.waitForFunction(() => window.ready === true, null, { timeout: 180000 });
   fs.mkdirSync(path.dirname(path.resolve(out)), { recursive: true });
-  await p.screenshot({ path: out });
+  if (out.endsWith('.pdf')) await p.pdf({ path: out, width: '210mm', height: '297mm', printBackground: true, preferCSSPageSize: true }); else await p.screenshot({ path: out, fullPage: true });
   await browser.close(); server.close();
 })();
