@@ -274,6 +274,8 @@ edge-tts --voice fr-FR-RemyMultilingualNeural \
       <tr><td class="k">video/presentation.js</td><td>Modèle de vidéo : chorégraphie, textes animés, sous-titres</td></tr>
       <tr><td class="k">video/render.js</td><td>Rendu image par image (navigateur Chromium)</td></tr>
       <tr><td class="k">video/mix.py</td><td>Musique + bruitages + voix, la musique baisse sous la voix</td></tr>
+      <tr><td class="k">video/moteur.js</td><td>Moteur commun des épisodes (Tonton, caméra, sous-titres, fin CivRebar)</td></tr>
+      <tr><td class="k">video/episodes/</td><td>Un dossier par épisode : texte.json (texte de la voix) + scene.js (mise en scène)</td></tr>
     </table>
   </div>
   <h3>Outils nécessaires (tous gratuits)</h3>
@@ -292,7 +294,9 @@ python3 video/mix.py frames/cues.json # → presentation_audio.wav
 ffmpeg -framerate 30 -i frames/f%05d.jpg -i video/presentation_audio.wav \
   -c:v libx264 -crf 20 -maxrate 6M -bufsize 12M -pix_fmt yuv420p \
   -af loudnorm=I=-14:TP=-1.5 -c:a aac -b:a 192k -shortest video.mp4
-# 6. Vérifier : < 30 Mo pour WhatsApp, format 9:16 pour TikTok</pre>
+# 6. Vérifier : < 30 Mo pour WhatsApp, format 9:16 pour TikTok
+# Raccourci pour un épisode (voix + images + son + MP4) :
+python3 video/voix.py episodes/mon_episode && sh video/fabrique.sh mon_episode</pre>
   <h3>Description pour un outil d'IA (image ou vidéo)</h3>
   <pre>3D stylized figurine character, "Tonton Ferraille", friendly Ivorian construction
 site chief in his late 50s, warm brown skin, big round glossy eyes, thick grey
@@ -313,9 +317,9 @@ Soft studio lighting, dark navy background, Pixar-like toy look, clean shapes.</
   <div class="lead">Des idées de séries, toutes au format vertical 9:16, toutes ramènent vers CivRebar AI.</div>
   <div class="cols">
     <div class="card"><h3 style="margin-top:0">Présentation du projet</h3><p>Tonton explique CivRebar AI en 60 à 70 s : le problème, la solution, la feuille de route, Signal.</p><span class="pill">FAIT</span></div>
-    <div class="card"><h3 style="margin-top:0">Tonton corrige</h3><p>Il montre un plan avec une erreur (enrobage, crochet, espacement), puis la bonne pratique. Suite animée de la série « Trouve l'erreur ».</p></div>
-    <div class="card"><h3 style="margin-top:0">Le mot du chantier</h3><p>15 à 25 s : un terme technique expliqué simplement (cadre, épingle, recouvrement…).</p></div>
-    <div class="card"><h3 style="margin-top:0">Vrai ou faux ?</h3><p>Une idée reçue, un suspense, puis la réponse de Tonton, avec un compte à rebours.</p></div>
+    <div class="card"><h3 style="margin-top:0">Tonton corrige</h3><p>Il montre un plan avec une erreur (enrobage, crochet, espacement), puis la bonne pratique. Suite animée de la série « Trouve l'erreur ».</p><span class="pill">FAIT · ENROBAGE</span></div>
+    <div class="card"><h3 style="margin-top:0">Le mot du chantier</h3><p>15 à 25 s : un terme technique expliqué simplement (cadre, épingle, recouvrement…).</p><span class="pill">FAIT · LE CADRE</span></div>
+    <div class="card"><h3 style="margin-top:0">Vrai ou faux ?</h3><p>Une idée reçue, un suspense, puis la réponse de Tonton, avec un compte à rebours.</p><span class="pill">FAIT · TROP D'ACIER</span></div>
     <div class="card"><h3 style="margin-top:0">Tonton & Signal</h3><p>Petits dialogues : Signal propose, Tonton vérifie. Montre que l'ingénieur garde la main.</p></div>
     <div class="card"><h3 style="margin-top:0">Journal de bord</h3><p>Avancement du développement : « Cette semaine, la poutre sait dessiner ses cadres ».</p></div>
   </div>
