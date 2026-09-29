@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><title>Tonton Ferraille présente CivRebar AI</title>
+<style>
+@font-face{font-family:Sora;src:url(../../fonts/sora-latin-300-normal.woff2);font-weight:300}
+@font-face{font-family:Sora;src:url(../../fonts/sora-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:Sora;src:url(../../fonts/sora-latin-700-normal.woff2);font-weight:700 800}
+@font-face{font-family:Manrope;src:url(../../fonts/manrope-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:Manrope;src:url(../../fonts/manrope-latin-700-normal.woff2);font-weight:600 700}
+@font-face{font-family:Mono;src:url(../../fonts/jetbrains-mono-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:Serif;src:url(../../fonts/instrument-serif-latin-400-italic.woff2);font-style:italic}
+html,body{margin:0;background:#000}
+canvas{display:block}
+</style>
+<script type="importmap">{"imports":{"three":"../node_modules/three/build/three.module.js","three/addons/":"../node_modules/three/examples/jsm/"}}</script>
+</head><body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<script>
+// précharge les polices avant le module
+Promise.all(['300 20px Sora','600 20px Sora','700 20px Sora','500 20px Manrope','700 20px Manrope','500 20px Mono','italic 400 20px Serif'].map(f => document.fonts.load(f)));
+</script>
+<script type="module" src="presentation.js"></script>
+</body></html>

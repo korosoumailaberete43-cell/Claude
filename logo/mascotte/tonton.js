@@ -204,11 +204,12 @@ export function createTonton() {
     const lid = x.lid == null ? 0 : x.lid;   // 0 ouvert → 1 fermé
     P.eyes.forEach(({ lid: l, pup }) => { l.rotation.x = -1.35 + lid * 1.25; pup.position.x = (x.lookX || 0) * 0.025; pup.position.y = (x.lookY || 0) * 0.025; });
     const m = x.mouth || 'smile';
-    P.smile.visible = m === 'smile' || m === 'frown';
+    const talk = x.talk || 0;          // 0 → 1 : bouche qui s'ouvre en parlant (synchro voix)
+    P.smile.visible = (m === 'smile' || m === 'frown') && talk < 0.12;
     P.smile.rotation.z = m === 'frown' ? 0 : Math.PI;
     P.smile.position.y = m === 'frown' ? -0.04 : 0.04;
-    P.open.visible = m === 'open';
-    P.open.scale.set(1.1, 0.8 * (x.open || 1), 0.5);
+    P.open.visible = m === 'open' || talk >= 0.12;
+    P.open.scale.set(1.1 - talk * 0.25, 0.8 * (m === 'open' ? (x.open || 1) : 0.35 + talk * 0.95), 0.5);
     P.mous.rotation.z = (x.mousTilt || 0);
   }
   setPose(); setExpression();
