@@ -7,13 +7,13 @@
 ## Célébration des vies
 - Publication des **affiches d'anniversaire** des membres tout au long du trimestre.
 - **Nombre d'anniversaires célébrés :** **[à vérifier]**
-- Déposer 2 ou 3 exemples d'affiches dans `photos/`.
+- **Visuel : une seule image** pour les anniversaires (fournie par le rédacteur). Pas d'autre visuel dans cette rubrique.
 
 ## Événements heureux
 - **[à vérifier]** (mariages, naissances, diplômes, soutenances… ou « aucun »)
 
 ## Solidarité (rester sobre : pas de détail médical)
-- Soutien et suivi fraternel de l'ami **Alhousseïny TOURÉ** **[à vérifier]** (orthographe exacte du nom), Directeur du domaine Coopération Internationale, pendant sa maladie.
+- Soutien et suivi fraternel de l'ami **Alhousseïny TOURÉ** **[à vérifier]** (orthographe exacte du nom), Directeur du domaine Coopération Internationale (sous la VP Sara FOFANA), pendant sa maladie.
 - Soutien et suivi fraternel de l'ami **Koro Soumaïla BÉRÊTE**, Directeur Chargé de la Communication, pendant sa maladie.
 - Formulation suggérée : « L'organisation a manifesté sa solidarité et son soutien à … et leur souhaite un complet rétablissement. » **[à vérifier]** (les deux sont-ils rétablis ?)
 

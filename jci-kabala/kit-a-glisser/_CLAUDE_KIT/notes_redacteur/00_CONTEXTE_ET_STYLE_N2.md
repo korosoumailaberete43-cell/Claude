@@ -53,8 +53,9 @@ Chaque page : en-tête « Les réalisations » + nom du domaine, pied de page av
 | Directrice du Domaine Croissance et Motivation | Nanténin DIARRA |
 | Immédiat Past-Président | Dianégué B. DEMBÉLÉ |
 
-**À vérifier au n°3 :** le rédacteur a cité « Alhousseïny (?) TOURÉ, directeur du domaine Coopération Internationale »,
-qui n'apparaît pas dans ce tableau. Demande s'il y a eu des changements dans le Comité Directeur.
+| Directeur du domaine Coopération Internationale (sous la VP Sara FOFANA) | Alhousseïny TOURÉ *(orthographe à vérifier ; compris à l'oral « Al-Fousseini »)* |
+
+Demande s'il y a eu d'autres changements dans le Comité Directeur depuis le n°2.
 
 ## Faits du n°2 utiles pour la continuité du n°3
 - Tribunes : au n°2, Tribune des Membres N°3 à N°5 et Tribune des Observateurs N°4 à N°6.

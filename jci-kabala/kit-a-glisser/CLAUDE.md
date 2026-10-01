@@ -36,6 +36,7 @@ Le kit `_CLAUDE_KIT/` a été ajouté à la racine :
 | `_CLAUDE_KIT/charte/` | Charte JCI, `REGLES.md` (résumé), logos (copie) |
 | `_CLAUDE_KIT/notes_redacteur/` | Ce que le rédacteur a déjà expliqué, rubrique par rubrique ; `[à vérifier]` = information manquante |
 | `_CLAUDE_KIT/notes_redacteur/00_CONTEXTE_ET_STYLE_N2.md` | **À lire en premier** : structure, style et Comité Directeur tirés du n°2 |
+| `_CLAUDE_KIT/notes_redacteur/TEXTES_PROPOSES_N3.md` | **Textes déjà rédigés et relus avec le rédacteur** : base de l'étape 4 ; complète uniquement les `[À COMPLÉTER]` avec les réponses de l'étape 1, et ne réécris pas le reste sans demande |
 | `_CLAUDE_KIT/PROMPTS.md` | Les messages que le rédacteur t'enverra |
 
 Tous les dossiers du rédacteur sont en **lecture seule**. Ton seul espace de travail : `20_PRODUCTION/` (à créer).
