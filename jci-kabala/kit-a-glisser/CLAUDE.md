@@ -5,31 +5,54 @@ après chaque étape pour que le rédacteur en chef (Koro Soumaïla BÉRÊTE, Di
 Réponds toujours en français, simplement.
 
 ## Ce qu'on produit
-- Un bulletin **magazine en couleurs**, format **A4 portrait**, environ 16 à 24 pages, exporté en **PDF**.
+- Un bulletin **magazine en couleurs**, format **A4 portrait**, environ 24 à 32 pages (le n°2 en comptait 30), exporté en **PDF**.
 - Une version **PDF légère** (moins de 15 Mo) pour WhatsApp, et une **image PNG par page** pour les réseaux sociaux.
 - Le design doit être **nouveau** (pas une copie des numéros précédents), moderne, aéré, attrayant, mais 100 % conforme
-  à la charte JCI. Les anciens numéros servent de référence pour le **contenu, l'ordre des rubriques et le ton**.
+  à la charte JCI. Les anciens numéros servent de référence pour le **contenu, l'ordre des rubriques, le ton et le niveau de finition**
+  (affiches intégrées, en-têtes de domaine, pied de page slogan + numéro) ; le n°3 doit être au moins aussi riche.
 
-## Architecture du dossier
-Le dossier a été organisé **par le rédacteur lui-même** : les noms de dossiers peuvent différer des rubriques
-ci-dessous. Le kit `_CLAUDE_KIT/` a été ajouté à la racine :
-| Élément | Contenu | Droits |
+## Architecture du dossier (dossier « Echo de U Kabala N°3 » du rédacteur)
+| Dossier du rédacteur | Contenu | Rubrique du bulletin |
 |---|---|---|
-| `_CLAUDE_KIT/charte/` | Charte JCI (PDF), `REGLES.md` (résumé), logos officiels de U Kabala | Lecture seule |
-| `_CLAUDE_KIT/notes_redacteur/` | Ce que le rédacteur a déjà expliqué, rubrique par rubrique ; `[à vérifier]` = information manquante | Lecture seule |
-| `_CLAUDE_KIT/PROMPTS.md` | Les messages que le rédacteur t'enverra | Lecture seule |
-| Tous les autres dossiers du rédacteur | Documents, photos, affiches, anciens numéros | Lecture seule |
-| `20_PRODUCTION/` (à créer) | **Ton seul espace de travail** : plans, textes, HTML, PDF, images | Lecture / écriture |
+| `Charte JCI & Logo JCI U Kabala/` | Brand Guidelines (PDF) + 5 logos U Kabala | Références design |
+| `Exemple de bulletin/Echo de U kabala/` | **Écho n°1 et n°2 mis en page (PDF)** | Référence de contenu, de structure et de ton |
+| `Activité statutaires/Image AG N°3/` (`Céremonie d'intronisation`, `Recompenses`, `Signature du protocole d'accord`, `Reste des images`) | Photos de l'AGO N°3 | Activité statutaire |
+| `Croissance & Motivation/` (`Convention Locale 2026` avec `Affiche des Candidats` et `Affiches des élus 2027`, `Forun des membres et observateurs`, `Leader du jour`, `Tribune des membres`, `Tribune des observateurs`, `U Kabala Motivation`, `Visite du VPN`) | Photos et affiches | Croissance et motivation |
+| `Efficacité 100% & Recompenses/` (`Membre le plus remarquable du mois`, `Recompenses lors de l'AG 3`) | Affiches et photos | Efficacité 100 % et récompenses |
+| `Développement Individuel/` (`Formation 1`, `Formation 2`, `Formation 3`, `Participation à Trainer`) | Affiches et photos | Développement individuel |
+| `Programmes JCI/` (`Partage d'expérience`, `Concours interne d'art oratoire Débat & Maîtrise de cérémonie`) | Affiches et photos | Programmes JCI |
+| `Coopération Internationale/` (`Activité des organisations locales soeurs`, `Visite officielle de la JCI Conakry Leaders`) | Photos | Coopération internationale |
+| `Autres images/Images du président 2026/` | Photos du Président | Mot du Président, RIO, Trainer |
+| `Galérie Photo/` | Environ 100 photos WhatsApp + un zip + un sous-dossier | Galerie photos (choisir les 12 à 20 meilleures) |
+
+**Pas de dossier pour :** Affaires sociales, Impact communautaire, Business et entrepreneuriat, Nos Partenaires
+(logo ADM Rénovation), Past Présidents, RIO à Niamey. Demande au rédacteur s'il a des visuels (affiches
+d'anniversaire, affiche du forum entrepreneuriat, logo du partenaire, photos de Niamey) ; sinon ces rubriques
+se font en texte avec un élément graphique.
+
+Le kit `_CLAUDE_KIT/` a été ajouté à la racine :
+| Élément | Contenu |
+|---|---|
+| `_CLAUDE_KIT/charte/` | Charte JCI, `REGLES.md` (résumé), logos (copie) |
+| `_CLAUDE_KIT/notes_redacteur/` | Ce que le rédacteur a déjà expliqué, rubrique par rubrique ; `[à vérifier]` = information manquante |
+| `_CLAUDE_KIT/notes_redacteur/00_CONTEXTE_ET_STYLE_N2.md` | **À lire en premier** : structure, style et Comité Directeur tirés du n°2 |
+| `_CLAUDE_KIT/PROMPTS.md` | Les messages que le rédacteur t'enverra |
+
+Tous les dossiers du rédacteur sont en **lecture seule**. Ton seul espace de travail : `20_PRODUCTION/` (à créer).
+Les **affiches** (Canva) des activités sont des sources d'information : lis-y les noms, dates, numéros et thèmes,
+et propose de les intégrer dans les pages comme au n°2.
 
 **Sources d'information, par ordre de priorité :** (1) les réponses du rédacteur dans la conversation,
 (2) les documents de ses dossiers, (3) les notes de `_CLAUDE_KIT/notes_redacteur/`. En cas de contradiction,
 ne choisis pas toi-même : pose la question.
 
-Ordre des rubriques dans le bulletin :
-couverture et sommaire, Institutionnel (présentation JCI / JCI Mali / U Kabala, mot du Président, équipe de rédaction),
+Ordre des rubriques dans le bulletin (même squelette que le n°2, voir `00_CONTEXTE_ET_STYLE_N2.md`) :
+couverture et sommaire, Institutionnel (présentation JCI / JCI Mali / U Kabala, mission-vision-thème-slogan,
+mot du Président, équipe de rédaction, Comité Directeur Local),
 Activité statutaire, Croissance et motivation, Affaires sociales, Efficacité 100 % et récompenses,
 Impact communautaire, Développement individuel, Business et entrepreneuriat, Coopération internationale,
-Programmes JCI, Nos Past Présidents, **Nos Partenaires (page nouvelle, juste avant la galerie)**, Galerie photos.
+Programmes JCI, une double page **SPÉCIAL** sur le fait marquant du trimestre (à proposer au rédacteur :
+RIO à Niamey et élection du Président au CPS-JCI RIO, ou Convention Locale Couplée et élus 2027), Nos Past Présidents, **Nos Partenaires (page nouvelle, juste avant la galerie)**, Galerie photos.
 Il n'y a **pas** de rubrique « Perspectives » ni « Hautes personnalités du mandat ».
 Ne modifie, ne renomme, ne déplace et ne supprime **jamais** un fichier hors de `20_PRODUCTION/`.
 
