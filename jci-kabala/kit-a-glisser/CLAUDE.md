@@ -38,6 +38,7 @@ Le kit `_CLAUDE_KIT/` a été ajouté à la racine :
 | `_CLAUDE_KIT/notes_redacteur/00_CONTEXTE_ET_STYLE_N2.md` | **À lire en premier** : structure, style et Comité Directeur tirés du n°2 |
 | `_CLAUDE_KIT/notes_redacteur/TEXTES_PROPOSES_N3.md` | **Textes déjà rédigés et relus avec le rédacteur : ils priment sur les fiches des autres notes en cas d'écart** : base de l'étape 4 ; complète uniquement les `[À COMPLÉTER]` avec les réponses de l'étape 1, et ne réécris pas le reste sans demande |
 | `_CLAUDE_KIT/PROMPTS.md` | Les messages que le rédacteur t'enverra |
+| `.claude/agents/` | Assistants Sonnet `inventaire-photos` et `verif-pages` (voir « Économie de tokens ») |
 
 Tous les dossiers du rédacteur sont en **lecture seule**. Ton seul espace de travail : `20_PRODUCTION/` (à créer).
 Les **affiches** (Canva) des activités sont des sources d'information : lis-y les noms, dates, numéros et thèmes,
@@ -118,6 +119,18 @@ Ne modifie, ne renomme, ne déplace et ne supprime **jamais** un fichier hors de
 orthographe exacte de chaque nom et titre, noms des lauréats et des élus, membres remarquables de juillet, août,
 septembre, nom exact du partenaire et logo, photo du Président, liste des activités des autres OL auxquelles
 U Kabala a participé, quelle photo mettre en couverture.
+
+## Économie de tokens : qui fait quoi
+Des assistants réglés sur **Sonnet** (moins coûteux) sont définis dans `.claude/agents/`. Délègue-leur
+systématiquement, sans attendre qu'on te le demande :
+| Tâche | Qui |
+|---|---|
+| Regarder et trier les photos et affiches (étape 0, galerie, nouvelles photos ajoutées) | agent `inventaire-photos` (un appel par dossier de rubrique) |
+| Vérifier les pages rendues en PNG (étapes 3, 5, 6 et après chaque correction) | agent `verif-pages`, uniquement sur les pages modifiées |
+| Compresser les images, générer le PDF et les PNG | un script (`20_PRODUCTION/construire`), pas de réflexion du modèle |
+Garde pour toi (modèle principal) : les questions au rédacteur, le chemin de fer, la direction artistique,
+la mise en page HTML/CSS et les arbitrages. Ne regarde pas toi-même des dizaines d'images : fie-toi aux tableaux
+des assistants et n'ouvre une image que si tu dois décider précisément de son cadrage.
 
 ## Corrections après le brouillon (économiser les tokens)
 - Le rédacteur regroupe ses corrections en un seul message (ex. « Page 5 : … Page 9 : … »).

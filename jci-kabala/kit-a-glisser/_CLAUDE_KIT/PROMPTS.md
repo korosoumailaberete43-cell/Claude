@@ -2,7 +2,7 @@
 
 Ouvrez Claude Code **dans votre dossier « Echo de U Kabala N°3 »** (celui où vous avez placé `CLAUDE.md` et `_CLAUDE_KIT`).
 Il lit automatiquement `CLAUDE.md` (les règles).
-Envoyez les prompts **un par un**, dans l'ordre. Ne passez au suivant qu'après avoir validé le résultat.
+Envoyez les prompts **un par un**, dans l'ordre. Conseil : `/model` Sonnet pour les prompts 1, 4, 6, 7 ; Opus pour 2, 3, 5. Ne passez au suivant qu'après avoir validé le résultat.
 
 ---
 
