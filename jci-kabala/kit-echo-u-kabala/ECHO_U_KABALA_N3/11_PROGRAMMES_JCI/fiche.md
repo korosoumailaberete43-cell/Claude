@@ -1,31 +1,45 @@
 # Programmes JCI
 
-> Concours internes et nationaux, art oratoire, débat, Spotlight…
-> Remplissez ce qui s'applique, supprimez le reste. Ne laissez pas d'information inventée : si vous ne savez pas, écrivez **« à vérifier »**.
-> Déposez les photos dans le sous-dossier `photos/`, nommées `AAAA-MM-JJ_nom-activite_01.jpg`.
-
-## Résultats de concours
-| Concours | Catégorie | Lauréat(e) | Rang |
-|---|---|---|---|
-| | | | |
-
-## Activités du trimestre
-(Copiez un bloc par activité supplémentaire.)
+> Partage d'expérience et concours interne.
+> Pré-rempli à partir des explications orales du rédacteur en chef (1ᵉʳ octobre 2026).
+> Tout ce qui est marqué **[à vérifier]** est à compléter ou corriger avant de lancer Claude Code.
 
 ### Activité 1
-- **Nom de l'activité :**
-- **Date(s) :** (ex. 12/07/2026)
-- **Lieu / format :** (Campus de Kabala, Google Meet…)
-- **Responsable / directeur(trice) de projet :**
-- **Intervenant(s), animateur(s) ou invité(s) :** (Nom complet + titre exact, ex. « Sén. Modibo BA »)
-- **Nombre de participants :** (membres / observateurs / invités)
-- **Objectif en une phrase :**
-- **Ce qui s'est passé (3 à 6 points) :**
-  -
-- **Résultats / chiffres :**
+- **Nom de l'activité :** Séance de partage d'expérience
+- **Date(s) :** **[à vérifier]**
+- **Lieu / format :** **[à vérifier]**
+- **Responsable / directeur(trice) de projet :** **[à vérifier]**
+- **Intervenant(s), animateur(s) ou invité(s) :** **[à vérifier]**
+- **Nombre de participants :** **[à vérifier]**
+- **Objectif en une phrase :** Préparer les candidats au concours interne grâce à l'expérience d'aînés.
+- **Ce qui s'est passé :**
+  - Thème(s) : **[à vérifier]**
+- **Résultats / chiffres :** 
 - **Une phrase ou citation marquante (facultatif) :**
-- **Photos :** (noms des fichiers dans `photos/` + légende courte. Marquez ⭐ la meilleure photo)
-  - `AAAA-MM-JJ_nom-activite_01.jpg` : légende
+- **Photos :** (à déposer dans `photos/`, marquez ⭐ la meilleure)
+
+### Activité 2
+- **Nom de l'activité :** Concours interne : art oratoire, débat et maîtrise de cérémonie
+- **Date(s) :** **[à vérifier]**
+- **Lieu / format :** **[à vérifier]**
+- **Responsable / directeur(trice) de projet :** **[à vérifier]**
+- **Intervenant(s), animateur(s) ou invité(s) :** **[à vérifier]**
+- **Nombre de participants :** **[à vérifier]**
+- **Objectif en une phrase :** Révéler les meilleurs talents de U Kabala dans les trois disciplines.
+- **Ce qui s'est passé :**
+  - Organisé après la séance de partage d'expérience
+  - Lauréats récompensés lors de l'AGO N°3 (voir 06_EFFICACITE_RECOMPENSES)
+- **Résultats / chiffres :** 
+- **Une phrase ou citation marquante (facultatif) :**
+- **Photos :** (à déposer dans `photos/`, marquez ⭐ la meilleure)
+
+## Résultats du concours interne
+| Catégorie | Lauréat(e) | Rang |
+|---|---|---|
+| Art oratoire | **[à vérifier]** | |
+| Débat | **[à vérifier]** | |
+| Maîtrise de cérémonie (MC) | **[à vérifier]** | |
+- **Membres du jury :** **[à vérifier]**
 
 ## Notes libres
 - 

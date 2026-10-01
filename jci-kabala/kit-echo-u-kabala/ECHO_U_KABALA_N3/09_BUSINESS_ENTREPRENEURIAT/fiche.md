@@ -1,45 +1,30 @@
 # Business et entrepreneuriat
 
-> La Voix de l'Entrepreneur, visites d'entreprise, partenariats, boutique.
-> Remplissez ce qui s'applique, supprimez le reste. Ne laissez pas d'information inventée : si vous ne savez pas, écrivez **« à vérifier »**.
-> Déposez les photos dans le sous-dossier `photos/`, nommées `AAAA-MM-JJ_nom-activite_01.jpg`.
-
-## Partenariats
-- **Conventions signées ou en cours :**
-- **Boutique JCI locale :**
-
-## Activités du trimestre
-(Copiez un bloc par activité supplémentaire.)
+> Forum local sur l'entrepreneuriat des jeunes, partenariats, boutique.
+> Pré-rempli à partir des explications orales du rédacteur en chef (1ᵉʳ octobre 2026).
+> Tout ce qui est marqué **[à vérifier]** est à compléter ou corriger avant de lancer Claude Code.
 
 ### Activité 1
-- **Nom de l'activité :**
-- **Date(s) :** (ex. 12/07/2026)
-- **Lieu / format :** (Campus de Kabala, Google Meet…)
-- **Responsable / directeur(trice) de projet :**
-- **Intervenant(s), animateur(s) ou invité(s) :** (Nom complet + titre exact, ex. « Sén. Modibo BA »)
-- **Nombre de participants :** (membres / observateurs / invités)
-- **Objectif en une phrase :**
-- **Ce qui s'est passé (3 à 6 points) :**
-  -
-- **Résultats / chiffres :**
+- **Nom de l'activité :** Forum local sur l'entrepreneuriat des jeunes : 1ʳᵉ réunion de projet
+- **Date(s) :** **[à vérifier]**
+- **Lieu / format :** **[à vérifier]**
+- **Responsable / directeur(trice) de projet :** **[à vérifier]**
+- **Intervenant(s), animateur(s) ou invité(s) :** **[à vérifier]**
+- **Nombre de participants :** **[à vérifier]**
+- **Objectif en une phrase :** Lancer la préparation du forum local, en collaboration avec l'OL marraine.
+- **Ce qui s'est passé :**
+  - Projet mené en collaboration avec l'organisation marraine, la JCI Kalaban **[à vérifier]** (compris à l'oral : « DCI Calabar »)
+  - Première réunion de projet tenue ; le forum lui-même aura lieu plus tard (date prévue : **[à vérifier]**)
+- **Résultats / chiffres :** 
 - **Une phrase ou citation marquante (facultatif) :**
-- **Photos :** (noms des fichiers dans `photos/` + légende courte. Marquez ⭐ la meilleure photo)
-  - `AAAA-MM-JJ_nom-activite_01.jpg` : légende
+- **Photos :** (à déposer dans `photos/`, marquez ⭐ la meilleure)
 
-### Activité 2
-- **Nom de l'activité :**
-- **Date(s) :** (ex. 12/07/2026)
-- **Lieu / format :** (Campus de Kabala, Google Meet…)
-- **Responsable / directeur(trice) de projet :**
-- **Intervenant(s), animateur(s) ou invité(s) :** (Nom complet + titre exact, ex. « Sén. Modibo BA »)
-- **Nombre de participants :** (membres / observateurs / invités)
-- **Objectif en une phrase :**
-- **Ce qui s'est passé (3 à 6 points) :**
-  -
-- **Résultats / chiffres :**
-- **Une phrase ou citation marquante (facultatif) :**
-- **Photos :** (noms des fichiers dans `photos/` + légende courte. Marquez ⭐ la meilleure photo)
-  - `AAAA-MM-JJ_nom-activite_01.jpg` : légende
+## Partenariats
+- **Premier protocole d'accord signé avec ADM Rénovation** **[à vérifier]**, lors de l'AGO N°3 (détail dans `03_ACTIVITE_STATUTAIRE`).
+
+## Boutique JCI locale
+- Vente en cours des **pins** JCI (simples et personnalisés) achetés au trimestre précédent.
+- **Prix / nombre vendus (facultatif) :** **[à vérifier]**
 
 ## Notes libres
 - 

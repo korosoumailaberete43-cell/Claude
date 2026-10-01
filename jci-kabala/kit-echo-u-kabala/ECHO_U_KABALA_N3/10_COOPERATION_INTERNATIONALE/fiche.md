@@ -1,41 +1,44 @@
 # Coopération internationale
 
-> Conseils nationaux, congrès, jumelages, échanges avec d'autres OL.
-> Remplissez ce qui s'applique, supprimez le reste. Ne laissez pas d'information inventée : si vous ne savez pas, écrivez **« à vérifier »**.
-> Déposez les photos dans le sous-dossier `photos/`, nommées `AAAA-MM-JJ_nom-activite_01.jpg`.
-
-## Activités du trimestre
-(Copiez un bloc par activité supplémentaire.)
+> RIO, visite de JCI Conakry Leaders, participation aux activités d'autres OL.
+> Pré-rempli à partir des explications orales du rédacteur en chef (1ᵉʳ octobre 2026).
+> Tout ce qui est marqué **[à vérifier]** est à compléter ou corriger avant de lancer Claude Code.
 
 ### Activité 1
-- **Nom de l'activité :**
-- **Date(s) :** (ex. 12/07/2026)
-- **Lieu / format :** (Campus de Kabala, Google Meet…)
-- **Responsable / directeur(trice) de projet :**
-- **Intervenant(s), animateur(s) ou invité(s) :** (Nom complet + titre exact, ex. « Sén. Modibo BA »)
-- **Nombre de participants :** (membres / observateurs / invités)
-- **Objectif en une phrase :**
-- **Ce qui s'est passé (3 à 6 points) :**
-  -
-- **Résultats / chiffres :**
+- **Nom de l'activité :** Rencontre Inter-Organisations des organisations universitaires (RIO)
+- **Date(s) :** **[à vérifier]**
+- **Lieu / format :** **[à vérifier]**
+- **Responsable / directeur(trice) de projet :** **[à vérifier]**
+- **Intervenant(s), animateur(s) ou invité(s) :** Alassane DIALLO (Président Local) et Aminata TRAORÉ (Secrétaire Générale)
+- **Nombre de participants :** 2 représentants de U Kabala
+- **Objectif en une phrase :** Représenter U Kabala auprès des autres organisations universitaires de la JCI Mali.
+- **Ce qui s'est passé :**
+  - Lieu et organisation hôte : **[à vérifier]**
+- **Résultats / chiffres :** 
 - **Une phrase ou citation marquante (facultatif) :**
-- **Photos :** (noms des fichiers dans `photos/` + légende courte. Marquez ⭐ la meilleure photo)
-  - `AAAA-MM-JJ_nom-activite_01.jpg` : légende
+- **Photos :** (à déposer dans `photos/`, marquez ⭐ la meilleure)
 
 ### Activité 2
-- **Nom de l'activité :**
-- **Date(s) :** (ex. 12/07/2026)
-- **Lieu / format :** (Campus de Kabala, Google Meet…)
-- **Responsable / directeur(trice) de projet :**
-- **Intervenant(s), animateur(s) ou invité(s) :** (Nom complet + titre exact, ex. « Sén. Modibo BA »)
-- **Nombre de participants :** (membres / observateurs / invités)
-- **Objectif en une phrase :**
-- **Ce qui s'est passé (3 à 6 points) :**
-  -
-- **Résultats / chiffres :**
+- **Nom de l'activité :** Visite officielle de la JCI Conakry Leaders (Guinée)
+- **Date(s) :** **[à vérifier]**
+- **Lieu / format :** **[à vérifier]**
+- **Responsable / directeur(trice) de projet :** **[à vérifier]**
+- **Intervenant(s), animateur(s) ou invité(s) :** **[à vérifier]**
+- **Nombre de participants :** **[à vérifier]**
+- **Objectif en une phrase :** Accueillir une délégation officielle d'une OL guinéenne.
+- **Ce qui s'est passé :**
+  - Composition de la délégation : **[à vérifier]**
+  - Programme de la visite : **[à vérifier]**
+- **Résultats / chiffres :** 
 - **Une phrase ou citation marquante (facultatif) :**
-- **Photos :** (noms des fichiers dans `photos/` + légende courte. Marquez ⭐ la meilleure photo)
-  - `AAAA-MM-JJ_nom-activite_01.jpg` : légende
+- **Photos :** (à déposer dans `photos/`, marquez ⭐ la meilleure)
+
+## Participation aux activités d'autres organisations locales (AG, conventions, activités)
+| Date | Organisation locale | Activité | Délégation U Kabala |
+|---|---|---|---|
+| **[à vérifier]** | | | |
+| **[à vérifier]** | | | |
+| **[à vérifier]** | | | |
 
 ## Notes libres
-- 
+- Liste détaillée des participations annoncée par le rédacteur en chef.
