@@ -15,6 +15,8 @@ Lis aussi le n°1 dans le même dossier.
    Programmes JCI, Affaires sociales, Efficacité 100 % & Récompenses, Impact communautaire,
    Développement individuel, Business & Entrepreneuriat, Coopération internationale.
 9. Une double page « SPÉCIAL » sur l'événement majeur du trimestre (au n°2 : l'Académie Doni Blon).
+   **Pas de page SPÉCIAL au n°3** (décision du rédacteur) : la RIO et l'élection du Président restent dans la
+   rubrique Coopération internationale.
 10. Nos Past Présidents (2 portraits).
 11. Galerie photos (5 pages).
 Chaque page : en-tête « Les réalisations » + nom du domaine, pied de page avec le slogan et le numéro de page.

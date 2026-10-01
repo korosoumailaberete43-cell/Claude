@@ -51,9 +51,10 @@ couverture et sommaire, Institutionnel (présentation JCI / JCI Mali / U Kabala,
 mot du Président, équipe de rédaction, Comité Directeur Local),
 Activité statutaire, Croissance et motivation, Affaires sociales, Efficacité 100 % et récompenses,
 Impact communautaire, Développement individuel, Business et entrepreneuriat, Coopération internationale,
-Programmes JCI, une double page **SPÉCIAL** sur le fait marquant du trimestre (à proposer au rédacteur :
-RIO à Niamey et élection du Président au CPS-JCI RIO, ou Convention Locale Couplée et élus 2027), Nos Past Présidents, **Nos Partenaires (page nouvelle, juste avant la galerie)**, Galerie photos.
-Il n'y a **pas** de rubrique « Perspectives » ni « Hautes personnalités du mandat ».
+Programmes JCI, Nos Past Présidents, **Nos Partenaires (page nouvelle, juste avant la galerie)**, Galerie photos.
+Il n'y a **pas** de rubrique « Perspectives », ni « Hautes personnalités du mandat », ni de page « SPÉCIAL »
+(contrairement au n°2). La RIO à Niamey et l'élection du Président au CPS-JCI RIO sont traitées **dans le texte**
+de la rubrique Coopération internationale.
 Ne modifie, ne renomme, ne déplace et ne supprime **jamais** un fichier hors de `20_PRODUCTION/`.
 
 ## Règles de contenu (non négociables)
