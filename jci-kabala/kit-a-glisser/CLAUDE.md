@@ -119,6 +119,12 @@ orthographe exacte de chaque nom et titre, noms des lauréats et des élus, memb
 septembre, nom exact du partenaire et logo, photo du Président, liste des activités des autres OL auxquelles
 U Kabala a participé, quelle photo mettre en couverture.
 
+## Corrections après le brouillon (économiser les tokens)
+- Le rédacteur regroupe ses corrections en un seul message (ex. « Page 5 : … Page 9 : … »).
+- Ne modifie que les pages concernées ; ne relis et ne regarde en image **que ces pages**, pas tout le bulletin.
+- Régénère le PDF complet seulement à la fin d'une série de corrections.
+- Ne réécris jamais un texte validé sans qu'on te le demande.
+
 ## Checklist de contrôle qualité (étape 6)
 - [ ] Aucun `[À COMPLÉTER]` restant ; aucun fait absent des sources.
 - [ ] Orthographe des noms identique aux sources ; dates au format « 12 juillet 2026 ».
