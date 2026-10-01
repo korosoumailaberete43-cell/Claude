@@ -1,34 +1,33 @@
 # Activité statutaire
 
-> AG, réunions du Comité Directeur, prestations de serment, remises de prix.
-> Remplissez ce qui s'applique, supprimez le reste. Ne laissez pas d'information inventée : si vous ne savez pas, écrivez **« à vérifier »**.
-> Déposez les photos dans le sous-dossier `photos/`, nommées `AAAA-MM-JJ_nom-activite_01.jpg`.
+> AG, prestations de serment, intronisations, remises de prix, protocoles.
+> Pré-rempli à partir des explications orales du rédacteur en chef (1ᵉʳ octobre 2026).
+> Tout ce qui est marqué **[à vérifier]** est à compléter ou corriger avant de lancer Claude Code.
 
-## Assemblée(s) Générale(s) du trimestre
-- **Numéro de l'AG :**
-- **Date et lieu :**
-- **Participation :**
-- **Décisions principales :**
-- **Prestations de serment** (nom + fonction) :
-- **Remise de prix** (lauréats + prix) :
-
-## Activités du trimestre
-(Copiez un bloc par activité supplémentaire.)
+## Assemblée Générale Ordinaire N°3
+- **Date et lieu :** **[à vérifier]**
+- **Participation :** **[à vérifier]**
+- **Temps forts :**
+  - Cérémonie d'**intronisation** de nouveaux membres (noms : **[à vérifier]**)
+  - Cérémonie de **récompense** des membres qui se sont le plus distingués (détail dans `06_EFFICACITE_RECOMPENSES`)
+  - **Signature du premier protocole d'accord** de U Kabala, avec **ADM Rénovation** **[à vérifier]** (nom exact de l'entreprise, signataires, objet du protocole)
+- **Décisions principales :** **[à vérifier]**
 
 ### Activité 1
-- **Nom de l'activité :**
-- **Date(s) :** (ex. 12/07/2026)
-- **Lieu / format :** (Campus de Kabala, Google Meet…)
-- **Responsable / directeur(trice) de projet :**
-- **Intervenant(s), animateur(s) ou invité(s) :** (Nom complet + titre exact, ex. « Sén. Modibo BA »)
-- **Nombre de participants :** (membres / observateurs / invités)
-- **Objectif en une phrase :**
-- **Ce qui s'est passé (3 à 6 points) :**
-  -
-- **Résultats / chiffres :**
+- **Nom de l'activité :** Signature du premier protocole d'accord avec ADM Rénovation
+- **Date(s) :** **[à vérifier]**
+- **Lieu / format :** **[à vérifier]**
+- **Responsable / directeur(trice) de projet :** **[à vérifier]**
+- **Intervenant(s), animateur(s) ou invité(s) :** **[à vérifier]**
+- **Nombre de participants :** **[à vérifier]**
+- **Objectif en une phrase :** Premier partenariat officiel de la JCI Universitaire Kabala.
+- **Ce qui s'est passé :**
+  - Signé lors de l'AGO N°3
+  - Objet du partenariat : **[à vérifier]**
+  - Signataires : **[à vérifier]**
+- **Résultats / chiffres :** 
 - **Une phrase ou citation marquante (facultatif) :**
-- **Photos :** (noms des fichiers dans `photos/` + légende courte. Marquez ⭐ la meilleure photo)
-  - `AAAA-MM-JJ_nom-activite_01.jpg` : légende
+- **Photos :** (à déposer dans `photos/`, marquez ⭐ la meilleure)
 
 ## Notes libres
-- 
+- Le protocole peut aussi être repris dans la rubrique Business et Entrepreneuriat (partenariats).
