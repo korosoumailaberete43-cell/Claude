@@ -33,13 +33,15 @@
 - **Une phrase ou citation marquante (facultatif) :**
 - **Photos :** (à déposer dans `photos/`, marquez ⭐ la meilleure)
 
-## Résultats du concours interne
-| Catégorie | Lauréat(e) | Rang |
-|---|---|---|
-| Art oratoire | **[à vérifier]** | |
-| Débat | **[à vérifier]** | |
-| Maîtrise de cérémonie (MC) | **[à vérifier]** | |
-- **Membres du jury :** **[à vérifier]**
+## Résultats du concours interne (confirmés par le rédacteur)
+| Catégorie | Lauréat(e) |
+|---|---|
+| Art oratoire | Ibrahim SAMAKÉ |
+| Débat | Équipe : Aboubacar Sidiki DIALLO (capitaine), Harouna Mahamane TOURÉ, Ousmane MOHOMODOU |
+| Maîtrise de cérémonie (MC) | Aminata TRAORÉ |
+
+## Convention groupée de la Zone 1
+- **2ᵉ place au concours de maîtrise de cérémonie**, avec Aminata TRAORÉ (Secrétaire Générale). Date et lieu : **[à vérifier]**
 
 ## Notes libres
 - 

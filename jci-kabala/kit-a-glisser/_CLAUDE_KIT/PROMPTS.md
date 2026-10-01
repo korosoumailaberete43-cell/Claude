@@ -8,7 +8,8 @@ Envoyez les prompts **un par un**, dans l'ordre. Ne passez au suivant qu'après 
 
 ## Prompt 1 : inventaire et questions (le plus important)
 ```
-Lis CLAUDE.md puis tout le dossier, y compris _CLAUDE_KIT. Fais l'étape 0 (inventaire) : rattache chaque document
+Lis CLAUDE.md puis tout le dossier, y compris _CLAUDE_KIT (commence par
+_CLAUDE_KIT/notes_redacteur/00_CONTEXTE_ET_STYLE_N2.md et TEXTES_PROPOSES_N3.md, puis les PDF des n°1 et n°2). Fais l'étape 0 (inventaire) : rattache chaque document
 et chaque photo à une rubrique du bulletin, regarde les photos, et montre-moi le résultat.
 Puis enchaîne sur l'étape 1 : pose-moi les questions de complément, rubrique par rubrique, 5 à 8 questions à la
 fois, en commençant par l'Activité statutaire. Note mes réponses au fur et à mesure dans 20_PRODUCTION/01_reponses.md.

@@ -36,7 +36,7 @@ Le kit `_CLAUDE_KIT/` a été ajouté à la racine :
 | `_CLAUDE_KIT/charte/` | Charte JCI, `REGLES.md` (résumé), logos (copie) |
 | `_CLAUDE_KIT/notes_redacteur/` | Ce que le rédacteur a déjà expliqué, rubrique par rubrique ; `[à vérifier]` = information manquante |
 | `_CLAUDE_KIT/notes_redacteur/00_CONTEXTE_ET_STYLE_N2.md` | **À lire en premier** : structure, style et Comité Directeur tirés du n°2 |
-| `_CLAUDE_KIT/notes_redacteur/TEXTES_PROPOSES_N3.md` | **Textes déjà rédigés et relus avec le rédacteur** : base de l'étape 4 ; complète uniquement les `[À COMPLÉTER]` avec les réponses de l'étape 1, et ne réécris pas le reste sans demande |
+| `_CLAUDE_KIT/notes_redacteur/TEXTES_PROPOSES_N3.md` | **Textes déjà rédigés et relus avec le rédacteur : ils priment sur les fiches des autres notes en cas d'écart** : base de l'étape 4 ; complète uniquement les `[À COMPLÉTER]` avec les réponses de l'étape 1, et ne réécris pas le reste sans demande |
 | `_CLAUDE_KIT/PROMPTS.md` | Les messages que le rédacteur t'enverra |
 
 Tous les dossiers du rédacteur sont en **lecture seule**. Ton seul espace de travail : `20_PRODUCTION/` (à créer).
@@ -54,7 +54,7 @@ Activité statutaire, Croissance et motivation, Affaires sociales, Efficacité 1
 Impact communautaire, Développement individuel, Business et entrepreneuriat, Coopération internationale,
 Programmes JCI, Nos Past Présidents, **Nos Partenaires (page nouvelle, juste avant la galerie)**, Galerie photos.
 Il n'y a **pas** de rubrique « Perspectives », ni « Hautes personnalités du mandat », ni de page « SPÉCIAL »
-(contrairement au n°2). La RIO à Niamey et l'élection du Président au CPS-JCI RIO sont traitées **dans le texte**
+(contrairement au n°2). La RIO à Niamey et la nomination du Président au CPS-JCI RIO sont traitées **dans le texte**
 de la rubrique Coopération internationale.
 Ne modifie, ne renomme, ne déplace et ne supprime **jamais** un fichier hors de `20_PRODUCTION/`.
 
@@ -72,9 +72,11 @@ Ne modifie, ne renomme, ne déplace et ne supprime **jamais** un fichier hors de
    **Exception : Impact Communautaire** reste, en version courte, selon la consigne de `notes_redacteur/07_IMPACT_COMMUNAUTAIRE.md`.
 7. **Mot du Président :** tu rédiges une proposition dans le style du n°2 à partir des notes ; elle sera relue
    et corrigée à la main. Marque-la clairement « PROPOSITION À VALIDER » jusqu'à validation.
-8. **Santé des membres :** parle de soutien et de solidarité, jamais de détail médical.
-9. **Temps forts à mettre en avant** (couverture, mot du Président, encadrés) : élection du Président au
-   CPS JCI RIO à Niamey, premier protocole d'accord (ADM Rénovation), Convention Locale Couplée.
+8. **Alhousseïny TOURÉ** (directeur du domaine Coopération internationale) n'est cité que dans Affaires sociales,
+   jamais dans la rubrique Coopération internationale. À la RIO, le Président a été **nommé** (et non élu).
+9. **Santé des membres :** parle de soutien et de solidarité, jamais de détail médical.
+10. **Temps forts à mettre en avant** (couverture, mot du Président, encadrés) : nomination du Président au
+   CPS-JCI RIO à Niamey, premier protocole d'accord (ADM Rénovation), Convention Locale Couplée, 2ᵉ place en maîtrise de cérémonie à la Convention groupée Zone 1.
 
 ## Règles de design (charte JCI, voir `_CLAUDE_KIT/charte/REGLES.md`)
 - **Couleurs :** Bleu JCI `#0097D7` (dominant), Noir JCI `#130F2D`, Blanc ; Navy `#1F4789` et Teal `#57BCBC` en appui ;

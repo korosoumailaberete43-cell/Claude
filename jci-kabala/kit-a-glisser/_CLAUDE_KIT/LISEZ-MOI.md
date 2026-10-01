@@ -1,9 +1,23 @@
-# Comment utiliser ce kit
+# Démarrer Claude Code sur votre ordinateur
 
-1. Décompressez ce zip et copiez **`CLAUDE.md`** et le dossier **`_CLAUDE_KIT`** à la **racine** de votre dossier
-   « Echo de U Kabala N°3 » (à côté de vos sous-dossiers). Ne renommez pas `CLAUDE.md`.
-2. Ajoutez si possible le PDF du n°2 (et du n°1) dans votre dossier.
-3. Ouvrez Claude Code dans votre dossier et collez le **Prompt 1** de `_CLAUDE_KIT/PROMPTS.md`.
-4. Répondez à ses questions. Quand tout est complet, dites « questions terminées », puis passez au Prompt 2.
+## Une seule fois : installer Claude Code
+- Le plus simple : l'application **Claude pour ordinateur** (claude.ai/download), onglet **Code**.
+- Ou dans un terminal : voir https://code.claude.com/docs (commande d'installation officielle), puis `claude` pour se connecter.
 
-Claude Code ne modifie jamais vos fichiers : il travaille uniquement dans un dossier `20_PRODUCTION` qu'il crée.
+## Préparer le dossier
+1. Téléchargez le dossier Drive « Echo de U Kabala N°3 » sur votre ordinateur (clic droit > Télécharger,
+   puis décompressez), ou utilisez Google Drive pour ordinateur.
+2. Décompressez ce kit et copiez **`CLAUDE.md`** et **`_CLAUDE_KIT`** à la **racine** de ce dossier,
+   à côté de « Activité statutaires », « Croissance & Motivation », etc. Ne renommez pas `CLAUDE.md`.
+3. Évitez de lancer Claude Code directement dans le dossier synchronisé Google Drive : travaillez sur une copie locale.
+
+## Lancer la session
+- **Application :** onglet Code > choisir le dossier « Echo de U Kabala N°3 » > nouvelle session.
+- **Terminal :** `cd` vers le dossier, puis tapez `claude`.
+Collez ensuite le **Prompt 1** de `_CLAUDE_KIT/PROMPTS.md`. Répondez aux questions, dites « questions terminées »,
+puis passez aux prompts suivants dans l'ordre.
+
+## Si la session s'arrête en cours de route
+Ouvrez une nouvelle session dans le même dossier et écrivez :
+`Lis CLAUDE.md et 20_PRODUCTION/, dis-moi où nous en sommes et reprends à l'étape suivante.`
+Tout le travail est enregistré dans `20_PRODUCTION/`, rien n'est perdu.

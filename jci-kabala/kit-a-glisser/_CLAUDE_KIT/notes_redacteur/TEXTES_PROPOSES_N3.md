@@ -10,7 +10,7 @@
 
 Chers membres, observateurs, sympathisants et partenaires de la JCI Universitaire Kabala,
 
-Au terme de ce troisième trimestre, notre organisation a franchi des étapes qui resteront dans son histoire. Pour la première fois, U Kabala a signé un protocole d'accord avec un partenaire, ADM Rénovation. Notre Convention Locale Couplée a validé nos rapports, certifié nos comptes et désigné ceux qui porteront le flambeau en 2027. À Niamey, lors de la Rencontre Inter-Organisations, notre organisation a été honorée par mon élection au poste de Secrétaire Général du CPS-JCI RIO, une responsabilité que je reçois au nom de chacun d'entre vous.
+Au terme de ce troisième trimestre, notre organisation a franchi des étapes qui resteront dans son histoire. Pour la première fois, U Kabala a signé un protocole d'accord avec un partenaire, ADM Rénovation. Notre Convention Locale Couplée a validé nos rapports, certifié nos comptes et désigné ceux qui porteront le flambeau en 2027. À Niamey, lors de la Rencontre Inter-Organisations, notre organisation a été honorée par ma nomination au poste de Secrétaire Général du CPS-JCI RIO, une responsabilité que je reçois au nom de chacun d'entre vous.
 
 Ces résultats ne doivent rien au hasard. Ils sont le fruit de vos tribunes préparées avec soin, de vos formations suivies avec assiduité, de votre présence aux côtés des organisations sœurs et de votre solidarité dans les moments difficiles. Je remercie le Comité Directeur Local pour sa constance, et chaque membre et observateur pour son engagement.
 
@@ -83,7 +83,17 @@ Avant d'entrer en compétition, les candidats ont bénéficié d'une séance de 
 
 ### Concours interne : art oratoire, débat et maîtrise de cérémonie
 
-Annoncé au numéro précédent, le concours interne s'est tenu le **[À COMPLÉTER : date et lieu]**. Dans chacune des trois disciplines, les candidats ont mis à l'épreuve leur aisance, leur argumentation et leur sens de la cérémonie **[À COMPLÉTER : lauréats par discipline, jury]**. Les lauréats ont été récompensés lors de l'AGO N°3.
+Annoncé au numéro précédent, le concours interne s'est tenu le **[À COMPLÉTER : date et lieu]**. Dans chacune des trois disciplines, les candidats ont mis à l'épreuve leur aisance, leur argumentation et leur sens de la cérémonie. Le palmarès :
+
+- **Art oratoire :** l'ami **Ibrahim SAMAKÉ** ;
+- **Débat :** l'équipe conduite par son capitaine, l'ami **Aboubacar Sidiki DIALLO**, avec les amis **Harouna Mahamane TOURÉ** et **Ousmane MOHOMODOU** ;
+- **Maîtrise de cérémonie :** l'amie **Aminata TRAORÉ**.
+
+Les lauréats ont été récompensés lors de l'AGO N°3.
+
+### Deuxième place à la Convention groupée de la Zone 1
+
+Au-delà de nos murs, le talent s'est confirmé : lors de la **Convention groupée de la Zone 1** *[À COMPLÉTER : date et lieu]*, U Kabala a décroché la **deuxième place du concours de maîtrise de cérémonie**, grâce à l'amie **Aminata TRAORÉ**, notre Secrétaire Générale.
 
 Le message de ce trimestre est simple : à U Kabala, le talent se travaille, se mesure et se récompense.
 
@@ -119,7 +129,7 @@ Sous la direction de l'ami **Bouramablen DIAKITÉ**, Directeur chargé de l'Effi
 
 ### Remise de prix à l'AGO N°3
 
-Lors de l'AGO N°3, prix et attestations ont été remis aux membres qui se sont distingués **[À COMPLÉTER : noms et distinctions]**, ainsi qu'aux lauréats du concours interne en art oratoire, débat et maîtrise de cérémonie **[À COMPLÉTER : noms]**.
+Lors de l'AGO N°3, prix et attestations ont été remis aux membres qui se sont distingués **[À COMPLÉTER : noms et distinctions]**, ainsi qu'aux lauréats du concours interne : **Ibrahim SAMAKÉ** (art oratoire), l'équipe d'**Aboubacar Sidiki DIALLO**, **Harouna Mahamane TOURÉ** et **Ousmane MOHOMODOU** (débat) et **Aminata TRAORÉ** (maîtrise de cérémonie).
 
 L'objectif reste inchangé : atteindre l'Efficacité 100 % d'ici la fin du mandat.
 
@@ -177,11 +187,11 @@ La boutique poursuit la vente des pins achetés au trimestre précédent, une ma
 
 ## Coopération internationale
 
-Sous l'impulsion de la Vice-Présidente **Sara FOFANA** et du Directeur du domaine, l'ami **Alhousseïny TOURÉ** *[orthographe à vérifier]*, la JCI Universitaire Kabala a porté ses couleurs au-delà de ses frontières et accueilli ses partenaires étrangers.
+Sous l'impulsion de la Vice-Présidente **Sara FOFANA**, la JCI Universitaire Kabala a porté ses couleurs au-delà de ses frontières et accueilli ses partenaires étrangers.
 
 ### Rencontre Inter-Organisations (RIO) à Niamey
 
-Du **[À COMPLÉTER : dates]**, la JCI Universitaire Kabala était représentée à **Niamey, au Niger**, à la Rencontre Inter-Organisations des organisations universitaires, par son Président, **Alassane DIALLO**, et sa Secrétaire Générale, **Aminata TRAORÉ**. Au cours de cette rencontre, le Président a été **élu Secrétaire Général du Comité de Planification Stratégique de l'Afrique de l'Ouest (CPS-JCI RIO)** *[À vérifier : intitulé exact]*. Une marque de confiance qui place U Kabala au cœur de la dynamique ouest-africaine de la JCI.
+Du **[À COMPLÉTER : dates]**, la JCI Universitaire Kabala était représentée à **Niamey, au Niger**, à la Rencontre Inter-Organisations des organisations universitaires, par son Président, **Alassane DIALLO**, et sa Secrétaire Générale, **Aminata TRAORÉ**. Au cours de cette rencontre, le Président a été **nommé Secrétaire Général du Comité de Planification Stratégique de l'Afrique de l'Ouest (CPS-JCI RIO)** *[À vérifier : intitulé exact]*. Une marque de confiance qui place U Kabala au cœur de la dynamique ouest-africaine de la JCI.
 
 ### Visite officielle de la JCI Conakry Leaders
 

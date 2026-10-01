@@ -14,8 +14,8 @@
 - **Objectif en une phrase :** Représenter U Kabala auprès des organisations universitaires JCI d'Afrique de l'Ouest.
 - **Ce qui s'est passé :**
   - Rencontre internationale tenue à **Niamey, au Niger** (organisation hôte : **[à vérifier]**)
-  - **Temps fort :** le Président Local **Alassane DIALLO** a été **élu Secrétaire Général du Comité de Planification Stratégique de l'Afrique de l'Ouest (CPS JCI RIO)** **[à vérifier : intitulé exact du comité]**
-- **Résultats / chiffres :** Élection du Président Local au bureau du CPS JCI RIO : U Kabala représentée au niveau ouest-africain.
+  - **Temps fort :** le Président Local **Alassane DIALLO** a été **nommé Secrétaire Général du Comité de Planification Stratégique de l'Afrique de l'Ouest (CPS JCI RIO)** **[à vérifier : intitulé exact du comité]**
+- **Résultats / chiffres :** Nomination du Président Local au bureau du CPS JCI RIO : U Kabala représentée au niveau ouest-africain.
 - **Une phrase ou citation marquante (facultatif) :**
 - **Photos :** (à déposer dans `photos/`, marquez ⭐ la meilleure)
 
