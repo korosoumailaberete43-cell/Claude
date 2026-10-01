@@ -2,7 +2,11 @@
 
 Ouvrez Claude Code **dans votre dossier « Echo de U Kabala N°3 »** (celui où vous avez placé `CLAUDE.md` et `_CLAUDE_KIT`).
 Il lit automatiquement `CLAUDE.md` (les règles).
-Envoyez les prompts **un par un**, dans l'ordr## Prompt 1 : inventaire et questions (le plus important)
+Envoyez les prompts **un par un**, dans l'ordre. Ne passez au suivant qu'après avoir validé le résultat.
+
+---
+
+## Prompt 1 : inventaire et questions (le plus important)
 ```
 Lis CLAUDE.md puis tout le dossier, y compris _CLAUDE_KIT. Fais l'étape 0 (inventaire) : rattache chaque document
 et chaque photo à une rubrique du bulletin, regarde les photos, et montre-moi le résultat.
