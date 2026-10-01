@@ -7,14 +7,15 @@
 ### Activité 1
 - **Nom de l'activité :** Rencontre Inter-Organisations des organisations universitaires (RIO)
 - **Date(s) :** **[à vérifier]**
-- **Lieu / format :** **[à vérifier]**
+- **Lieu / format :** Niamey (Niger)
 - **Responsable / directeur(trice) de projet :** **[à vérifier]**
 - **Intervenant(s), animateur(s) ou invité(s) :** Alassane DIALLO (Président Local) et Aminata TRAORÉ (Secrétaire Générale)
 - **Nombre de participants :** 2 représentants de U Kabala
 - **Objectif en une phrase :** Représenter U Kabala auprès des autres organisations universitaires de la JCI Mali.
 - **Ce qui s'est passé :**
-  - Lieu et organisation hôte : **[à vérifier]**
-- **Résultats / chiffres :** 
+  - Rencontre internationale tenue à **Niamey, au Niger** (organisation hôte : **[à vérifier]**)
+  - **Temps fort :** le Président Local **Alassane DIALLO** a été **élu Secrétaire Général du Comité de Planification Stratégique de l'Afrique de l'Ouest (CPS JCI RIO)** **[à vérifier : intitulé exact du comité]**
+- **Résultats / chiffres :** Élection du Président Local au bureau du CPS JCI RIO : U Kabala représentée au niveau ouest-africain.
 - **Une phrase ou citation marquante (facultatif) :**
 - **Photos :** (à déposer dans `photos/`, marquez ⭐ la meilleure)
 
