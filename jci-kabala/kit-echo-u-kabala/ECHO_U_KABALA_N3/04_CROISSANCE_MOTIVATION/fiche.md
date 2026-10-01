@@ -40,6 +40,8 @@
   - Trois (3) réunions de projet de préparation (dates : **[à vérifier]**)
   - Tenue de la convention (date, lieu, OL couplée(s) : **[à vérifier]**)
   - Élection des membres (postes et élus : **[à vérifier]**)
+  - Présentation et **validation du rapport moral et du rapport financier**
+  - **Certification des comptes** par le Commissaire aux comptes, l'ami **Mahamane Abouzéïdi DIALLO**
 - **Résultats / chiffres :** 
 - **Une phrase ou citation marquante (facultatif) :**
 - **Photos :** (à déposer dans `photos/`, marquez ⭐ la meilleure)

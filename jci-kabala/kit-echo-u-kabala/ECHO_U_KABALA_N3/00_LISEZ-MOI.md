@@ -7,7 +7,8 @@
 
 ## Ce que vous devez faire
 1. **Déposer les anciens numéros** (PDF ou images de chaque page) dans `01_REFERENCES/anciens_numeros/`.
-2. **Remplir chaque `fiche.md`** des dossiers `02_` à `14_` (s'ouvre avec le Bloc-notes, VS Code ou Typora).
+2. **Compléter chaque `fiche.md`** des dossiers `02_` à `14_` (s'ouvre avec le Bloc-notes, VS Code ou Typora).
+   Elles sont déjà pré-remplies : il reste surtout les noms, les dates et tout ce qui est marqué **[à vérifier]**.
    - Une rubrique sans activité ce trimestre : écrivez simplement « Aucune activité » en haut de la fiche.
    - Si vous préférez, transmettez un document Word ou des notes vocales transcrites dans le dossier : Claude les lira.
 3. **Déposer les photos** dans le sous-dossier `photos/` de chaque rubrique :
@@ -28,5 +29,6 @@
 - [ ] Anciens numéros déposés
 - [ ] Toutes les fiches remplies (ou marquées « Aucune activité »)
 - [ ] Photos déposées et nommées
-- [ ] Mot du Président fourni (ou ses idées clés)
+- [ ] Nouvelle photo du Président déposée
+- [ ] Logo d'ADM Rénovation déposé dans `13_PARTENAIRES/logos/`
 - [ ] Tableau d'honneur de juillet, août, septembre fourni

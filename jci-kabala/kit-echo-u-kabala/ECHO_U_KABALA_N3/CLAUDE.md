@@ -15,10 +15,13 @@ Réponds toujours en français, simplement.
 |---|---|---|
 | `01_REFERENCES/charte/` | Charte JCI (PDF), `REGLES.md` (résumé), logos officiels | Lecture seule |
 | `01_REFERENCES/anciens_numeros/` | Numéros 1 et 2 (PDF / images) | Lecture seule |
-| `02_…` à `14_…` | Une rubrique du bulletin = un dossier : `fiche.md` (informations) + `photos/` | Lecture seule |
+| `02_…` à `14_…` | Une rubrique du bulletin = un dossier : `fiche.md` (informations) + `photos/` (ou `logos/`) | Lecture seule |
 | `20_PRODUCTION/` | **Ton seul espace de travail** : plans, textes, HTML, PDF, images | Lecture / écriture |
 
-Ordre des rubriques dans le bulletin : celui des numéros des dossiers (02 → 14).
+Ordre des rubriques dans le bulletin : celui des numéros des dossiers (02 → 14) :
+couverture et sommaire, Institutionnel (présentation, mot du Président, équipe de rédaction), puis les réalisations
+du trimestre (03 à 11), Nos Past Présidents (12), **Nos Partenaires (13, page nouvelle, juste avant la galerie)**,
+Galerie photos (14). Il n'y a **pas** de rubrique « Perspectives » ni « Hautes personnalités du mandat ».
 Ne modifie, ne renomme et ne supprime **jamais** un fichier hors de `20_PRODUCTION/`.
 
 ## Règles de contenu (non négociables)
@@ -32,6 +35,12 @@ Ne modifie, ne renomme et ne supprime **jamais** un fichier hors de `20_PRODUCTI
 5. **Thème du mandat 2026 :** « Conviction et engagement : La JCI Universitaire Kabala, creuset d'un leadership jeune
    audacieux et transformateur ».
 6. Une rubrique vide (dossier sans activité) est retirée du bulletin et du sommaire : signale-le, ne la remplis pas.
+   **Exception : Impact Communautaire** reste, en version courte, selon la consigne de sa fiche.
+7. **Mot du Président :** tu rédiges une proposition dans le style du n°2 à partir de la fiche ; elle sera relue
+   et corrigée à la main. Marque-la clairement « PROPOSITION À VALIDER » jusqu'à validation.
+8. **Santé des membres :** parle de soutien et de solidarité, jamais de détail médical.
+9. **Temps forts à mettre en avant** (couverture, mot du Président, encadrés) : élection du Président au
+   CPS JCI RIO à Niamey, premier protocole d'accord (ADM Rénovation), Convention Locale Couplée.
 
 ## Règles de design (charte JCI, voir `01_REFERENCES/charte/REGLES.md`)
 - **Couleurs :** Bleu JCI `#0097D7` (dominant), Noir JCI `#130F2D`, Blanc ; Navy `#1F4789` et Teal `#57BCBC` en appui ;

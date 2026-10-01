@@ -1,46 +1,21 @@
 # Affaires sociales
 
-> Grin party, sorties, anniversaires, événements heureux, solidarité.
-> Remplissez ce qui s'applique, supprimez le reste. Ne laissez pas d'information inventée : si vous ne savez pas, écrivez **« à vérifier »**.
-> Déposez les photos dans le sous-dossier `photos/`, nommées `AAAA-MM-JJ_nom-activite_01.jpg`.
+> Anniversaires, événements heureux et malheureux, solidarité.
+> Pré-rempli à partir des explications orales du rédacteur en chef (1ᵉʳ octobre 2026).
+> Tout ce qui est marqué **[à vérifier]** est à compléter ou corriger avant de lancer Claude Code.
 
-## Vie du groupe
-- **Nombre d'anniversaires célébrés :**
-- **Événements heureux** (mariages, naissances, diplômes, soutenances) :
-- **Solidarité** (maladie, deuil, soutien) — rester discret, sans détail privé :
+## Célébration des vies
+- Publication des **affiches d'anniversaire** des membres tout au long du trimestre.
+- **Nombre d'anniversaires célébrés :** **[à vérifier]**
+- Déposer 2 ou 3 exemples d'affiches dans `photos/`.
 
-## Activités du trimestre
-(Copiez un bloc par activité supplémentaire.)
+## Événements heureux
+- **[à vérifier]** (mariages, naissances, diplômes, soutenances… ou « aucun »)
 
-### Activité 1
-- **Nom de l'activité :**
-- **Date(s) :** (ex. 12/07/2026)
-- **Lieu / format :** (Campus de Kabala, Google Meet…)
-- **Responsable / directeur(trice) de projet :**
-- **Intervenant(s), animateur(s) ou invité(s) :** (Nom complet + titre exact, ex. « Sén. Modibo BA »)
-- **Nombre de participants :** (membres / observateurs / invités)
-- **Objectif en une phrase :**
-- **Ce qui s'est passé (3 à 6 points) :**
-  -
-- **Résultats / chiffres :**
-- **Une phrase ou citation marquante (facultatif) :**
-- **Photos :** (noms des fichiers dans `photos/` + légende courte. Marquez ⭐ la meilleure photo)
-  - `AAAA-MM-JJ_nom-activite_01.jpg` : légende
-
-### Activité 2
-- **Nom de l'activité :**
-- **Date(s) :** (ex. 12/07/2026)
-- **Lieu / format :** (Campus de Kabala, Google Meet…)
-- **Responsable / directeur(trice) de projet :**
-- **Intervenant(s), animateur(s) ou invité(s) :** (Nom complet + titre exact, ex. « Sén. Modibo BA »)
-- **Nombre de participants :** (membres / observateurs / invités)
-- **Objectif en une phrase :**
-- **Ce qui s'est passé (3 à 6 points) :**
-  -
-- **Résultats / chiffres :**
-- **Une phrase ou citation marquante (facultatif) :**
-- **Photos :** (noms des fichiers dans `photos/` + légende courte. Marquez ⭐ la meilleure photo)
-  - `AAAA-MM-JJ_nom-activite_01.jpg` : légende
+## Solidarité (rester sobre : pas de détail médical)
+- Soutien et suivi fraternel de l'ami **Alhousseïny TOURÉ** **[à vérifier]** (orthographe exacte du nom), Directeur du domaine Coopération Internationale, pendant sa maladie.
+- Soutien et suivi fraternel de l'ami **Koro Soumaïla BÉRÊTE**, Directeur Chargé de la Communication, pendant sa maladie.
+- Formulation suggérée : « L'organisation a manifesté sa solidarité et son soutien à … et leur souhaite un complet rétablissement. » **[à vérifier]** (les deux sont-ils rétablis ?)
 
 ## Notes libres
 - 

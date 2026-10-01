@@ -1,41 +1,16 @@
 # Impact communautaire
 
-> Projets citoyens (ex. Safe Plus) : préparation, exécution, résultats.
-> Remplissez ce qui s'applique, supprimez le reste. Ne laissez pas d'information inventée : si vous ne savez pas, écrivez **« à vérifier »**.
-> Déposez les photos dans le sous-dossier `photos/`, nommées `AAAA-MM-JJ_nom-activite_01.jpg`.
+> Pas d'activité réalisée sur le terrain ce trimestre : rubrique courte, tournée vers la suite.
+> Pré-rempli à partir des explications orales du rédacteur en chef (1ᵉʳ octobre 2026).
+> Tout ce qui est marqué **[à vérifier]** est à compléter ou corriger avant de lancer Claude Code.
 
-## Activités du trimestre
-(Copiez un bloc par activité supplémentaire.)
-
-### Activité 1
-- **Nom de l'activité :**
-- **Date(s) :** (ex. 12/07/2026)
-- **Lieu / format :** (Campus de Kabala, Google Meet…)
-- **Responsable / directeur(trice) de projet :**
-- **Intervenant(s), animateur(s) ou invité(s) :** (Nom complet + titre exact, ex. « Sén. Modibo BA »)
-- **Nombre de participants :** (membres / observateurs / invités)
-- **Objectif en une phrase :**
-- **Ce qui s'est passé (3 à 6 points) :**
-  -
-- **Résultats / chiffres :**
-- **Une phrase ou citation marquante (facultatif) :**
-- **Photos :** (noms des fichiers dans `photos/` + légende courte. Marquez ⭐ la meilleure photo)
-  - `AAAA-MM-JJ_nom-activite_01.jpg` : légende
-
-### Activité 2
-- **Nom de l'activité :**
-- **Date(s) :** (ex. 12/07/2026)
-- **Lieu / format :** (Campus de Kabala, Google Meet…)
-- **Responsable / directeur(trice) de projet :**
-- **Intervenant(s), animateur(s) ou invité(s) :** (Nom complet + titre exact, ex. « Sén. Modibo BA »)
-- **Nombre de participants :** (membres / observateurs / invités)
-- **Objectif en une phrase :**
-- **Ce qui s'est passé (3 à 6 points) :**
-  -
-- **Résultats / chiffres :**
-- **Une phrase ou citation marquante (facultatif) :**
-- **Photos :** (noms des fichiers dans `photos/` + légende courte. Marquez ⭐ la meilleure photo)
-  - `AAAA-MM-JJ_nom-activite_01.jpg` : légende
+## Situation du trimestre
+- **Aucune activité concrète réalisée** au 3ᵉ trimestre.
+- **Consigne de rédaction :** garder la rubrique, en version courte (une demi-page au plus), sans inventer d'activité.
+  Message à faire passer : le domaine Impact Communautaire compte tenir les **réunions de projet** nécessaires
+  pour réaliser les **projets définis dans le plan d'action** du mandat, afin de passer à l'action sur le terrain.
+- **Projets du plan d'action concernés (facultatif) :** **[à vérifier]** (ex. Safe Plus ?)
+- **Responsable du domaine (VPIC) :** Diata TRAORÉ **[à vérifier]**
 
 ## Notes libres
 - 
