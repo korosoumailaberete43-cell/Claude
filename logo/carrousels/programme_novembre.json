@@ -1,0 +1,470 @@
+{
+ "_": "Prolongation des deux séries quotidiennes TikTok jusqu'au 10 novembre 2026.",
+ "fuseau": "Atlantic/Reykjavik",
+ "posts": [
+  {
+   "jour": "2026-10-13",
+   "heure": "09:00:00",
+   "id": "J15_anatomie_poutre",
+   "titre": "L'anatomie d'une poutre",
+   "texte": "Les 5 familles d'armatures d'une poutre 🔩 Tu les connais toutes ? 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-10-14",
+   "heure": "09:00:00",
+   "id": "J16_lire_un_plan",
+   "titre": "Comment lire un plan de ferraillage",
+   "texte": "Dans quel ordre lire un plan de ferraillage ? La méthode en 4 étapes 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 6
+  },
+  {
+   "jour": "2026-10-15",
+   "heure": "09:00:00",
+   "id": "J17_acier_beton",
+   "titre": "Pourquoi l'acier et le béton vont ensemble",
+   "texte": "Pourquoi l'acier et le béton forment le meilleur duo du BTP 🔩 Glisse 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 6
+  },
+  {
+   "jour": "2026-10-16",
+   "heure": "09:00:00",
+   "id": "J18_vocabulaire2",
+   "titre": "Le ferraillage en 6 symboles",
+   "texte": "6 symboles du ferraillage, décodés 🔩 Tu les connais tous ? 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 6
+  },
+  {
+   "jour": "2026-10-17",
+   "heure": "09:00:00",
+   "id": "J19_anatomie_poteau",
+   "titre": "L'anatomie d'un poteau",
+   "texte": "Ce qu'il y a vraiment dans un poteau 🔩 Et pourquoi les cadres comptent autant 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 7
+  },
+  {
+   "jour": "2026-10-18",
+   "heure": "09:00:00",
+   "id": "J20_anatomie_dalle",
+   "titre": "L'anatomie d'une dalle",
+   "texte": "Une dalle, ça se ferraille dans quel sens ? 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 7
+  },
+  {
+   "jour": "2026-10-19",
+   "heure": "09:00:00",
+   "id": "J21_anatomie_semelle",
+   "titre": "L'anatomie d'une semelle",
+   "texte": "Une semelle travaille à l'envers d'une poutre. Tu sais pourquoi ? 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 7
+  },
+  {
+   "jour": "2026-10-20",
+   "heure": "09:00:00",
+   "id": "J22_enrobage",
+   "titre": "L'enrobage, expliqué en 6 images",
+   "texte": "L'enrobage : le centimètre invisible qui décide de la durée de vie 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 7
+  },
+  {
+   "jour": "2026-10-21",
+   "heure": "09:00:00",
+   "id": "J23_ancrage_recouvrement",
+   "titre": "Ancrage et recouvrement",
+   "texte": "Ancrage ou recouvrement ? La différence en 1 minute 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 7
+  },
+  {
+   "jour": "2026-10-22",
+   "heure": "09:00:00",
+   "id": "J24_crochets_pliages",
+   "titre": "Crochets et pliages",
+   "texte": "Pourquoi les crochets sont à 135° et pas à 90° ? 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 7
+  },
+  {
+   "jour": "2026-10-23",
+   "heure": "09:00:00",
+   "id": "J25_effort_tranchant",
+   "titre": "L'effort tranchant, sans formule",
+   "texte": "L'effort tranchant expliqué avec un jeu de cartes 🃏 Glisse 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 7
+  },
+  {
+   "jour": "2026-10-24",
+   "heure": "09:00:00",
+   "id": "J26_4_etapes",
+   "titre": "Les 4 étapes d'un plan de ferraillage",
+   "texte": "Les 4 étapes d'un plan de ferraillage — et les 2 qu'on peut automatiser 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 6
+  },
+  {
+   "jour": "2026-10-25",
+   "heure": "09:00:00",
+   "id": "J27_nomenclature",
+   "titre": "La nomenclature, à quoi ça sert",
+   "texte": "La nomenclature : le tableau que personne ne regarde, et qui part à l'atelier 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 7
+  },
+  {
+   "jour": "2026-10-26",
+   "heure": "09:00:00",
+   "id": "J28_checklist2",
+   "titre": "7 points à vérifier avant de rendre",
+   "texte": "7 points à vérifier avant de rendre un plan de ferraillage ✅ Enregistre 📌\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 9
+  },
+  {
+   "jour": "2026-10-27",
+   "heure": "09:00:00",
+   "id": "J29_cout_du_temps",
+   "titre": "Ce que coûte vraiment le dessin",
+   "texte": "80 % du temps d'un plan de ferraillage, c'est du dessin. Pas du calcul 😮‍💨👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 7
+  },
+  {
+   "jour": "2026-10-28",
+   "heure": "09:00:00",
+   "id": "J30_v1",
+   "titre": "Ce que fait la première version",
+   "texte": "Ce que fait réellement la v1 de CivRebar AI 🔩 Sans promesse en l'air 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 7
+  },
+  {
+   "jour": "2026-10-29",
+   "heure": "09:00:00",
+   "id": "J31_ce_qu_il_ne_fera_pas",
+   "titre": "Ce qu'il ne fera jamais",
+   "texte": "Ce que CivRebar AI ne fera jamais. Et pourquoi c'est une bonne nouvelle 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 7
+  },
+  {
+   "jour": "2026-10-30",
+   "heure": "09:00:00",
+   "id": "J32_autolisp",
+   "titre": "AutoLISP, c'est quoi ?",
+   "texte": "AutoLISP : le langage caché d'AutoCAD, et le point de départ de CivRebar 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 7
+  },
+  {
+   "jour": "2026-10-31",
+   "heure": "09:00:00",
+   "id": "J33_pourquoi_autocad",
+   "titre": "Pourquoi AutoCAD et pas autre chose",
+   "texte": "Pourquoi CivRebar vit dans AutoCAD, et pas ailleurs 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 7
+  },
+  {
+   "jour": "2026-11-01",
+   "heure": "09:00:00",
+   "id": "J34_avant_apres",
+   "titre": "Avant / après",
+   "texte": "La même poutre, deux méthodes. Ce qui change vraiment 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 6
+  },
+  {
+   "jour": "2026-11-02",
+   "heure": "09:00:00",
+   "id": "J35_faq",
+   "titre": "Vos questions, nos réponses",
+   "texte": "Vos 4 questions les plus fréquentes sur CivRebar AI, et nos réponses 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 6
+  },
+  {
+   "jour": "2026-11-03",
+   "heure": "09:00:00",
+   "id": "J36_poteau_court",
+   "titre": "Le poteau court, ce piège discret",
+   "texte": "Le poteau court : une allège, et le poteau devient dangereux 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 7
+  },
+  {
+   "jour": "2026-11-04",
+   "heure": "09:00:00",
+   "id": "J37_tremies",
+   "titre": "Trémies et réservations",
+   "texte": "Comment ferrailler autour d'une trémie dans une dalle 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 7
+  },
+  {
+   "jour": "2026-11-05",
+   "heure": "09:00:00",
+   "id": "J38_du_plan_au_chantier",
+   "titre": "Du plan au chantier : qui lit quoi",
+   "texte": "Ton plan part. Qui va vraiment le lire ? 4 métiers, 4 lectures 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 6
+  },
+  {
+   "jour": "2026-11-06",
+   "heure": "09:00:00",
+   "id": "J39_symbole",
+   "titre": "Les quatre parties de notre symbole",
+   "texte": "Notre logo n'est pas un R. C'est une barre d'acier façonnée 🔩 Glisse 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 7
+  },
+  {
+   "jour": "2026-11-07",
+   "heure": "09:00:00",
+   "id": "J40_quiz2",
+   "titre": "Quiz : le sens de portée",
+   "texte": "QUIZ 🧠 Dalle de 3 × 6 m sur deux appuis : les aciers vont dans quel sens ? 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 7
+  },
+  {
+   "jour": "2026-11-08",
+   "heure": "09:00:00",
+   "id": "J41_erreurs_couteuses",
+   "titre": "Les 5 erreurs les plus coûteuses",
+   "texte": "Les 5 erreurs de ferraillage les plus coûteuses, classées 👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-11-09",
+   "heure": "09:00:00",
+   "id": "J42_bilan",
+   "titre": "Un mois de publications",
+   "texte": "Un mois de publications : le bilan, et la suite 🔩👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 6
+  },
+  {
+   "jour": "2026-11-10",
+   "heure": "09:00:00",
+   "id": "J43_testeurs",
+   "titre": "Rejoins les premiers testeurs",
+   "texte": "On cherche les premiers testeurs de CivRebar AI. Écris « TESTEUR » 📩👉\n\n#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 7
+  },
+  {
+   "jour": "2026-10-13",
+   "heure": "20:00:00",
+   "id": "TE15_poteau_cadres",
+   "titre": "Trouve l'erreur n° 15",
+   "texte": "🔍 TROUVE L'ERREUR n° 15 : un poteau, un détail que beaucoup oublient. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-10-14",
+   "heure": "20:00:00",
+   "id": "TE16_poteau_enrobage",
+   "titre": "Trouve l'erreur n° 16",
+   "texte": "🔍 TROUVE L'ERREUR n° 16 : une coupe de poteau, un détail invisible après coulage. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-10-15",
+   "heure": "20:00:00",
+   "id": "TE17_noeud",
+   "titre": "Trouve l'erreur n° 17",
+   "texte": "🔍 TROUVE L'ERREUR n° 17 : une jonction poutre-poteau, un oubli fréquent. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-10-16",
+   "heure": "20:00:00",
+   "id": "TE18_poteau_recouv",
+   "titre": "Trouve l'erreur n° 18",
+   "texte": "🔍 TROUVE L'ERREUR n° 18 : un poteau, un recouvrement mal placé. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-10-17",
+   "heure": "20:00:00",
+   "id": "TE19_voile",
+   "titre": "Trouve l'erreur n° 19",
+   "texte": "🔍 TROUVE L'ERREUR n° 19 : un voile, une nappe qui manque. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-10-18",
+   "heure": "20:00:00",
+   "id": "TE20_tremie",
+   "titre": "Trouve l'erreur n° 20",
+   "texte": "🔍 TROUVE L'ERREUR n° 20 : une dalle percée, un renfort oublié. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-10-19",
+   "heure": "20:00:00",
+   "id": "TE21_linteau",
+   "titre": "Trouve l'erreur n° 21",
+   "texte": "🔍 TROUVE L'ERREUR n° 21 : un linteau, un appui qui pose question. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-10-20",
+   "heure": "20:00:00",
+   "id": "TE22_longrine",
+   "titre": "Trouve l'erreur n° 22",
+   "texte": "🔍 TROUVE L'ERREUR n° 22 : une longrine, une coupure au mauvais endroit. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-10-21",
+   "heure": "20:00:00",
+   "id": "TE23_radier",
+   "titre": "Trouve l'erreur n° 23",
+   "texte": "🔍 TROUVE L'ERREUR n° 23 : un radier, un sens de travail souvent inversé. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-10-22",
+   "heure": "20:00:00",
+   "id": "TE24_souten",
+   "titre": "Trouve l'erreur n° 24",
+   "texte": "🔍 TROUVE L'ERREUR n° 24 : un mur de soutènement, un acier mal placé. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-10-23",
+   "heure": "20:00:00",
+   "id": "TE25_poteau_court",
+   "titre": "Trouve l'erreur n° 25",
+   "texte": "🔍 TROUVE L'ERREUR n° 25 : un poteau coincé entre deux allèges. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-10-24",
+   "heure": "20:00:00",
+   "id": "TE26_reprise",
+   "titre": "Trouve l'erreur n° 26",
+   "texte": "🔍 TROUVE L'ERREUR n° 26 : un arrêt de bétonnage, une préparation oubliée. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-10-25",
+   "heure": "20:00:00",
+   "id": "TE27_epingles",
+   "titre": "Trouve l'erreur n° 27",
+   "texte": "🔍 TROUVE L'ERREUR n° 27 : une poutre large, des barres livrées à elles-mêmes. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-10-26",
+   "heure": "20:00:00",
+   "id": "TE28_treillis",
+   "titre": "Trouve l'erreur n° 28",
+   "texte": "🔍 TROUVE L'ERREUR n° 28 : deux panneaux de treillis, un chevauchement douteux. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-10-27",
+   "heure": "20:00:00",
+   "id": "TE29_porte_faux",
+   "titre": "Trouve l'erreur n° 29",
+   "texte": "🔍 TROUVE L'ERREUR n° 29 : un balcon, des chapeaux un peu courts. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-10-28",
+   "heure": "20:00:00",
+   "id": "TE30_sens_dalle",
+   "titre": "Trouve l'erreur n° 30",
+   "texte": "🔍 TROUVE L'ERREUR n° 30 : une dalle, un sens de portée inversé. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-10-29",
+   "heure": "20:00:00",
+   "id": "TE31_pliage",
+   "titre": "Trouve l'erreur n° 31",
+   "texte": "🔍 TROUVE L'ERREUR n° 31 : une barre pliée, un angle qui interroge. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-10-30",
+   "heure": "20:00:00",
+   "id": "TE32_about",
+   "titre": "Trouve l'erreur n° 32",
+   "texte": "🔍 TROUVE L'ERREUR n° 32 : une extrémité de poutre, un ancrage absent. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-10-31",
+   "heure": "20:00:00",
+   "id": "TE33_cale_dalle",
+   "titre": "Trouve l'erreur n° 33",
+   "texte": "🔍 TROUVE L'ERREUR n° 33 : une dalle prête à couler, un détail au sol. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-11-01",
+   "heure": "20:00:00",
+   "id": "TE34_nappe_semelle",
+   "titre": "Trouve l'erreur n° 34",
+   "texte": "🔍 TROUVE L'ERREUR n° 34 : une semelle, une nappe mal positionnée. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-11-02",
+   "heure": "20:00:00",
+   "id": "TE35_fiche",
+   "titre": "Trouve l'erreur n° 35",
+   "texte": "🔍 TROUVE L'ERREUR n° 35 : une poutre de rive, une valeur qui ne colle pas. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-11-03",
+   "heure": "20:00:00",
+   "id": "TE36_fiche",
+   "titre": "Trouve l'erreur n° 36",
+   "texte": "🔍 TROUVE L'ERREUR n° 36 : une fiche de poutre, un espacement surprenant. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-11-04",
+   "heure": "20:00:00",
+   "id": "TE37_fiche",
+   "titre": "Trouve l'erreur n° 37",
+   "texte": "🔍 TROUVE L'ERREUR n° 37 : une reprise de poteau, une longueur douteuse. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-11-05",
+   "heure": "20:00:00",
+   "id": "TE38_fiche",
+   "titre": "Trouve l'erreur n° 38",
+   "texte": "🔍 TROUVE L'ERREUR n° 38 : une fiche de poutre, un type d'acier inattendu. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-11-06",
+   "heure": "20:00:00",
+   "id": "TE39_fiche",
+   "titre": "Trouve l'erreur n° 39",
+   "texte": "🔍 TROUVE L'ERREUR n° 39 : une poutre très longue, une section très fine. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-11-07",
+   "heure": "20:00:00",
+   "id": "TE40_fiche",
+   "titre": "Trouve l'erreur n° 40",
+   "texte": "🔍 TROUVE L'ERREUR n° 40 : une poutre étroite, des barres trop nombreuses. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-11-08",
+   "heure": "20:00:00",
+   "id": "TE41_fiche",
+   "titre": "Trouve l'erreur n° 41",
+   "texte": "🔍 TROUVE L'ERREUR n° 41 : un poteau, deux diamètres inversés. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-11-09",
+   "heure": "20:00:00",
+   "id": "TE42_fiche",
+   "titre": "Trouve l'erreur n° 42",
+   "texte": "🔍 TROUVE L'ERREUR n° 42 : une nomenclature, un numéro en double. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  },
+  {
+   "jour": "2026-11-10",
+   "heure": "20:00:00",
+   "id": "TE43_fiche",
+   "titre": "Trouve l'erreur n° 43",
+   "texte": "🔍 TROUVE L'ERREUR n° 43 : un récapitulatif, un total qui ne tombe pas juste. Réponds en commentaire AVANT de glisser 👀\n\n#TrouveLErreur #GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI",
+   "affiches": 8
+  }
+ ]
+}

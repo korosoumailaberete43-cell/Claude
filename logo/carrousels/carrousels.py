@@ -371,8 +371,10 @@ def build(posts):
                 jobs.append(f"{f}|{d / fmt / f'{i + 1:02d}.png'}|{W}|{H}")
         (d / "legendes.txt").write_text(captions(p))
     env = {**os.environ, "NODE_PATH": subprocess.run(["npm", "root", "-g"], capture_output=True, text=True).stdout.strip()}
-    for k in range(0, len(jobs), 40):
-        subprocess.run(["node", str(HERE.parent / "src" / "render_png.js"), *jobs[k:k + 40]], check=True, env=env)
+    if os.environ.get("REPRENDRE"):   # ne refait que les affiches manquantes
+        jobs = [j for j in jobs if not pathlib.Path(j.split("|")[1]).exists()]
+    for k in range(0, len(jobs), 16):
+        subprocess.run(["node", str(HERE.parent / "src" / "render_png.js"), *jobs[k:k + 16]], check=True, env=env)
     for f in tmp.iterdir():
         f.unlink()
     tmp.rmdir()
