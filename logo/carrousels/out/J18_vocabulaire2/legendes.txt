@@ -1,0 +1,38 @@
+=== TIKTOK (mode photo) ===
+6 symboles du ferraillage, décodés 🔩 Tu les connais tous ? 👉
+
+#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI
+
+=== FACEBOOK / INSTAGRAM ===
+Le décodeur du plan de ferraillage 📐
+
+Ø : le diamètre d'une barre
+HA : barre à haute adhérence
+e : espacement entre cadres
+ls : longueur de recouvrement
+lb : longueur d'ancrage
+c : enrobage
+
+« 3 HA20 » → 3 barres à haute adhérence de 20 mm.
+« HA8 e = 15 » → cadres HA8 tous les 15 cm.
+
+💬 Lequel t'a posé problème au début ?
+
+#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #CivRebarAI
+
+=== LINKEDIN (joindre LinkedIn.pdf comme document) ===
+Le décodeur du plan de ferraillage 📐
+
+Ø : le diamètre d'une barre
+HA : barre à haute adhérence
+e : espacement entre cadres
+ls : longueur de recouvrement
+lb : longueur d'ancrage
+c : enrobage
+
+« 3 HA20 » → 3 barres à haute adhérence de 20 mm.
+« HA8 e = 15 » → cadres HA8 tous les 15 cm.
+
+💬 Lequel t'a posé problème au début ?
+
+#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP

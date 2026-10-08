@@ -229,9 +229,12 @@ def slide_html(post, s, i, n, fmt):
 <div class="cmp bad"><div class="tag">{esc(s.get("a_label", "Mythe"))}</div><p>{esc(s["a"])}</p></div>
 <div class="cmp good"><div class="tag">{esc(s.get("b_label", "Réalité"))}</div><p>{esc(s["b"])}</p></div>"""
     elif kind == "fields":
-        rows = "".join(f'<div class="row"><span>{esc(k)}</span><b>{esc(v)}</b></div>' for k, v in s["fields"])
+        bad = s.get("bad")
+        st = f' style="color:{ALERTE}"'
+        rows = "".join(f'<div class="row"><span>{esc(k)}</span><b{st if j == bad else ""}>{esc(v)}</b></div>'
+                       for j, (k, v) in enumerate(s["fields"]))
         main = f"""{f'<div class="num">{esc(s["num"])}</div>' if s.get("num") else ""}<h2>{esc(s["title"])}</h2>
-<div class="panel"><div class="ph">CIVREBAR AI · POUTRE</div>{rows}{f'<div class="btn">{esc(s["button"])}</div>' if s.get("button") else ""}</div>
+<div class="panel"><div class="ph">{esc(s.get("ph", "CIVREBAR AI · POUTRE"))}</div>{rows}{f'<div class="btn">{esc(s["button"])}</div>' if s.get("button") else ""}</div>
 {f'<p class="body">{esc(s["body"])}</p>' if s.get("body") else ""}"""
     elif kind == "beam":
         main = f"""{f'<div class="num">{esc(s["num"])}</div>' if s.get("num") else ""}<h2>{esc(s["title"])}</h2>
