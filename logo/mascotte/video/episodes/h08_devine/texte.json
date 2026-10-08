@@ -1,0 +1,32 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Une poutre : trente sur soixante, portée cinq mètres quarante."
+  ],
+  [
+   "compte",
+   "Combien de temps pour la ferrailler ? Réponds dans ta tête."
+  ],
+  [
+   "verdict",
+   "À la main ? Entre trente minutes et une heure. Sans te tromper."
+  ],
+  [
+   "twist",
+   "Et si ça tenait… dans le temps d'un café ?"
+  ],
+  [
+   "civrebar",
+   "CivRebar AI dessine les barres, les cadres, les cotes et les repères."
+  ],
+  [
+   "fin",
+   "Abonne-toi, je te montre tout."
+  ]
+ ],
+ "pauses": {
+  "compte": 3.2
+ },
+ "fin": 2.6
+}

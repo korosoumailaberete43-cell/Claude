@@ -1,0 +1,33 @@
+{
+ "segments": [
+  [
+   "hook",
+   "On m'a dit que c'était impossible."
+  ],
+  [
+   "suspense",
+   "Un outil de ferraillage… fait ici, par nous."
+  ],
+  [
+   "histoire",
+   "Pas acheté. Pas copié. Écrit ligne par ligne, pour nos poutres, nos normes, nos chantiers."
+  ],
+  [
+   "etat",
+   "Aujourd'hui, la poutre fonctionne. Les poteaux, les dalles et les semelles arrivent."
+  ],
+  [
+   "civrebar",
+   "CivRebar AI : l'intelligence de l'armature."
+  ],
+  [
+   "fin",
+   "Abonne-toi, et regarde-nous faire."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.8,
+  "suspense": 0.7
+ },
+ "fin": 2.6
+}

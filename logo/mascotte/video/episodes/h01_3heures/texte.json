@@ -1,0 +1,32 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Hier, tu as perdu trois heures de ta vie."
+  ],
+  [
+   "suspense",
+   "Et tu ne t'en es même pas rendu compte…"
+  ],
+  [
+   "reveal",
+   "Trois heures à dessiner des barres, des cadres et des cotes. À la main."
+  ],
+  [
+   "chiffre",
+   "Sur une année, ça fait plus de trente journées de travail. Perdues."
+  ],
+  [
+   "civrebar",
+   "CivRebar AI fait ce travail dans AutoCAD… en quelques secondes."
+  ],
+  [
+   "fin",
+   "Abonne-toi, et récupère ton temps."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.75
+ },
+ "fin": 2.6
+}

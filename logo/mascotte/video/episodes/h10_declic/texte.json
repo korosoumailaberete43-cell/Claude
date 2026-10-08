@@ -1,0 +1,32 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Pendant des années, j'ai cru que j'étais lent."
+  ],
+  [
+   "suspense",
+   "Jusqu'au jour où j'ai compté."
+  ],
+  [
+   "compte",
+   "Sur un plan de ferraillage, quatre-vingts pour cent du temps, c'est du dessin. Pas du calcul."
+  ],
+  [
+   "declic",
+   "Le problème, ce n'était pas moi. C'était l'outil."
+  ],
+  [
+   "civrebar",
+   "Alors on en a fabriqué un autre : CivRebar AI, dans AutoCAD."
+  ],
+  [
+   "fin",
+   "Abonne-toi, c'est une histoire qui commence."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.8
+ },
+ "fin": 2.6
+}

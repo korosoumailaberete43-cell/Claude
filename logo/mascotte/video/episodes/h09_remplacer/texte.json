@@ -1,0 +1,33 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Est-ce que l'intelligence artificielle va remplacer l'ingénieur ?"
+  ],
+  [
+   "suspense",
+   "Je vais te donner la vraie réponse."
+  ],
+  [
+   "non",
+   "Non. Et ça n'arrivera pas."
+  ],
+  [
+   "pourquoi",
+   "Parce que la machine calcule… mais elle ne porte rien. C'est l'ingénieur qui décide, et qui signe le plan."
+  ],
+  [
+   "civrebar",
+   "CivRebar AI ne prend pas ta place. Il prend ton travail répétitif."
+  ],
+  [
+   "fin",
+   "Abonne-toi, et garde la main."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.8,
+  "suspense": 0.9
+ },
+ "fin": 2.6
+}

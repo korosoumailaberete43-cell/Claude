@@ -1,0 +1,32 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Ne regarde pas cette vidéo si tu dessines encore ton ferraillage à la main."
+  ],
+  [
+   "suspense",
+   "Parce qu'après… tu ne pourras plus."
+  ],
+  [
+   "probleme",
+   "Barre par barre. Cadre par cadre. Cote par cote. Poutre après poutre."
+  ],
+  [
+   "reveal",
+   "Pendant ce temps, l'ordinateur à côté de toi… ne fait rien."
+  ],
+  [
+   "civrebar",
+   "CivRebar AI, lui, travaille. Dans AutoCAD. Pendant que tu réfléchis."
+  ],
+  [
+   "fin",
+   "Abonne-toi, tu ne pourras plus revenir en arrière."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.7
+ },
+ "fin": 2.6
+}

@@ -1,0 +1,33 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Regarde bien cette barre."
+  ],
+  [
+   "zoom",
+   "Encore. Plus près."
+  ],
+  [
+   "detail",
+   "Son crochet est trop court. Deux centimètres de moins que l'ancrage demandé."
+  ],
+  [
+   "consequence",
+   "Sur le papier, personne ne le voit. Sous charge, la barre glisse."
+  ],
+  [
+   "civrebar",
+   "CivRebar AI dessine les ancrages à la bonne longueur. À chaque fois."
+  ],
+  [
+   "fin",
+   "Abonne-toi, on regarde les détails ensemble."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.7,
+  "zoom": 1.1
+ },
+ "fin": 2.6
+}

@@ -1,0 +1,33 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Un trait oublié sur un plan…"
+  ],
+  [
+   "suspense",
+   "et c'est tout un plancher qu'il faut reprendre."
+  ],
+  [
+   "histoire",
+   "Un enrobage trop faible, un cadre mal espacé : ça ne se voit pas à l'écran. Ça se voit sur le chantier."
+  ],
+  [
+   "verite",
+   "Et là, ça ne coûte plus des heures. Ça coûte des millions."
+  ],
+  [
+   "civrebar",
+   "CivRebar AI applique la règle à chaque barre. Sans fatigue, sans oubli."
+  ],
+  [
+   "fin",
+   "Abonne-toi… avant ton prochain plan."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.6,
+  "suspense": 0.9
+ },
+ "fin": 2.6
+}

@@ -1,0 +1,32 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Une poutre. Deux méthodes. Un chronomètre."
+  ],
+  [
+   "defi",
+   "À ta montre : combien de temps pour la ferrailler ?"
+  ],
+  [
+   "main",
+   "À la main : le coffrage, les barres, les cadres, les cotes, les repères… quarante minutes."
+  ],
+  [
+   "auto",
+   "Avec CivRebar : tu donnes la section, la portée, les armatures."
+  ],
+  [
+   "civrebar",
+   "Huit secondes. Et le plan est dessiné dans AutoCAD."
+  ],
+  [
+   "fin",
+   "Abonne-toi, la suite arrive demain."
+  ]
+ ],
+ "pauses": {
+  "defi": 0.8
+ },
+ "fin": 2.6
+}

@@ -1,0 +1,33 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Certains bureaux d'études rendent trois fois plus de plans que les autres."
+  ],
+  [
+   "suspense",
+   "Ils ne travaillent pas plus. Ils ne sont pas plus nombreux."
+  ],
+  [
+   "reveal",
+   "Ils ont arrêté de redessiner la même chose… cent fois."
+  ],
+  [
+   "explique",
+   "Parce qu'une poutre, c'est toujours la même logique. Seuls les chiffres changent."
+  ],
+  [
+   "civrebar",
+   "C'est exactement ce que fait CivRebar AI, directement dans AutoCAD."
+  ],
+  [
+   "fin",
+   "Abonne-toi, et passe de l'autre côté."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.7,
+  "suspense": 0.8
+ },
+ "fin": 2.6
+}

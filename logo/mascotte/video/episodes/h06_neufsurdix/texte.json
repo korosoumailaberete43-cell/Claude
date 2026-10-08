@@ -1,0 +1,32 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Neuf ingénieurs sur dix ratent cette erreur."
+  ],
+  [
+   "question",
+   "Regarde bien cette poutre. Tu la vois ?"
+  ],
+  [
+   "reponse",
+   "Les cadres sont espacés de la même façon… du début à la fin."
+  ],
+  [
+   "regle",
+   "Mais l'effort tranchant, lui, est maximal aux appuis. Là-bas, il faut serrer."
+  ],
+  [
+   "civrebar",
+   "CivRebar AI calcule l'espacement, zone par zone. Automatiquement."
+  ],
+  [
+   "fin",
+   "Abonne-toi, et ne la rate plus jamais."
+  ]
+ ],
+ "pauses": {
+  "question": 2.6
+ },
+ "fin": 2.6
+}

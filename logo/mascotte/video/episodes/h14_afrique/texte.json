@@ -1,0 +1,32 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Le premier outil de ferraillage pensé ici, pour nos chantiers."
+  ],
+  [
+   "fierte",
+   "Pas une traduction. Pas une version allégée. Le vrai."
+  ],
+  [
+   "preuve",
+   "Nos sections, nos aciers, nos habitudes de dessin. Et nos délais."
+  ],
+  [
+   "suite",
+   "On commence par la poutre. Ensuite, tout le bâtiment y passera."
+  ],
+  [
+   "civrebar",
+   "CivRebar AI. L'intelligence de l'armature."
+  ],
+  [
+   "fin",
+   "Abonne-toi, et sois là au lancement."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.8
+ },
+ "fin": 2.6
+}

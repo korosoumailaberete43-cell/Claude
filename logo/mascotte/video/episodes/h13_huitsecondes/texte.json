@@ -1,0 +1,33 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Voilà ce que CivRebar AI fait en huit secondes."
+  ],
+  [
+   "attente",
+   "Regarde l'écran, ne cligne pas."
+  ],
+  [
+   "demo",
+   "Les barres filantes. Les chapeaux. Les cadres. Les cotes. Et les repères."
+  ],
+  [
+   "precision",
+   "Tout est à l'échelle, coté, et prêt à imprimer."
+  ],
+  [
+   "civrebar",
+   "Et toi, pendant ce temps-là… tu vérifies. C'est ton métier."
+  ],
+  [
+   "fin",
+   "Abonne-toi, la démonstration continue."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.8,
+  "attente": 1.0
+ },
+ "fin": 2.6
+}

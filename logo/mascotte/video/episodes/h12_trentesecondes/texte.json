@@ -1,0 +1,32 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Dans trente secondes, tu sauras pourquoi ce projet existe."
+  ],
+  [
+   "constat",
+   "Parce qu'en Afrique, on construit vite. Et on ferraille encore à la main."
+  ],
+  [
+   "conséquence",
+   "Des heures perdues. Des erreurs qui partent sur le chantier. Et personne pour les rattraper."
+  ],
+  [
+   "reponse",
+   "Alors on a écrit l'outil qui manquait."
+  ],
+  [
+   "civrebar",
+   "CivRebar AI : le ferraillage, directement dans AutoCAD."
+  ],
+  [
+   "fin",
+   "Abonne-toi, les trente secondes sont écoulées."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.7
+ },
+ "fin": 2.6
+}

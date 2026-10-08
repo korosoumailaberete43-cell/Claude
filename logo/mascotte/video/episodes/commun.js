@@ -78,7 +78,15 @@ export function finCivrebar(t, segCiv, badge = 'BIENTÔT DANS AUTOCAD') {
   glow(W / 2, 340, 420, COL.signal, 0.18 * a);
   ctx.save(); ctx.translate(W / 2, 330); ctx.scale(k * 0.95, k * 0.95); ctx.translate(-W / 2, -330); lockup(W / 2, 330, 1, a); ctx.restore();
   const kb = prog(t, t0 + 0.9, t0 + 1.2);
-  if (kb > 0) { ctx.save(); ctx.globalAlpha = a * kb; roundRect(W / 2 - 300, 560, 600, 62, 31, null, COL.cuivre, 3); txt(badge, W / 2, 602, font(700, 30), COL.cuivreC, { track: 3 }); ctx.restore(); }
+  if (kb > 0) { // le cadre s'ajuste à la longueur du badge
+    ctx.save(); ctx.globalAlpha = a * kb;
+    const taille = badge.length > 30 ? 26 : 30;
+    ctx.font = font(700, taille); ctx.letterSpacing = '3px';
+    const lb = Math.min(W - 120, ctx.measureText(badge).width + 60);
+    roundRect(W / 2 - lb / 2, 560, lb, 62, 31, null, COL.cuivre, 3);
+    txt(badge, W / 2, 602, font(700, taille), COL.cuivreC, { track: 3 });
+    ctx.restore();
+  }
 }
 export function abonne(t, tb) {
   const k = prog(t, tb, tb + 0.35);
