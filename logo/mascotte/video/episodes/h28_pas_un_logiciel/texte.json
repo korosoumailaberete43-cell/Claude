@@ -1,0 +1,33 @@
+{
+ "segments": [
+  [
+   "hook",
+   "On aurait pu faire un logiciel."
+  ],
+  [
+   "suspense",
+   "On a fait exactement l'inverse."
+  ],
+  [
+   "pourquoi",
+   "Parce qu'un logiciel de plus, c'est une licence de plus, un apprentissage de plus, un format de plus."
+  ],
+  [
+   "choix",
+   "Alors CivRebar AI vit dans AutoCAD. Celui que tu as déjà ouvert."
+  ],
+  [
+   "civrebar",
+   "Pas d'export. Pas d'import. Tu ne quittes pas ton dessin."
+  ],
+  [
+   "fin",
+   "Abonne-toi, et reste chez toi."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.8,
+  "suspense": 0.7
+ },
+ "fin": 2.6
+}

@@ -3,7 +3,7 @@ import * as THREE from 'three';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { createTonton } from './tonton.js';
 
-export function createStudio(w, h, { ground = true } = {}) {
+export function createStudio(w, h, { ground = true, ombres = 2048 } = {}) {
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, preserveDrawingBuffer: true });
   renderer.setPixelRatio(1); renderer.setSize(w, h);
   renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -18,7 +18,7 @@ export function createStudio(w, h, { ground = true } = {}) {
 
   const key = new THREE.DirectionalLight(0xfff1e0, 2.4);
   key.position.set(2.2, 4.5, 3.2); key.castShadow = true;
-  key.shadow.mapSize.set(2048, 2048); key.shadow.radius = 6; key.shadow.bias = -0.0004;
+  key.shadow.mapSize.set(ombres, ombres); key.shadow.radius = 6; key.shadow.bias = -0.0004;
   Object.assign(key.shadow.camera, { left: -2, right: 2, top: 3.2, bottom: -0.5, near: 0.5, far: 12 });
   scene.add(key);
   const rim = new THREE.DirectionalLight(0x9fe8f0, 0.8); rim.position.set(-3, 3, -3); scene.add(rim);

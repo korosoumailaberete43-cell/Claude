@@ -1,0 +1,32 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Ils ont percé la dalle après coup."
+  ],
+  [
+   "suspense",
+   "Et personne n'a renforcé le trou."
+  ],
+  [
+   "probleme",
+   "Une trémie coupe des barres. Et une barre coupée ne porte plus rien."
+  ],
+  [
+   "regle",
+   "Il faut un chevêtre sur les quatre côtés, et des barres en diagonale dans les angles."
+  ],
+  [
+   "civrebar",
+   "CivRebar AI dessinera les renforts de trémie avec la dalle."
+  ],
+  [
+   "fin",
+   "Abonne-toi, et anticipe tes réservations."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.8
+ },
+ "fin": 2.6
+}

@@ -1,0 +1,32 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Ce tableau, personne ne le regarde."
+  ],
+  [
+   "suspense",
+   "Et pourtant, c'est lui qui part à l'atelier."
+  ],
+  [
+   "role",
+   "Le ferrailleur ne voit jamais ta poutre. Il ne voit que des repères et des longueurs."
+  ],
+  [
+   "risque",
+   "Un repère en double, un total faux… et c'est le chantier qui s'arrête."
+  ],
+  [
+   "civrebar",
+   "CivRebar AI génère la nomenclature avec le dessin. Les deux restent d'accord."
+  ],
+  [
+   "fin",
+   "Abonne-toi, on parle du vrai métier."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.8
+ },
+ "fin": 2.6
+}

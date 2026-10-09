@@ -1,0 +1,32 @@
+{
+ "segments": [
+  [
+   "hook",
+   "On cherche dix personnes."
+  ],
+  [
+   "qui",
+   "Pas dix spectateurs. Dix ingénieurs qui dessinent vraiment du ferraillage."
+  ],
+  [
+   "quoi",
+   "Tu testes sur une poutre de ton choix. Et tu nous dis franchement ce qui ne va pas."
+  ],
+  [
+   "gain",
+   "En échange : l'accès avant tout le monde, et une vraie influence sur l'outil."
+  ],
+  [
+   "civrebar",
+   "Écris-nous le mot testeur, en commentaire ou en message."
+  ],
+  [
+   "fin",
+   "Abonne-toi, on revient vers toi."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.8
+ },
+ "fin": 2.6
+}

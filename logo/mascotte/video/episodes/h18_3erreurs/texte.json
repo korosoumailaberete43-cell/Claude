@@ -1,0 +1,32 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Trois erreurs. Sur neuf plans sur dix."
+  ],
+  [
+   "une",
+   "Numéro un : les cadres espacés pareil du début à la fin."
+  ],
+  [
+   "deux",
+   "Numéro deux : les chapeaux oubliés au-dessus d'un appui."
+  ],
+  [
+   "trois",
+   "Numéro trois : une barre tendue qui s'arrête net, sans ancrage."
+  ],
+  [
+   "civrebar",
+   "Ces trois-là, CivRebar AI t'aidera à les voir avant le chantier."
+  ],
+  [
+   "fin",
+   "Abonne-toi, et dis-moi laquelle tu rates le plus."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.8
+ },
+ "fin": 2.6
+}

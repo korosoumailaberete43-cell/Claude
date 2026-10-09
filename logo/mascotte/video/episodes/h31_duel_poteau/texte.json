@@ -1,0 +1,32 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Un poteau. Deux méthodes."
+  ],
+  [
+   "defi",
+   "Trente sur trente, quatre niveaux, cadres resserrés en tête et en pied."
+  ],
+  [
+   "main",
+   "À la main : le fût, les barres, les cadres zone par zone, les recouvrements, les cotes. Trente minutes."
+  ],
+  [
+   "auto",
+   "Avec CivRebar : tu donnes la section, la hauteur et les armatures."
+  ],
+  [
+   "civrebar",
+   "Quelques secondes. Et les zones critiques sont déjà resserrées."
+  ],
+  [
+   "fin",
+   "Abonne-toi, le poteau arrive bientôt."
+  ]
+ ],
+ "pauses": {
+  "defi": 0.8
+ },
+ "fin": 2.6
+}

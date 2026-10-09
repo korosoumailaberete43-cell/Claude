@@ -1,0 +1,33 @@
+{
+ "segments": [
+  [
+   "hook",
+   "« Ça existe déjà », on me dit."
+  ],
+  [
+   "suspense",
+   "Oui. Mais pas ici."
+  ],
+  [
+   "realite",
+   "Les outils qui existent sont chers, lourds, et pensés pour d'autres habitudes de dessin."
+  ],
+  [
+   "notre",
+   "Nous, on écrit pour nos sections, nos aciers, nos conventions. Et nos délais."
+  ],
+  [
+   "civrebar",
+   "CivRebar AI, c'est un outil de chez nous, pour nos chantiers."
+  ],
+  [
+   "fin",
+   "Abonne-toi, et juge sur pièces."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.8,
+  "suspense": 0.9
+ },
+ "fin": 2.6
+}

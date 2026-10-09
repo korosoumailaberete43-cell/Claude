@@ -1,0 +1,33 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Ces deux-là n'auraient jamais dû marcher ensemble."
+  ],
+  [
+   "beton",
+   "Le béton : très fort quand on l'écrase. Il casse net quand on le tire."
+  ],
+  [
+   "acier",
+   "L'acier : très fort quand on le tire. Mais seul, il flambe et il rouille."
+  ],
+  [
+   "magie",
+   "Et pourtant ça marche. En chauffant, les deux s'allongent presque pareil. Ils ne se décollent jamais."
+  ],
+  [
+   "civrebar",
+   "Tout le ferraillage repose là-dessus. Et CivRebar AI aussi."
+  ],
+  [
+   "fin",
+   "Abonne-toi, on revient aux bases."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.8,
+  "suspense": 0.7
+ },
+ "fin": 2.6
+}

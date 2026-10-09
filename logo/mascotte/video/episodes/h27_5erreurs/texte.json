@@ -1,0 +1,32 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Les cinq erreurs les plus chères du ferraillage."
+  ],
+  [
+   "cinq",
+   "Cinq : les ancrages absents. Quatre : les cadres mal répartis."
+  ],
+  [
+   "trois",
+   "Trois : les chapeaux oubliés. Deux : l'enrobage insuffisant."
+  ],
+  [
+   "un",
+   "Et numéro un… l'acier du mauvais côté. Console, radier, soutènement."
+  ],
+  [
+   "civrebar",
+   "Celle-là ne se répare pas. Elle se démolit."
+  ],
+  [
+   "fin",
+   "Abonne-toi, et ne la fais jamais."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.8
+ },
+ "fin": 2.6
+}

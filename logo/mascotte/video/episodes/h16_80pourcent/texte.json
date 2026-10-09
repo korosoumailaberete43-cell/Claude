@@ -1,0 +1,33 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Quatre-vingts pour cent."
+  ],
+  [
+   "suspense",
+   "C'est la part de ton temps qui ne sert à rien."
+  ],
+  [
+   "detail",
+   "Sur un plan de ferraillage, quatre-vingts pour cent du temps, c'est du dessin. Pas du calcul."
+  ],
+  [
+   "verite",
+   "Le calcul, c'est ton métier. Le dessin, c'est juste de la main-d'œuvre."
+  ],
+  [
+   "civrebar",
+   "CivRebar AI prend le dessin. Il te laisse le métier."
+  ],
+  [
+   "fin",
+   "Abonne-toi, et récupère tes quatre-vingts pour cent."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.7,
+  "suspense": 0.8
+ },
+ "fin": 2.6
+}

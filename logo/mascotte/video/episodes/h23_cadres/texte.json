@@ -1,0 +1,33 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Cadres tous les quarante centimètres."
+  ],
+  [
+   "suspense",
+   "Tu vois le problème ?"
+  ],
+  [
+   "un",
+   "Premier problème : la fissure passe entre deux cadres. Elle ne rencontre rien."
+  ],
+  [
+   "deux",
+   "Deuxième problème : la même valeur partout. Alors que l'effort est maximal aux appuis."
+  ],
+  [
+   "civrebar",
+   "CivRebar AI calcule l'espacement zone par zone, avec le maximum de la norme."
+  ],
+  [
+   "fin",
+   "Abonne-toi, et serre tes cadres où il faut."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.7,
+  "suspense": 0.8
+ },
+ "fin": 2.6
+}

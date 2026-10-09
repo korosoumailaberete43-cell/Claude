@@ -1,0 +1,33 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Un ingénieur m'a écrit ça hier."
+  ],
+  [
+   "message",
+   "« J'ai refait le même plan trois fois en une semaine. »"
+  ],
+  [
+   "pourquoi",
+   "Trois fois. La section a changé, puis la portée, puis la charge."
+  ],
+  [
+   "verite",
+   "À chaque fois : tout le dessin, toutes les cotes, toute la nomenclature. À reprendre."
+  ],
+  [
+   "civrebar",
+   "Avec CivRebar AI, tu changes les valeurs. Le plan se redessine."
+  ],
+  [
+   "fin",
+   "Abonne-toi, et écris-moi ton pire souvenir de reprise."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.7,
+  "message": 0.9
+ },
+ "fin": 2.6
+}

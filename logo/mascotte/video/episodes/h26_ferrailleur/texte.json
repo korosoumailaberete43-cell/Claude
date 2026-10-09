@@ -1,0 +1,32 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Le ferrailleur ne verra jamais ta poutre."
+  ],
+  [
+   "suspense",
+   "Il ne verra que ton plan."
+  ],
+  [
+   "realite",
+   "Sur le chantier, debout, parfois sous la pluie. Il lit vite."
+  ],
+  [
+   "conseil",
+   "Alors tout ce qui est ambigu sur ton plan sera interprété. Pas vérifié. Interprété."
+  ],
+  [
+   "civrebar",
+   "CivRebar AI dessine toujours selon les mêmes conventions. Un plan, une lecture."
+  ],
+  [
+   "fin",
+   "Abonne-toi, on dessine pour ceux qui posent."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.8
+ },
+ "fin": 2.6
+}

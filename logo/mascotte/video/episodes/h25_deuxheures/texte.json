@@ -1,0 +1,32 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Il est deux heures du matin."
+  ],
+  [
+   "scene",
+   "Tu redessines la même poutre. Pour la troisième fois."
+  ],
+  [
+   "raison",
+   "Parce que la section a bougé de cinq centimètres."
+  ],
+  [
+   "verite",
+   "Et tu sais très bien que ce n'est pas ça, ton métier."
+  ],
+  [
+   "civrebar",
+   "C'est pour ces nuits-là qu'on écrit CivRebar AI."
+  ],
+  [
+   "fin",
+   "Abonne-toi. Et rentre chez toi."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.9
+ },
+ "fin": 2.6
+}

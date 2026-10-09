@@ -1,0 +1,33 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Qui signe ce plan ?"
+  ],
+  [
+   "suspense",
+   "Pas la machine."
+  ],
+  [
+   "verite",
+   "L'intelligence artificielle calcule, propose, vérifie. Mais elle ne porte rien."
+  ],
+  [
+   "responsabilite",
+   "Le jour où un ouvrage bouge, c'est un nom qui est en bas du plan. Pas un logiciel."
+  ],
+  [
+   "civrebar",
+   "CivRebar AI t'assiste. Toi, tu décides. Et tu signes."
+  ],
+  [
+   "fin",
+   "Abonne-toi, et garde la main."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.9,
+  "suspense": 0.8
+ },
+ "fin": 2.6
+}

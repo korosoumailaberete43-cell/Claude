@@ -1,0 +1,32 @@
+{
+ "segments": [
+  [
+   "hook",
+   "C'est la dernière vidéo de la série."
+  ],
+  [
+   "bilan",
+   "En un mois, on a parlé d'enrobage, d'ancrage, de cadres, de trémies et de poteaux courts."
+  ],
+  [
+   "projet",
+   "Et pendant ce temps, la poutre a commencé à se dessiner toute seule."
+  ],
+  [
+   "suite",
+   "Ensuite viendront les poteaux, les dalles, les semelles… et les escaliers."
+  ],
+  [
+   "civrebar",
+   "CivRebar AI. L'intelligence de l'armature. Bientôt dans AutoCAD."
+  ],
+  [
+   "fin",
+   "Abonne-toi, et on se retrouve sur le chantier."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.9
+ },
+ "fin": 2.6
+}

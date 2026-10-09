@@ -1,0 +1,33 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Un centimètre."
+  ],
+  [
+   "suspense",
+   "C'est tout ce qui sépare un ouvrage sain… d'un ouvrage à reprendre."
+  ],
+  [
+   "quoi",
+   "Un centimètre d'enrobage en moins, sur une poutre exposée à la pluie."
+  ],
+  [
+   "effet",
+   "L'acier rouille. Il gonfle. Et le béton éclate. Dix ans plus tard."
+  ],
+  [
+   "civrebar",
+   "CivRebar AI applique l'enrobage du projet. Sur chaque barre, sans oublier."
+  ],
+  [
+   "fin",
+   "Abonne-toi, et ne perds plus ce centimètre."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.9,
+  "suspense": 0.7
+ },
+ "fin": 2.6
+}

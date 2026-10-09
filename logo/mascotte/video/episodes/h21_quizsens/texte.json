@@ -1,0 +1,32 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Petit test. Trois secondes."
+  ],
+  [
+   "question",
+   "Dalle de trois mètres sur six, appuyée sur ses deux grands côtés. Les aciers principaux vont dans quel sens ?"
+  ],
+  [
+   "reponse",
+   "Dans le sens des trois mètres."
+  ],
+  [
+   "pourquoi",
+   "Une dalle porte dans le sens où elle n'a rien en dessous. Pas dans le sens de sa plus grande dimension."
+  ],
+  [
+   "civrebar",
+   "CivRebar AI part toujours de la portée réelle, pas de la forme du rectangle."
+  ],
+  [
+   "fin",
+   "Abonne-toi, tu avais bon ?"
+  ]
+ ],
+ "pauses": {
+  "question": 2.8
+ },
+ "fin": 2.6
+}

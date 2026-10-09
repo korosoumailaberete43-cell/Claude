@@ -1,0 +1,32 @@
+{
+ "segments": [
+  [
+   "hook",
+   "Ce poteau-là va casser."
+  ],
+  [
+   "suspense",
+   "Et sur le plan, tout a l'air normal."
+  ],
+  [
+   "cause",
+   "Deux allèges maçonnées le serrent. Il ne peut plus bouger que sur quarante centimètres."
+  ],
+  [
+   "effet",
+   "Toute la déformation se concentre là. L'effort tranchant devient énorme."
+  ],
+  [
+   "civrebar",
+   "CivRebar AI repère ces poteaux-là, et resserre les cadres où il faut."
+  ],
+  [
+   "fin",
+   "Abonne-toi, on regarde les pièges ensemble."
+  ]
+ ],
+ "pauses": {
+  "hook": 0.8
+ },
+ "fin": 2.6
+}

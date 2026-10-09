@@ -219,7 +219,10 @@ export async function lancer(voixUrl, build) {
   V = await (await fetch(voixUrl)).json();
   DUR = V.dur;
   S = Object.fromEntries(V.segments.map(s => [s.id, s]));
-  st = createStudio(W, H);
+  const par = new URLSearchParams(location.search);
+  const q = +(par.get('q') || 0.68);                   // échelle de rendu 3D (0.68 : net à l'écran, bien plus rapide)
+  const ombres = +(par.get('ombres') || 1024);         // finesse des ombres
+  st = createStudio(Math.round(W * q), Math.round(H * q), { ombres });
   ({ renderer, scene, camera, tonton } = st);
   P = tonton.parts;
   out = document.getElementById('c');
@@ -231,7 +234,7 @@ export async function lancer(voixUrl, build) {
     ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1; ctx.filter = 'none';
     background(t);
     E.scenes(t, false);
-    ctx.drawImage(renderer.domElement, 0, 0);
+    ctx.drawImage(renderer.domElement, 0, 0, W, H);
     E.scenes(t, true);
     captions(t, E);
     const fl = Math.max(0.5 * decay(t, 0.15, 8), ...(E.flashes || []).map(([t0, a]) => a * decay(t, t0, 6.5)));
