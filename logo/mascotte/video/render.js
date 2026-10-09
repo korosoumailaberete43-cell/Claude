@@ -38,11 +38,22 @@ const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.woff2': 'font/
   const pages = [first];
   for (let i = 1; i < Math.min(+nw, jobs.length); i++) pages.push(await open());
   let k = 0, done = 0; const t0 = Date.now();
-  await Promise.all(pages.map(async p => {
+  // Une page perdue (mémoire, onglet fermé) est rouverte : un long rendu ne doit pas s'arrêter pour ça.
+  await Promise.all(pages.map(async (p, idx) => {
     while (k < jobs.length) {
       const j = jobs[k++];
-      const d = await p.evaluate(t => window.renderFrame(t), j.t);
-      fs.writeFileSync(path.join(outDir, j.name), Buffer.from(d.split(',')[1], 'base64'));
+      for (let essai = 1; ; essai++) {
+        try {
+          const d = await p.evaluate(t => window.renderFrame(t), j.t);
+          fs.writeFileSync(path.join(outDir, j.name), Buffer.from(d.split(',')[1], 'base64'));
+          break;
+        } catch (e) {
+          if (essai > 3) throw e;
+          console.log(`page ${idx} perdue sur ${j.name}, réouverture (${essai}/3)`);
+          try { await p.close(); } catch { /* déjà fermée */ }
+          p = await open();
+        }
+      }
       if (++done % 60 === 0) console.log(`${done}/${jobs.length}  ${((Date.now() - t0) / done).toFixed(0)} ms/img`);
     }
   }));
