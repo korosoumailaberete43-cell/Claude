@@ -19,8 +19,10 @@ const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.woff2': 'font/
     fs.createReadStream(f).pipe(res);
   }).listen(0);
   const url = `http://localhost:${server.address().port}/mascotte/video/${process.env.PAGE || 'presentation.html'}`;
-  const browser = await chromium.launch({ args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
+  const lancer = () => chromium.launch({ args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
+  let browser = await lancer();
   const open = async () => {
+    if (!browser.isConnected()) browser = await lancer();   // le navigateur lui-même peut mourir
     const p = await browser.newPage({ viewport: { width: 1080, height: 1920 } });
     p.on('pageerror', e => console.log('pageerror:', e.message));
     p.on('console', m => { if (m.type() === 'error') console.log('console:', m.text()); });
@@ -48,9 +50,10 @@ const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.woff2': 'font/
           fs.writeFileSync(path.join(outDir, j.name), Buffer.from(d.split(',')[1], 'base64'));
           break;
         } catch (e) {
-          if (essai > 3) throw e;
-          console.log(`page ${idx} perdue sur ${j.name}, réouverture (${essai}/3)`);
+          if (essai > 5) throw e;
+          console.log(`page ${idx} perdue sur ${j.name}, réouverture (${essai}/5)`);
           try { await p.close(); } catch { /* déjà fermée */ }
+          await new Promise(r => setTimeout(r, 1500 * essai));
           p = await open();
         }
       }
