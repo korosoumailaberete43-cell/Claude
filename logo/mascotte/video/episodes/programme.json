@@ -3,48 +3,237 @@
  "fuseau": "Atlantic/Reykjavik",
  "heure": "14:00:00",
  "posts": [
-  {"jour": "2026-10-09", "ep": "h01_3heures", "style": "choc",
+  {
+   "jour": "2026-10-09",
+   "ep": "h01_3heures",
+   "style": "choc",
    "titre": "Tu as perdu 3 heures hier",
-   "texte": "Hier, tu as perdu 3 heures de ta vie. Et tu ne t'en es même pas rendu compte 😮‍💨\n\nSur une année : plus de 30 journées de travail. Passées à dessiner des barres, des cadres et des cotes. À la main.\n\nCivRebar AI fait ce travail dans AutoCAD, en quelques secondes. Abonne-toi 👇"},
-  {"jour": "2026-10-10", "ep": "h03_nepasregarder", "style": "provoc",
+   "texte": "Hier, tu as perdu 3 heures de ta vie. Et tu ne t'en es même pas rendu compte 😮‍💨\n\nSur une année : plus de 30 journées de travail. Passées à dessiner des barres, des cadres et des cotes. À la main.\n\nCivRebar AI fait ce travail dans AutoCAD, en quelques secondes. Abonne-toi 👇"
+  },
+  {
+   "jour": "2026-10-10",
+   "ep": "h03_nepasregarder",
+   "style": "provoc",
    "titre": "Ne regarde pas si tu dessines à la main",
-   "texte": "Ne regarde pas cette vidéo si tu dessines encore ton ferraillage à la main. Parce qu'après… tu ne pourras plus 👀\n\nBarre par barre. Cadre par cadre. Cote par cote. Pendant ce temps, ton ordinateur ne fait rien.\n\nCivRebar AI, lui, travaille. Abonne-toi 👇"},
-  {"jour": "2026-10-11", "ep": "h04_chrono", "style": "duel",
+   "texte": "Ne regarde pas cette vidéo si tu dessines encore ton ferraillage à la main. Parce qu'après… tu ne pourras plus 👀\n\nBarre par barre. Cadre par cadre. Cote par cote. Pendant ce temps, ton ordinateur ne fait rien.\n\nCivRebar AI, lui, travaille. Abonne-toi 👇"
+  },
+  {
+   "jour": "2026-10-11",
+   "ep": "h04_chrono",
+   "style": "duel",
    "titre": "Une poutre, deux méthodes, un chrono",
-   "texte": "Une poutre. Deux méthodes. Un chronomètre ⏱️\n\nÀ la main : 40 minutes. Avec CivRebar AI : 8 secondes. Barres, cadres, cotes et repères, directement dans AutoCAD.\n\nTu paries combien ? Réponds en commentaire 👇"},
-  {"jour": "2026-10-12", "ep": "h07_impossible", "style": "recit",
+   "texte": "Une poutre. Deux méthodes. Un chronomètre ⏱️\n\nÀ la main : 40 minutes. Avec CivRebar AI : 8 secondes. Barres, cadres, cotes et repères, directement dans AutoCAD.\n\nTu paries combien ? Réponds en commentaire 👇"
+  },
+  {
+   "jour": "2026-10-12",
+   "ep": "h07_impossible",
+   "style": "recit",
    "titre": "On m'a dit que c'était impossible",
-   "texte": "« On m'a dit que c'était impossible. » Un outil de ferraillage fait ici, par nous 🇨🇮\n\nPas acheté. Pas copié. Écrit ligne par ligne, pour nos poutres, nos normes, nos chantiers.\n\nAujourd'hui la poutre fonctionne. Les poteaux, dalles et semelles arrivent. Abonne-toi et regarde-nous faire 👇"},
-  {"jour": "2026-10-13", "ep": "h06_neufsurdix", "style": "loupe",
+   "texte": "« On m'a dit que c'était impossible. » Un outil de ferraillage fait ici, par nous 🇨🇮\n\nPas acheté. Pas copié. Écrit ligne par ligne, pour nos poutres, nos normes, nos chantiers.\n\nAujourd'hui la poutre fonctionne. Les poteaux, dalles et semelles arrivent. Abonne-toi et regarde-nous faire 👇"
+  },
+  {
+   "jour": "2026-10-13",
+   "ep": "h06_neufsurdix",
+   "style": "loupe",
    "titre": "9 ingénieurs sur 10 ratent cette erreur",
-   "texte": "9 ingénieurs sur 10 ratent cette erreur 🔍\n\nLes cadres sont espacés de la même façon du début à la fin. Sauf que l'effort tranchant est maximal aux appuis : là-bas, il faut serrer.\n\nCivRebar AI calcule l'espacement zone par zone. Tu l'avais vue ? 👇"},
-  {"jour": "2026-10-14", "ep": "h02_millions", "style": "choc",
+   "texte": "9 ingénieurs sur 10 ratent cette erreur 🔍\n\nLes cadres sont espacés de la même façon du début à la fin. Sauf que l'effort tranchant est maximal aux appuis : là-bas, il faut serrer.\n\nCivRebar AI calcule l'espacement zone par zone. Tu l'avais vue ? 👇"
+  },
+  {
+   "jour": "2026-10-14",
+   "ep": "h02_millions",
+   "style": "choc",
    "titre": "Un trait oublié sur un plan",
-   "texte": "Un trait oublié sur un plan… et c'est tout un plancher qu'il faut reprendre 😳\n\nUn enrobage trop faible, un cadre mal espacé : ça ne se voit pas à l'écran. Ça se voit sur le chantier. Et là, ça ne coûte plus des heures.\n\nCivRebar AI applique la règle à chaque barre. Sans fatigue, sans oubli 👇"},
-  {"jour": "2026-10-15", "ep": "h09_remplacer", "style": "provoc",
+   "texte": "Un trait oublié sur un plan… et c'est tout un plancher qu'il faut reprendre 😳\n\nUn enrobage trop faible, un cadre mal espacé : ça ne se voit pas à l'écran. Ça se voit sur le chantier. Et là, ça ne coûte plus des heures.\n\nCivRebar AI applique la règle à chaque barre. Sans fatigue, sans oubli 👇"
+  },
+  {
+   "jour": "2026-10-15",
+   "ep": "h09_remplacer",
+   "style": "provoc",
    "titre": "L'IA va-t-elle remplacer l'ingénieur ?",
-   "texte": "Est-ce que l'IA va remplacer l'ingénieur ? La vraie réponse : NON 🚫\n\nLa machine calcule, mais elle ne porte rien. C'est l'ingénieur qui décide, et qui signe le plan.\n\nCivRebar AI ne prend pas ta place : il prend ton travail répétitif. Tu es d'accord ? 👇"},
-  {"jour": "2026-10-16", "ep": "h13_huitsecondes", "style": "demo",
+   "texte": "Est-ce que l'IA va remplacer l'ingénieur ? La vraie réponse : NON 🚫\n\nLa machine calcule, mais elle ne porte rien. C'est l'ingénieur qui décide, et qui signe le plan.\n\nCivRebar AI ne prend pas ta place : il prend ton travail répétitif. Tu es d'accord ? 👇"
+  },
+  {
+   "jour": "2026-10-16",
+   "ep": "h13_huitsecondes",
+   "style": "demo",
    "titre": "Ce que CivRebar fait en 8 secondes",
-   "texte": "Voilà ce que CivRebar AI fait en 8 secondes. Ne cligne pas des yeux ⚡\n\nLes barres filantes. Les chapeaux. Les cadres. Les cotes. Les repères. Tout est à l'échelle, coté, prêt à imprimer.\n\nEt toi, pendant ce temps-là, tu vérifies. C'est ton métier 👇"},
-  {"jour": "2026-10-17", "ep": "h10_declic", "style": "recit",
+   "texte": "Voilà ce que CivRebar AI fait en 8 secondes. Ne cligne pas des yeux ⚡\n\nLes barres filantes. Les chapeaux. Les cadres. Les cotes. Les repères. Tout est à l'échelle, coté, prêt à imprimer.\n\nEt toi, pendant ce temps-là, tu vérifies. C'est ton métier 👇"
+  },
+  {
+   "jour": "2026-10-17",
+   "ep": "h10_declic",
+   "style": "recit",
    "titre": "J'ai cru que j'étais lent",
-   "texte": "« Pendant des années, j'ai cru que j'étais lent. » Jusqu'au jour où j'ai compté 📊\n\nSur un plan de ferraillage, 80 % du temps c'est du dessin. Pas du calcul.\n\nLe problème, ce n'était pas moi. C'était l'outil. Alors on en a fabriqué un autre 👇"},
-  {"jour": "2026-10-18", "ep": "h11_zoom", "style": "loupe",
+   "texte": "« Pendant des années, j'ai cru que j'étais lent. » Jusqu'au jour où j'ai compté 📊\n\nSur un plan de ferraillage, 80 % du temps c'est du dessin. Pas du calcul.\n\nLe problème, ce n'était pas moi. C'était l'outil. Alors on en a fabriqué un autre 👇"
+  },
+  {
+   "jour": "2026-10-18",
+   "ep": "h11_zoom",
+   "style": "loupe",
    "titre": "Regarde bien cette barre",
-   "texte": "Regarde bien cette barre. Encore. Plus près 🔍\n\nSon crochet est trop court : 2 cm de moins que l'ancrage demandé. Sur le papier, personne ne le voit. Sous charge, la barre glisse.\n\nCivRebar AI dessine les ancrages à la bonne longueur. À chaque fois 👇"},
-  {"jour": "2026-10-19", "ep": "h05_secret", "style": "choc",
+   "texte": "Regarde bien cette barre. Encore. Plus près 🔍\n\nSon crochet est trop court : 2 cm de moins que l'ancrage demandé. Sur le papier, personne ne le voit. Sous charge, la barre glisse.\n\nCivRebar AI dessine les ancrages à la bonne longueur. À chaque fois 👇"
+  },
+  {
+   "jour": "2026-10-19",
+   "ep": "h05_secret",
+   "style": "choc",
    "titre": "Pourquoi certains rendent 3× plus de plans",
-   "texte": "Certains bureaux d'études rendent 3 fois plus de plans que les autres. Ils ne travaillent pas plus. Ils ne sont pas plus nombreux 🤔\n\nIls ont juste arrêté de redessiner la même chose cent fois. Une poutre, c'est toujours la même logique : seuls les chiffres changent.\n\nC'est exactement ce que fait CivRebar AI 👇"},
-  {"jour": "2026-10-20", "ep": "h08_devine", "style": "duel",
+   "texte": "Certains bureaux d'études rendent 3 fois plus de plans que les autres. Ils ne travaillent pas plus. Ils ne sont pas plus nombreux 🤔\n\nIls ont juste arrêté de redessiner la même chose cent fois. Une poutre, c'est toujours la même logique : seuls les chiffres changent.\n\nC'est exactement ce que fait CivRebar AI 👇"
+  },
+  {
+   "jour": "2026-10-20",
+   "ep": "h08_devine",
+   "style": "duel",
    "titre": "Combien de temps pour ferrailler ça ?",
-   "texte": "Une poutre 30 × 60, portée 5,40 m. Combien de temps pour la ferrailler ? Réponds avant la fin ⏱️\n\nÀ la main : entre 30 minutes et 1 heure. Si tu ne te trompes pas.\n\nEt si ça tenait dans le temps d'un café ? Ton estimation en commentaire 👇"},
-  {"jour": "2026-10-21", "ep": "h12_trentesecondes", "style": "choc",
+   "texte": "Une poutre 30 × 60, portée 5,40 m. Combien de temps pour la ferrailler ? Réponds avant la fin ⏱️\n\nÀ la main : entre 30 minutes et 1 heure. Si tu ne te trompes pas.\n\nEt si ça tenait dans le temps d'un café ? Ton estimation en commentaire 👇"
+  },
+  {
+   "jour": "2026-10-21",
+   "ep": "h12_trentesecondes",
+   "style": "choc",
    "titre": "Dans 30 secondes tu sauras pourquoi",
-   "texte": "Dans 30 secondes, tu sauras pourquoi ce projet existe ⏳\n\nIci, on construit vite. Et on ferraille encore à la main. Des heures perdues, des erreurs qui partent sur le chantier, et personne pour les rattraper.\n\nAlors on a écrit l'outil qui manquait : CivRebar AI 👇"},
-  {"jour": "2026-10-22", "ep": "h14_afrique", "style": "recit",
+   "texte": "Dans 30 secondes, tu sauras pourquoi ce projet existe ⏳\n\nIci, on construit vite. Et on ferraille encore à la main. Des heures perdues, des erreurs qui partent sur le chantier, et personne pour les rattraper.\n\nAlors on a écrit l'outil qui manquait : CivRebar AI 👇"
+  },
+  {
+   "jour": "2026-10-22",
+   "ep": "h14_afrique",
+   "style": "recit",
    "titre": "Le premier outil de ferraillage pensé ici",
-   "texte": "Le premier outil de ferraillage pensé ici, pour nos chantiers 🏗️\n\nPas une traduction. Pas une version allégée. Le vrai : nos sections, nos aciers, nos habitudes de dessin, nos délais.\n\nOn commence par la poutre. Ensuite, tout le bâtiment y passera. Sois là au lancement 👇"}
+   "texte": "Le premier outil de ferraillage pensé ici, pour nos chantiers 🏗️\n\nPas une traduction. Pas une version allégée. Le vrai : nos sections, nos aciers, nos habitudes de dessin, nos délais.\n\nOn commence par la poutre. Ensuite, tout le bâtiment y passera. Sois là au lancement 👇"
+  },
+  {
+   "jour": "2026-10-23",
+   "ep": "h15_poteaucourt",
+   "style": "loupe",
+   "titre": "Ce poteau va casser",
+   "texte": "Ce poteau-là va casser. Et sur le plan, tout a l'air normal 😳\n\nDeux allèges le serrent : il ne peut plus bouger que sur 40 cm. Toute la déformation se concentre là, et l'effort tranchant devient énorme.\n\nCivRebar AI resserre les cadres où il faut 👇"
+  },
+  {
+   "jour": "2026-10-24",
+   "ep": "h16_80pourcent",
+   "style": "choc",
+   "titre": "80 % de ton temps",
+   "texte": "80 % de ton temps ne sert à rien 😮‍💨\n\nSur un plan de ferraillage, 80 % du temps c'est du dessin. Pas du calcul.\n\nLe calcul, c'est ton métier. Le dessin, c'est de la main-d'œuvre. CivRebar AI prend le dessin et te laisse le métier 👇"
+  },
+  {
+   "jour": "2026-10-25",
+   "ep": "h17_message",
+   "style": "message",
+   "titre": "Un ingénieur m'a écrit ça",
+   "texte": "« J'ai refait le même plan trois fois en une semaine. » 📩\n\nLa section a changé, puis la portée, puis la charge. À chaque fois : tout le dessin, toutes les cotes, toute la nomenclature à reprendre.\n\nAvec CivRebar AI, tu changes les valeurs. Le plan se redessine 👇"
+  },
+  {
+   "jour": "2026-10-26",
+   "ep": "h18_3erreurs",
+   "style": "liste",
+   "titre": "3 erreurs sur 9 plans sur 10",
+   "texte": "3 erreurs. Sur 9 plans sur 10 🔍\n\n1️⃣ Les cadres espacés pareil du début à la fin\n2️⃣ Les chapeaux oubliés au-dessus d'un appui\n3️⃣ Une barre tendue qui s'arrête net, sans ancrage\n\nLaquelle tu rates le plus ? 👇"
+  },
+  {
+   "jour": "2026-10-27",
+   "ep": "h19_uncm",
+   "style": "choc",
+   "titre": "1 centimètre",
+   "texte": "1 centimètre. C'est tout ce qui sépare un ouvrage sain d'un ouvrage à reprendre 😳\n\n1 cm d'enrobage en moins sur une poutre exposée : l'acier rouille, il gonfle, le béton éclate. Dix ans plus tard.\n\nCivRebar AI applique l'enrobage du projet sur chaque barre 👇"
+  },
+  {
+   "jour": "2026-10-28",
+   "ep": "h20_nomenclature",
+   "style": "loupe",
+   "titre": "Le tableau que personne ne lit",
+   "texte": "Ce tableau, personne ne le regarde. Et pourtant c'est lui qui part à l'atelier 📋\n\nLe ferrailleur ne voit jamais ta poutre. Il ne voit que des repères et des longueurs. Un repère en double, et le chantier s'arrête.\n\nCivRebar AI génère la nomenclature avec le dessin 👇"
+  },
+  {
+   "jour": "2026-10-29",
+   "ep": "h21_quizsens",
+   "style": "quiz",
+   "titre": "Les aciers vont dans quel sens ?",
+   "texte": "Petit test, 3 secondes ⏱️\n\nUne dalle de 3 m × 6 m, appuyée sur ses deux grands côtés. Les aciers principaux vont dans quel sens ?\n\n👉 Dans le sens des 3 m. Une dalle porte là où elle n'a rien en dessous, pas dans le sens de sa plus grande dimension.\n\nTu avais bon ? 👇"
+  },
+  {
+   "jour": "2026-10-30",
+   "ep": "h22_tremie",
+   "style": "loupe",
+   "titre": "Ils ont percé la dalle",
+   "texte": "Ils ont percé la dalle après coup. Et personne n'a renforcé le trou 🕳️\n\nUne trémie coupe des barres. Une barre coupée ne porte plus rien. Il faut un chevêtre sur les 4 côtés, et des diagonales dans les angles.\n\nTu les anticipes comment, tes réservations ? 👇"
+  },
+  {
+   "jour": "2026-10-31",
+   "ep": "h23_cadres",
+   "style": "loupe",
+   "titre": "Cadres tous les 40 cm",
+   "texte": "Cadres tous les 40 cm. Tu vois le problème ? 👀\n\n1️⃣ La fissure passe entre deux cadres : elle ne rencontre rien.\n2️⃣ Même valeur partout, alors que l'effort est maximal aux appuis.\n\nCivRebar AI calcule l'espacement zone par zone 👇"
+  },
+  {
+   "jour": "2026-11-01",
+   "ep": "h24_couple",
+   "style": "choc",
+   "titre": "Ces deux-là n'auraient jamais dû marcher",
+   "texte": "Le béton et l'acier n'auraient jamais dû marcher ensemble 🤝\n\n🧱 Le béton : très fort écrasé, nul quand on le tire.\n🔩 L'acier : très fort tiré, mais il flambe et il rouille.\n\nEt pourtant ça marche : en chauffant, les deux s'allongent presque pareil. Ils ne se décollent jamais 👇"
+  },
+  {
+   "jour": "2026-11-02",
+   "ep": "h25_deuxheures",
+   "style": "recit",
+   "titre": "Il est deux heures du matin",
+   "texte": "Il est 2 h du matin. Tu redessines la même poutre. Pour la troisième fois 😮‍💨\n\nParce que la section a bougé de 5 cm.\n\nEt tu sais très bien que ce n'est pas ça, ton métier.\n\nC'est pour ces nuits-là qu'on écrit CivRebar AI 👇"
+  },
+  {
+   "jour": "2026-11-03",
+   "ep": "h26_ferrailleur",
+   "style": "recit",
+   "titre": "Le ferrailleur ne verra jamais ta poutre",
+   "texte": "Le ferrailleur ne verra jamais ta poutre. Il ne verra que ton plan 👷\n\nDebout sur le chantier, parfois sous la pluie, il lit vite. Tout ce qui est ambigu sera interprété. Pas vérifié : interprété.\n\nTu dessines pour celui qui pose la barre 👇"
+  },
+  {
+   "jour": "2026-11-04",
+   "ep": "h27_5erreurs",
+   "style": "liste",
+   "titre": "Les 5 erreurs les plus chères",
+   "texte": "Les 5 erreurs les plus chères du ferraillage ⚠️\n\n5️⃣ Les ancrages absents\n4️⃣ Les cadres mal répartis\n3️⃣ Les chapeaux oubliés\n2️⃣ L'enrobage insuffisant\n1️⃣ L'acier du mauvais côté\n\nCelle-là ne se répare pas. Elle se démolit 👇"
+  },
+  {
+   "jour": "2026-11-05",
+   "ep": "h28_pas_un_logiciel",
+   "style": "provoc",
+   "titre": "On aurait pu faire un logiciel",
+   "texte": "On aurait pu faire un logiciel. On a fait exactement l'inverse 🤔\n\nUn logiciel de plus, c'est une licence de plus, un apprentissage de plus, un format de plus.\n\nAlors CivRebar AI vit dans AutoCAD. Celui que tu as déjà ouvert. Pas d'export, pas d'import 👇"
+  },
+  {
+   "jour": "2026-11-06",
+   "ep": "h29_signature",
+   "style": "provoc",
+   "titre": "Qui signe ce plan ?",
+   "texte": "Qui signe ce plan ? Pas la machine ✍️\n\nL'IA calcule, propose, vérifie. Mais elle ne porte rien. Le jour où un ouvrage bouge, c'est un nom qui est en bas du plan. Pas un logiciel.\n\nCivRebar AI t'assiste. Toi, tu décides. Et tu signes 👇"
+  },
+  {
+   "jour": "2026-11-07",
+   "ep": "h30_testeurs",
+   "style": "choc",
+   "titre": "On cherche 10 personnes",
+   "texte": "On cherche 10 personnes 📩\n\nPas 10 spectateurs : 10 ingénieurs qui dessinent vraiment du ferraillage.\n\nTu testes sur une poutre de ton choix, et tu nous dis franchement ce qui ne va pas. En échange : l'accès avant tout le monde.\n\nÉcris « TESTEUR » en commentaire 👇"
+  },
+  {
+   "jour": "2026-11-08",
+   "ep": "h31_duel_poteau",
+   "style": "duel",
+   "titre": "Un poteau, deux méthodes",
+   "texte": "Un poteau. Deux méthodes. Un chrono ⏱️\n\n30 × 30, quatre niveaux, cadres resserrés en tête et en pied.\n\nÀ la main : 30 minutes. Avec CivRebar : quelques secondes, et les zones critiques sont déjà resserrées.\n\nLe poteau arrive bientôt 👇"
+  },
+  {
+   "jour": "2026-11-09",
+   "ep": "h32_ca_existe",
+   "style": "message",
+   "titre": "« Ça existe déjà »",
+   "texte": "« Ça existe déjà, votre truc. » Oui. Mais pas ici 🇨🇮\n\nLes outils qui existent sont chers, lourds, et pensés pour d'autres habitudes de dessin.\n\nNous, on écrit pour nos sections, nos aciers, nos conventions. Et nos délais 👇"
+  },
+  {
+   "jour": "2026-11-10",
+   "ep": "h33_rendezvous",
+   "style": "recit",
+   "titre": "La dernière vidéo de la série",
+   "texte": "C'est la dernière vidéo de la série 🔩\n\nEn un mois : enrobage, ancrage, cadres, trémies, poteaux courts. Et pendant ce temps, la poutre a commencé à se dessiner toute seule.\n\nEnsuite : les poteaux, les dalles, les semelles… et les escaliers.\n\nOn se retrouve sur le chantier 👇"
+  }
  ],
  "hashtags": "#GénieCivil #BétonArmé #Ferraillage #AutoCAD #BTP #Ingénieur #CivRebarAI"
 }
