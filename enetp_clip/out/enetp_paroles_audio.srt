@@ -1,0 +1,192 @@
+1
+00:00:09,440 --> 00:00:16,780
+Allô, l'administration ? C'est nous, les étudiants de l'E-N-E-T-P, Kabala.
+
+2
+00:00:16,800 --> 00:00:20,820
+On a une déclaration à faire !
+
+3
+00:00:26,640 --> 00:00:29,420
+Du lundi au samedi, on est toujours là,
+
+4
+00:00:29,440 --> 00:00:32,780
+Dimanche ? Mini-projet, on ne se repose pas !
+
+5
+00:00:32,800 --> 00:00:36,380
+De huit heures à dix-huit heures, on vit dans l'amphi,
+
+6
+00:00:36,400 --> 00:00:39,100
+Le gardien demande : « Vous habitez ici ? »
+
+7
+00:00:39,120 --> 00:00:41,820
+Maman s'inquiète : « Tu parles tout seul le soir ! »
+
+8
+00:00:41,840 --> 00:00:45,080
+« Non maman, je calcule un moment fléchissant ! »
+
+9
+00:00:45,040 --> 00:00:48,620
+Elle appelle le marabout, elle dit que c'est grave maintenant !
+
+10
+00:00:48,640 --> 00:00:52,060
+Pitié, pitié, Monsieur le Directeur !
+
+11
+00:00:52,080 --> 00:00:55,400
+On est fatigués, on n'a même plus d'heures !
+
+12
+00:00:55,360 --> 00:00:59,020
+Nos têtes sont cassées, nos cahiers sont pleins,
+
+13
+00:00:59,040 --> 00:01:02,380
+L'E-N-E-T-P fabrique des guerriers chaque matin !
+
+14
+00:01:02,400 --> 00:01:05,820
+Physique mécanique m'a giflé en session,
+
+15
+00:01:05,840 --> 00:01:09,420
+Mécanique rationnelle, R-D-M, sans sommation,
+
+16
+00:01:09,440 --> 00:01:12,700
+Le béton armé m'a coulé sans pitié,
+
+17
+00:01:12,720 --> 00:01:16,120
+Calcul des structures : ma structure s'est effondrée !
+
+18
+00:01:16,000 --> 00:01:18,520
+En salle des profs, il y a un championnat :
+
+19
+00:01:18,480 --> 00:01:22,540
+« Moi j'en ai mis cinquante ! » « Moi toute la promo, c'est moi ! »
+
+20
+00:01:22,560 --> 00:01:25,580
+Ils comptent leurs buts comme en finale de coupe,
+
+21
+00:01:25,600 --> 00:01:27,080
+Et nous, on est le ballon !
+
+22
+00:01:27,040 --> 00:01:30,380
+Pitié, pitié, Monsieur le Directeur !
+
+23
+00:01:30,400 --> 00:01:33,800
+On est fatigués, on n'a même plus d'heures !
+
+24
+00:01:33,680 --> 00:01:37,180
+Nos têtes sont cassées, nos cahiers sont pleins,
+
+25
+00:01:37,200 --> 00:01:40,120
+L'E-N-E-T-P fabrique des guerriers chaque matin !
+
+26
+00:01:40,080 --> 00:01:42,220
+On nous a dit : « Ici, c'est le master »,
+
+27
+00:01:42,240 --> 00:01:44,360
+Mais la Licence trois nous retient comme un aimant,
+
+28
+00:01:44,320 --> 00:01:47,160
+Tellement de crédits, même Excel a abandonné,
+
+29
+00:01:47,040 --> 00:01:50,060
+On dirait qu'ils veulent qu'on se marie en Licence trois !
+
+30
+00:01:50,080 --> 00:01:52,380
+Je suis venu en rêvant d'être ingénieur,
+
+31
+00:01:52,400 --> 00:01:55,080
+On m'a dit : « Petit, ici on forme des enseignants. »
+
+32
+00:01:55,040 --> 00:01:57,340
+Mon oncle croit que je construis des ponts…
+
+33
+00:01:57,360 --> 00:02:01,280
+Je construis des ponts, tonton… dans la tête des gens !
+
+34
+00:02:01,680 --> 00:02:03,900
+Communiqué des étudiants :
+
+35
+00:02:03,920 --> 00:02:11,740
+Article un : interdit de causer au trottoir, interdit de s'asseoir par groupe, interdit d'écrire sur les tables…
+
+36
+00:02:11,760 --> 00:02:14,620
+On ne citera pas de nom. Tout le monde sait qui.
+
+37
+00:02:14,640 --> 00:02:19,900
+Article deux : le championnat des rattrapages est officiellement annulé.
+
+38
+00:02:19,920 --> 00:02:26,620
+Article trois : celui qui dit que c'est facile viendra faire béton armé avec nous… un dimanche.
+
+39
+00:02:26,640 --> 00:02:28,520
+Mais entre nous, faut dire la vérité :
+
+40
+00:02:28,480 --> 00:02:30,440
+Nos profs sont sévères, mais vraiment forts,
+
+41
+00:02:30,320 --> 00:02:32,360
+Ils cassent nos têtes pour mieux les construire,
+
+42
+00:02:32,240 --> 00:02:34,680
+Ce qu'on souffre aujourd'hui, demain c'est notre trésor.
+
+43
+00:02:34,560 --> 00:02:36,860
+Un jour maman me verra devant le tableau,
+
+44
+00:02:36,880 --> 00:02:41,660
+Et dira : « Mon fils n'était pas fou… il était à l'E-N-E-T-P ! »
+
+45
+00:02:41,680 --> 00:02:45,180
+Merci, merci, nos chers professeurs !
+
+46
+00:02:45,200 --> 00:02:48,460
+Vous êtes durs, mais vous êtes les meilleurs !
+
+47
+00:02:48,480 --> 00:02:52,140
+Nos têtes sont cassées, mais nos têtes sont pleines,
+
+48
+00:02:52,160 --> 00:02:56,520
+E-N-E-T-P, Kabala… qui maîtrise enseigne !
+

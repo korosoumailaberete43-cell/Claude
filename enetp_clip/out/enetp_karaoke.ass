@@ -1,0 +1,131 @@
+[Script Info]
+Title: ENETP Kabala — PITIÉ, MONSIEUR LE DIRECTEUR
+ScriptType: v4.00+
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Karaoke,Inter,64,&H003CE1FF,&H64FFFFFF,&H00120C06,&HA0000000,-1,0,0,0,100,100,0.6,0,1,4,2,5,80,80,60,1
+Style: Next,Inter,38,&H8CFFFFFF,&H8CFFFFFF,&H00120C06,&H00000000,0,0,0,0,100,100,0.4,0,1,3,1,5,80,80,60,1
+Style: Section,Inter,30,&H00E8E8E8,&H00E8E8E8,&H00120C06,&H00000000,-1,0,0,0,100,100,4.0,0,1,3,1,9,60,70,50,1
+Style: Mark,Inter,30,&H00F0F0F0,&H00F0F0F0,&H00120C06,&H00000000,-1,0,0,0,100,100,2.5,0,1,3,1,7,250,60,50,1
+Style: Big,Inter,78,&H00FFFFFF,&H00FFFFFF,&H00120C06,&H00000000,-1,0,0,0,100,100,8.0,0,1,4,2,5,80,80,60,1
+Style: Sub,Inter,40,&H00C8E6FF,&H00C8E6FF,&H00120C06,&H00000000,0,0,0,0,100,100,1.5,0,1,3,1,5,80,80,60,1
+Style: Tiny,Inter,28,&H00B0B0B0,&H00B0B0B0,&H00120C06,&H00000000,0,0,0,0,100,100,3.0,0,1,2,1,5,80,80,60,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+
+Dialogue: 0,0:00:00.60,0:00:12.39,Big,,0,0,0,,{\pos(960,700)\fad(700,900)\fscx92\fscy92}E · N · E · T · P   —   K A B A L A
+Dialogue: 0,0:00:01.30,0:00:12.39,Sub,,0,0,0,,{\pos(960,775)\fad(700,900)\i1}Qui Maîtrise Enseigne{\i0}
+Dialogue: 0,0:00:02.10,0:00:12.39,Big,,0,0,0,,{\pos(960,880)\fad(600,900)\fs52\c&H003CE1FF&\fsp3}PITIÉ, MONSIEUR LE DIRECTEUR
+Dialogue: 0,0:00:02.70,0:00:12.39,Tiny,,0,0,0,,{\pos(960,950)\fad(600,900)}Déclaration des étudiants de l'E.N.E.T.P — Kabala
+Dialogue: 0,0:00:12.74,0:03:07.11,Mark,,0,0,0,,{\pos(250,78)\fad(800,800)\an4}ENETP · KABALA
+Dialogue: 2,0:00:12.49,0:00:20.28,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k45}{\kf56}Allô,{\k80} {\kf120}l'administration ?{\k32} {\kf32}C'est{\k8} {\kf12}nous,{\k12} {\kf12}les\N{\k4}{\kf56}étudiants{\k8} {\kf12}de{\k0} {\kf104}l'E-N-E-T-P,{\k48} {\kf88}Kabala.
+Dialogue: 1,0:00:12.49,0:00:20.25,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}On a une déclaration à faire !
+Dialogue: 0,0:00:12.49,0:00:16.94,Section,,0,0,0,,{\pos(1840,80)\fad(400,400)\an6}INTRO PARLÉ
+Dialogue: 2,0:00:19.85,0:00:24.32,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k45}{\kf32}On{\k8} {\kf12}a{\k20} {\kf12}une{\k4} {\kf64}déclaration{\k16} {\kf12}à{\k12} {\kf130}faire !
+Dialogue: 0,0:00:21.02,0:00:25.84,Sub,,0,0,0,,{\pos(960,660)\fad(600,600)\fnDejaVu Sans\fs46\alpha&H60&}♪   ♪   ♪
+Dialogue: 2,0:00:29.69,0:00:32.92,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k45}{\kf16}Du{\k8} {\kf48}lundi{\k8} {\kf12}au{\k4} {\kf40}samedi,{\k16} {\kf12}on{\k12} {\kf12}est{\k0} {\kf48}toujours{\k0} {\kf24}là,
+Dialogue: 1,0:00:29.69,0:00:32.89,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Dimanche ? Mini-projet, on ne se repose pas !
+Dialogue: 0,0:00:29.69,0:00:34.14,Section,,0,0,0,,{\pos(1840,80)\fad(400,400)\an6}COUPLET 1
+Dialogue: 2,0:00:32.65,0:00:36.28,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k29}{\kf64}Dimanche ?{\k8} {\kf40}Mini-projet,{\k8} {\kf32}on{\k16} {\kf12}ne{\k20} {\kf12}se{\k4} {\kf12}repose\N{\k4}{\kf48}pas !
+Dialogue: 1,0:00:32.65,0:00:36.25,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}De huit heures à dix-huit heures, on vit dans\Nl'amphi,
+Dialogue: 2,0:00:35.89,0:00:39.88,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k41}{\kf16}De{\k8} {\kf32}huit{\k0} {\kf24}heures{\k8} {\kf12}à{\k0} {\kf24}dix-huit{\k8} {\kf24}heures,{\k0} {\kf32}on{\k8} {\kf12}vit\N{\k12}{\kf24}dans{\k8} {\kf12}l'amphi,
+Dialogue: 1,0:00:35.89,0:00:39.85,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Le gardien demande : « Vous habitez ici ? »
+Dialogue: 2,0:00:39.45,0:00:42.60,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k45}{\kf12}Le{\k12} {\kf48}gardien{\k8} {\kf40}demande : «{\k16} {\kf32}Vous{\k0} {\kf56}habitez{\k0} {\kf24}ici ? »
+Dialogue: 1,0:00:39.45,0:00:42.57,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Maman s'inquiète : « Tu parles tout seul le soir ! »
+Dialogue: 2,0:00:42.33,0:00:45.32,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k29}{\kf40}Maman{\k0} {\kf64}s'inquiète : «{\k16} {\kf16}Tu{\k8} {\kf24}parles{\k0} {\kf12}tout{\k4} {\kf24}seul{\k8} {\kf12}le\N{\k4}{\kf24}soir ! »
+Dialogue: 1,0:00:42.33,0:00:45.29,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Non maman, je calcule un moment fléchissant ! »
+Dialogue: 2,0:00:45.13,0:00:48.58,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k21}{\kf24}Non{\k16} {\kf40}maman,{\k8} {\kf12}je{\k20} {\kf48}calcule{\k8} {\kf12}un{\k4} {\kf32}moment\N{\k8}{\kf80}fléchissant ! »
+Dialogue: 1,0:00:45.13,0:00:48.49,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Elle appelle le marabout, elle dit que c'est grave\Nmaintenant !
+Dialogue: 2,0:00:48.41,0:00:52.12,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k13}{\kf12}Elle{\k12} {\kf40}appelle{\k8} {\kf12}le{\k4} {\kf64}marabout,{\k8} {\kf24}elle{\k0} {\kf16}dit{\k0} {\kf12}que{\k0} {\kf32}c'est\N{\k8}{\kf24}grave{\k8} {\kf40}maintenant !
+Dialogue: 1,0:00:48.41,0:00:52.09,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Pitié, pitié, Monsieur le Directeur !
+Dialogue: 2,0:00:51.69,0:00:55.56,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k45}{\kf104}Pitié,{\k16} {\kf40}pitié,{\k16} {\kf40}Monsieur{\k0} {\kf12}le{\k4} {\kf64}Directeur !
+Dialogue: 1,0:00:51.69,0:00:55.53,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}On est fatigués, on n'a même plus d'heures !
+Dialogue: 0,0:00:51.69,0:00:56.14,Section,,0,0,0,,{\pos(1840,80)\fad(400,400)\an6}REFRAIN
+Dialogue: 2,0:00:55.13,0:00:58.90,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k45}{\kf32}On{\k8} {\kf12}est{\k4} {\kf72}fatigués,{\k24} {\kf12}on{\k12} {\kf32}n'a{\k0} {\kf32}même{\k8} {\kf12}plus{\k4} {\kf56}d'heures !
+Dialogue: 1,0:00:55.13,0:00:58.81,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Nos têtes sont cassées, nos cahiers sont pleins,
+Dialogue: 2,0:00:58.73,0:01:02.52,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k13}{\kf32}Nos{\k0} {\kf40}têtes{\k0} {\kf16}sont{\k0} {\kf56}cassées,{\k64} {\kf16}nos{\k0} {\kf48}cahiers{\k0} {\kf16}sont\N{\kf40}pleins,
+Dialogue: 1,0:00:58.73,0:01:02.49,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}L'E-N-E-T-P fabrique des guerriers chaque matin !
+Dialogue: 2,0:01:02.09,0:01:05.88,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k45}{\kf80}L'E-N-E-T-P{\k24} {\kf40}fabrique{\k8} {\kf12}des{\k4} {\kf56}guerriers{\k8} {\kf24}chaque\N{\k8}{\kf40}matin !
+Dialogue: 1,0:01:02.09,0:01:05.85,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Physique mécanique m'a giflé en session,
+Dialogue: 2,0:01:05.53,0:01:09.32,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k37}{\kf56}Physique{\k8} {\kf56}mécanique{\k48} {\kf24}m'a{\k8} {\kf56}giflé{\k8} {\kf12}en{\k0} {\kf40}session,
+Dialogue: 1,0:01:05.53,0:01:09.29,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Mécanique rationnelle, R-D-M, sans sommation,
+Dialogue: 0,0:01:05.45,0:01:09.90,Section,,0,0,0,,{\pos(1840,80)\fad(400,400)\an6}COUPLET 2
+Dialogue: 2,0:01:08.97,0:01:12.92,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k37}{\kf64}Mécanique{\k8} {\kf56}rationnelle,{\k8} {\kf64}R-D-M,{\k32} {\kf24}sans\N{\kf56}sommation,
+Dialogue: 1,0:01:08.97,0:01:12.89,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Le béton armé m'a coulé sans pitié,
+Dialogue: 2,0:01:12.49,0:01:16.20,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k45}{\kf12}Le{\k4} {\kf48}béton{\k0} {\kf40}armé{\k48} {\kf24}m'a{\k8} {\kf40}coulé{\k0} {\kf32}sans{\k0} {\kf32}pitié,
+Dialogue: 1,0:01:12.49,0:01:16.17,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Calcul des structures : ma structure s'est\Neffondrée !
+Dialogue: 2,0:01:15.77,0:01:19.62,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k45}{\kf40}Calcul{\k8} {\kf12}des{\k0} {\kf72}structures :{\k8} {\kf12}ma{\k12} {\kf56}structure{\k8} {\kf32}s'est\N{\kf72}effondrée !
+Dialogue: 1,0:01:15.77,0:01:19.45,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}En salle des profs, il y a un championnat :
+Dialogue: 2,0:01:19.45,0:01:22.02,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k5}{\kf12}En{\k0} {\kf24}salle{\k8} {\kf12}des{\k12} {\kf32}profs,{\k16} {\kf12}il{\k0} {\kf12}y{\k4} {\kf12}a{\k4} {\kf12}un{\k0} {\kf80}championnat :
+Dialogue: 1,0:01:19.45,0:01:21.93,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Moi j'en ai mis cinquante ! » « Moi toute la promo,\Nc'est moi ! »
+Dialogue: 2,0:01:21.85,0:01:26.04,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k13}{\kf24}Moi{\k8} {\kf32}j'en{\k0} {\kf16}ai{\k0} {\kf16}mis{\k8} {\kf64}cinquante ! » «{\k8} {\kf32}Moi{\k0} {\kf16}toute{\k8} {\kf12}la\N{\kf40}promo,{\k24} {\kf32}c'est{\k0} {\kf24}moi ! »
+Dialogue: 1,0:01:21.85,0:01:26.01,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Ils comptent leurs buts comme en finale de coupe,
+Dialogue: 2,0:01:25.61,0:01:29.08,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k45}{\kf16}Ils{\k8} {\kf24}comptent{\k8} {\kf24}leurs{\k0} {\kf48}buts{\k16} {\kf12}comme{\k20} {\kf12}en{\k4} {\kf32}finale{\k8} {\kf12}de\N{\k4}{\kf32}coupe,
+Dialogue: 1,0:01:25.61,0:01:29.05,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Et nous, on est le ballon !
+Dialogue: 2,0:01:28.81,0:01:30.58,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k29}{\kf24}Et{\k0} {\kf12}nous,{\k12} {\kf12}on{\k4} {\kf12}est{\k20} {\kf12}le{\k0} {\kf32}ballon !
+Dialogue: 1,0:01:28.81,0:01:30.49,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Pitié, pitié, Monsieur le Directeur !
+Dialogue: 2,0:01:30.41,0:01:33.88,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k13}{\kf56}Pitié,{\k56} {\kf40}pitié,{\k8} {\kf48}Monsieur{\k0} {\kf12}le{\k4} {\kf56}Directeur !
+Dialogue: 1,0:01:30.41,0:01:33.85,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}On est fatigués, on n'a même plus d'heures !
+Dialogue: 0,0:01:30.09,0:01:34.54,Section,,0,0,0,,{\pos(1840,80)\fad(400,400)\an6}REFRAIN
+Dialogue: 2,0:01:33.45,0:01:37.30,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k45}{\kf24}On{\k8} {\kf12}est{\k4} {\kf88}fatigués,{\k16} {\kf12}on{\k12} {\kf24}n'a{\k8} {\kf32}même{\k8} {\kf12}plus{\k4} {\kf64}d'heures !
+Dialogue: 1,0:01:33.45,0:01:37.13,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Nos têtes sont cassées, nos cahiers sont pleins,
+Dialogue: 2,0:01:37.13,0:01:40.68,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k5}{\kf24}Nos{\k8} {\kf40}têtes{\k0} {\kf16}sont{\k0} {\kf56}cassées,{\k40} {\kf16}nos{\k0} {\kf56}cahiers{\k0} {\kf16}sont\N{\kf40}pleins,
+Dialogue: 1,0:01:37.13,0:01:40.65,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}L'E-N-E-T-P fabrique des guerriers chaque matin !
+Dialogue: 2,0:01:40.25,0:01:43.62,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k45}{\kf72}L'E-N-E-T-P{\k32} {\kf40}fabrique{\k0} {\kf12}des{\k0} {\kf56}guerriers{\k8} {\kf24}chaque\N{\k8}{\kf32}matin !
+Dialogue: 1,0:01:40.25,0:01:43.53,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}On nous a dit : « Ici, c'est le master »,
+Dialogue: 2,0:01:43.45,0:01:45.72,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k13}{\kf24}On{\k8} {\kf12}nous{\k0} {\kf12}a{\k0} {\kf24}dit : «{\k8} {\kf32}Ici,{\k8} {\kf32}c'est{\k0} {\kf12}le{\k0} {\kf40}master »,
+Dialogue: 1,0:01:43.45,0:01:45.69,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Mais la Licence trois nous retient comme un aimant,
+Dialogue: 0,0:01:43.13,0:01:47.58,Section,,0,0,0,,{\pos(1840,80)\fad(400,400)\an6}COUPLET 3
+Dialogue: 2,0:01:45.53,0:01:47.86,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k21}{\kf16}Mais{\k0} {\kf12}la{\k0} {\kf32}Licence{\k8} {\kf24}trois{\k8} {\kf12}nous{\k0} {\kf40}retient{\k0} {\kf12}comme{\k4} {\kf12}un\N{\kf32}aimant,
+Dialogue: 1,0:01:45.53,0:01:47.77,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Tellement de crédits, même Excel a abandonné,
+Dialogue: 2,0:01:47.69,0:01:50.66,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k13}{\kf40}Tellement{\k8} {\kf12}de{\k0} {\kf48}crédits,{\k8} {\kf24}même{\k8} {\kf40}Excel{\k8} {\kf12}a\N{\k4}{\kf64}abandonné,
+Dialogue: 1,0:01:47.69,0:01:50.49,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}On dirait qu'ils veulent qu'on se marie en Licence\Ntrois !
+Dialogue: 2,0:01:50.49,0:01:53.56,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k5}{\kf24}On{\k0} {\kf24}dirait{\k0} {\kf32}qu'ils{\k0} {\kf32}veulent{\k8} {\kf32}qu'on{\k0} {\kf12}se{\k0} {\kf24}marie{\k8} {\kf12}en\N{\kf32}Licence{\k8} {\kf24}trois !
+Dialogue: 1,0:01:50.49,0:01:53.53,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Je suis venu en rêvant d'être ingénieur,
+Dialogue: 2,0:01:53.13,0:01:55.88,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k45}{\kf24}Je{\k8} {\kf24}suis{\k0} {\kf16}venu{\k16} {\kf12}en{\k0} {\kf40}rêvant{\k0} {\kf32}d'être{\k0} {\kf48}ingénieur,
+Dialogue: 1,0:01:53.13,0:01:55.85,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}On m'a dit : « Petit, ici on forme des\Nenseignants. »
+Dialogue: 2,0:01:55.69,0:01:58.58,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k21}{\kf16}On{\k0} {\kf32}m'a{\k0} {\kf16}dit : «{\k0} {\kf32}Petit,{\k0} {\kf32}ici{\k16} {\kf12}on{\k4} {\kf16}forme{\k8} {\kf12}des\N{\kf64}enseignants. »
+Dialogue: 1,0:01:55.69,0:01:58.49,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Mon oncle croit que je construis des ponts…
+Dialogue: 2,0:01:58.41,0:02:00.84,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k13}{\kf16}Mon{\k0} {\kf32}oncle{\k8} {\kf24}croit{\k8} {\kf12}que{\k0} {\kf12}je{\k0} {\kf56}construis{\k8} {\kf12}des{\k0} {\kf40}ponts…
+Dialogue: 1,0:01:58.41,0:02:00.81,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Je construis des ponts, tonton… dans la tête des\Ngens !
+Dialogue: 2,0:02:00.65,0:02:04.78,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k21}{\kf24}Je{\k0} {\kf56}construis{\k0} {\kf12}des{\k4} {\kf32}ponts,{\k24} {\kf40}tonton…{\k8} {\kf12}dans{\k4} {\kf12}la{\k0} {\kf32}tête\N{\k8}{\kf12}des{\k4} {\kf32}gens !
+Dialogue: 1,0:02:00.65,0:02:04.78,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Communiqué des étudiants :
+Dialogue: 2,0:02:04.73,0:02:07.40,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k45}{\kf88}Communiqué{\k8} {\kf12}des{\k12} {\kf72}étudiants :
+Dialogue: 1,0:02:04.73,0:02:07.37,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Article un : interdit de causer au trottoir,\Ninterdit de s'asseoir par groupe, interdit d'écrire\Nsur les tables…
+Dialogue: 0,0:02:04.73,0:02:09.18,Section,,0,0,0,,{\pos(1840,80)\fad(400,400)\an6}COMMUNIQUÉ PARLÉ
+Dialogue: 2,0:02:07.05,0:02:15.24,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k37}{\kf64}Article{\k8} {\kf12}un :{\k52} {\kf72}interdit{\k0} {\kf12}de{\k0} {\kf40}causer{\k0} {\kf12}au{\k0} {\kf64}trottoir,\N{\k8}{\kf48}interdit{\k0} {\kf12}de{\k0} {\kf80}s'asseoir{\k0} {\kf16}par{\k0} {\kf32}groupe,{\k24} {\kf56}interdit\N{\kf64}d'écrire{\k0} {\kf16}sur{\k0} {\kf12}les{\k4} {\kf40}tables…
+Dialogue: 1,0:02:07.05,0:02:15.21,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}On ne citera pas de nom. Tout le monde sait qui.
+Dialogue: 2,0:02:14.81,0:02:18.12,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k45}{\kf32}On{\k0} {\kf12}ne{\k12} {\kf40}citera{\k8} {\kf12}pas{\k4} {\kf12}de{\k4} {\kf16}nom.{\k8} {\kf24}Tout{\k0} {\kf12}le{\k0} {\kf24}monde{\k8} {\kf16}sait\N{\k8}{\kf12}qui.
+Dialogue: 1,0:02:14.81,0:02:18.09,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Article deux : le championnat des rattrapages est\Nofficiellement annulé.
+Dialogue: 2,0:02:17.81,0:02:23.40,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k33}{\kf64}Article{\k8} {\kf32}deux :{\k56} {\kf12}le{\k12} {\kf72}championnat{\k8} {\kf12}des\N{\k4}{\kf72}rattrapages{\k8} {\kf12}est{\k12} {\kf72}officiellement{\k0} {\kf56}annulé.
+Dialogue: 1,0:02:17.81,0:02:23.37,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Article trois : celui qui dit que c'est facile\Nviendra faire béton armé avec nous… un dimanche.
+Dialogue: 2,0:02:23.21,0:02:30.12,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k21}{\kf56}Article{\k8} {\kf32}trois :{\k24} {\kf40}celui{\k8} {\kf12}qui{\k4} {\kf24}dit{\k8} {\kf12}que{\k0} {\kf32}c'est\N{\kf40}facile{\k8} {\kf40}viendra{\k8} {\kf24}faire{\k0} {\kf40}béton{\k8} {\kf40}armé{\k16} {\kf12}avec{\k12} {\kf12}nous…\N{\k52}{\kf12}un{\k20} {\kf40}dimanche.
+Dialogue: 1,0:02:23.21,0:02:30.09,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Mais entre nous, faut dire la vérité :
+Dialogue: 2,0:02:29.77,0:02:32.02,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k37}{\kf24}Mais{\k0} {\kf32}entre{\k8} {\kf12}nous,{\k4} {\kf16}faut{\k16} {\kf16}dire{\k0} {\kf12}la{\k0} {\kf40}vérité :
+Dialogue: 1,0:02:29.77,0:02:31.93,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Nos profs sont sévères, mais vraiment forts,
+Dialogue: 0,0:02:29.69,0:02:34.14,Section,,0,0,0,,{\pos(1840,80)\fad(400,400)\an6}COUPLET 4
+Dialogue: 2,0:02:31.85,0:02:33.94,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k13}{\kf24}Nos{\k0} {\kf24}profs{\k0} {\kf16}sont{\k0} {\kf40}sévères,{\k0} {\kf12}mais{\k4} {\kf32}vraiment{\k8} {\kf24}forts,
+Dialogue: 1,0:02:31.85,0:02:33.77,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Ils cassent nos têtes pour mieux les construire,
+Dialogue: 2,0:02:33.77,0:02:35.86,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k5}{\kf16}Ils{\k0} {\kf40}cassent{\k0} {\kf16}nos{\k0} {\kf32}têtes{\k8} {\kf12}pour{\k0} {\kf24}mieux{\k0} {\kf12}les\N{\kf40}construire,
+Dialogue: 1,0:02:33.77,0:02:35.69,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Ce qu'on souffre aujourd'hui, demain c'est notre\Ntrésor.
+Dialogue: 2,0:02:35.69,0:02:38.18,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k5}{\kf16}Ce{\k0} {\kf24}qu'on{\k0} {\kf32}souffre{\k0} {\kf64}aujourd'hui,{\k0} {\kf24}demain{\k0} {\kf24}c'est\N{\kf16}notre{\k0} {\kf32}trésor.
+Dialogue: 1,0:02:35.69,0:02:38.01,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Un jour maman me verra devant le tableau,
+Dialogue: 2,0:02:38.01,0:02:40.36,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k5}{\kf24}Un{\k0} {\kf16}jour{\k8} {\kf24}maman{\k0} {\kf12}me{\k4} {\kf32}verra{\k8} {\kf32}devant{\k0} {\kf12}le{\k0} {\kf40}tableau,
+Dialogue: 1,0:02:38.01,0:02:40.33,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Et dira : « Mon fils n'était pas fou… il était à\Nl'E-N-E-T-P ! »
+Dialogue: 2,0:02:40.09,0:02:45.16,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k29}{\kf24}Et{\k0} {\kf32}dira : «{\k24} {\kf24}Mon{\k8} {\kf24}fils{\k8} {\kf48}n'était{\k0} {\kf12}pas{\k4} {\kf16}fou…{\k24} {\kf12}il\N{\k12}{\kf12}était{\k12} {\kf12}à{\k0} {\kf96}l'E-N-E-T-P ! »
+Dialogue: 1,0:02:40.09,0:02:45.13,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Merci, merci, nos chers professeurs !
+Dialogue: 2,0:02:44.73,0:02:48.68,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k45}{\kf88}Merci,{\k32} {\kf24}merci,{\k24} {\kf32}nos{\k0} {\kf32}chers{\k0} {\kf72}professeurs !
+Dialogue: 1,0:02:44.73,0:02:48.65,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Vous êtes durs, mais vous êtes les meilleurs !
+Dialogue: 0,0:02:44.73,0:02:49.18,Section,,0,0,0,,{\pos(1840,80)\fad(400,400)\an6}REFRAIN FINAL
+Dialogue: 2,0:02:48.25,0:02:51.96,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k45}{\kf24}Vous{\k8} {\kf24}êtes{\k8} {\kf72}durs,{\k8} {\kf12}mais{\k4} {\kf12}vous{\k4} {\kf24}êtes{\k8} {\kf12}les\N{\k20}{\kf72}meilleurs !
+Dialogue: 1,0:02:48.25,0:02:51.93,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}Nos têtes sont cassées, mais nos têtes sont pleines,
+Dialogue: 2,0:02:51.77,0:02:55.64,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k21}{\kf24}Nos{\k0} {\kf40}têtes{\k0} {\kf16}sont{\k0} {\kf56}cassées,{\k40} {\kf12}mais{\k12} {\kf16}nos{\k0} {\kf32}têtes{\k8} {\kf16}sont\N{\k8}{\kf40}pleines,
+Dialogue: 1,0:02:51.77,0:02:55.61,Next,,0,0,0,,{\pos(960,800)\fad(200,150)}E-N-E-T-P, Kabala… qui maîtrise enseigne !
+Dialogue: 2,0:02:55.21,0:02:59.82,Karaoke,,0,0,0,,{\pos(960,648)\fad(180,220)}{\k45}{\kf80}E-N-E-T-P,{\k32} {\kf56}Kabala…{\k16} {\kf12}qui{\k20} {\kf56}maîtrise{\k8} {\kf56}enseigne !

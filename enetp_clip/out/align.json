@@ -1,0 +1,2324 @@
+{
+ "duration": 183.6135,
+ "lines": [
+  {
+   "section": "Intro parlé",
+   "text": "Allô, l'administration ? C'est nous, les étudiants de l'E-N-E-T-P, Kabala.",
+   "start": 9.44,
+   "end": 16.24,
+   "words": [
+    {
+     "w": "Allô",
+     "start": 9.44,
+     "end": 10.0
+    },
+    {
+     "w": "l'administration",
+     "start": 10.8,
+     "end": 12.0
+    },
+    {
+     "w": "C'est",
+     "start": 12.32,
+     "end": 12.64
+    },
+    {
+     "w": "nous",
+     "start": 12.72,
+     "end": 12.8
+    },
+    {
+     "w": "les",
+     "start": 12.96,
+     "end": 13.04
+    },
+    {
+     "w": "étudiants",
+     "start": 13.12,
+     "end": 13.68
+    },
+    {
+     "w": "de",
+     "start": 13.76,
+     "end": 13.84
+    },
+    {
+     "w": "l'ENETP",
+     "start": 13.84,
+     "end": 14.88
+    },
+    {
+     "w": "Kabala",
+     "start": 15.36,
+     "end": 16.24
+    }
+   ]
+  },
+  {
+   "section": "Intro parlé",
+   "text": "On a une déclaration à faire !",
+   "start": 16.8,
+   "end": 26.32,
+   "words": [
+    {
+     "w": "On",
+     "start": 16.8,
+     "end": 17.12
+    },
+    {
+     "w": "a",
+     "start": 17.2,
+     "end": 17.28
+    },
+    {
+     "w": "une",
+     "start": 17.52,
+     "end": 17.6
+    },
+    {
+     "w": "déclaration",
+     "start": 17.68,
+     "end": 18.32
+    },
+    {
+     "w": "à",
+     "start": 18.48,
+     "end": 18.56
+    },
+    {
+     "w": "faire",
+     "start": 18.72,
+     "end": 26.32
+    }
+   ]
+  },
+  {
+   "section": "Couplet 1",
+   "text": "Du lundi au samedi, on est toujours là,",
+   "start": 26.64,
+   "end": 29.2,
+   "words": [
+    {
+     "w": "Du",
+     "start": 26.64,
+     "end": 26.8
+    },
+    {
+     "w": "lundi",
+     "start": 26.88,
+     "end": 27.36
+    },
+    {
+     "w": "au",
+     "start": 27.44,
+     "end": 27.52
+    },
+    {
+     "w": "samedi",
+     "start": 27.6,
+     "end": 28.0
+    },
+    {
+     "w": "on",
+     "start": 28.16,
+     "end": 28.24
+    },
+    {
+     "w": "est",
+     "start": 28.4,
+     "end": 28.48
+    },
+    {
+     "w": "toujours",
+     "start": 28.48,
+     "end": 28.96
+    },
+    {
+     "w": "là",
+     "start": 28.96,
+     "end": 29.2
+    }
+   ]
+  },
+  {
+   "section": "Couplet 1",
+   "text": "Dimanche ? Mini-projet, on ne se repose pas !",
+   "start": 29.44,
+   "end": 32.4,
+   "words": [
+    {
+     "w": "Dimanche",
+     "start": 29.44,
+     "end": 30.08
+    },
+    {
+     "w": "Mini",
+     "start": 30.16,
+     "end": 30.56
+    },
+    {
+     "w": "projet",
+     "start": 30.64,
+     "end": 30.96
+    },
+    {
+     "w": "on",
+     "start": 31.12,
+     "end": 31.2
+    },
+    {
+     "w": "ne",
+     "start": 31.44,
+     "end": 31.52
+    },
+    {
+     "w": "se",
+     "start": 31.6,
+     "end": 31.68
+    },
+    {
+     "w": "repose",
+     "start": 31.76,
+     "end": 32.24
+    },
+    {
+     "w": "pas",
+     "start": 32.32,
+     "end": 32.4
+    }
+   ]
+  },
+  {
+   "section": "Couplet 1",
+   "text": "De huit heures à dix-huit heures, on vit dans l'amphi,",
+   "start": 32.8,
+   "end": 35.84,
+   "words": [
+    {
+     "w": "De",
+     "start": 32.8,
+     "end": 32.96
+    },
+    {
+     "w": "huit",
+     "start": 33.04,
+     "end": 33.36
+    },
+    {
+     "w": "heures",
+     "start": 33.36,
+     "end": 33.6
+    },
+    {
+     "w": "à",
+     "start": 33.68,
+     "end": 33.76
+    },
+    {
+     "w": "dix",
+     "start": 33.76,
+     "end": 34.0
+    },
+    {
+     "w": "huit",
+     "start": 34.08,
+     "end": 34.32
+    },
+    {
+     "w": "heures",
+     "start": 34.32,
+     "end": 34.64
+    },
+    {
+     "w": "on",
+     "start": 34.72,
+     "end": 34.8
+    },
+    {
+     "w": "vit",
+     "start": 34.96,
+     "end": 35.2
+    },
+    {
+     "w": "dans",
+     "start": 35.28,
+     "end": 35.36
+    },
+    {
+     "w": "l'amphi",
+     "start": 35.36,
+     "end": 35.84
+    }
+   ]
+  },
+  {
+   "section": "Couplet 1",
+   "text": "Le gardien demande : « Vous habitez ici ? »",
+   "start": 36.4,
+   "end": 38.88,
+   "words": [
+    {
+     "w": "Le",
+     "start": 36.4,
+     "end": 36.48
+    },
+    {
+     "w": "gardien",
+     "start": 36.64,
+     "end": 37.12
+    },
+    {
+     "w": "demande",
+     "start": 37.2,
+     "end": 37.6
+    },
+    {
+     "w": "Vous",
+     "start": 37.76,
+     "end": 38.08
+    },
+    {
+     "w": "habitez",
+     "start": 38.08,
+     "end": 38.64
+    },
+    {
+     "w": "ici",
+     "start": 38.64,
+     "end": 38.88
+    }
+   ]
+  },
+  {
+   "section": "Couplet 1",
+   "text": "Maman s'inquiète : « Tu parles tout seul le soir ! »",
+   "start": 39.12,
+   "end": 41.68,
+   "words": [
+    {
+     "w": "Maman",
+     "start": 39.12,
+     "end": 39.52
+    },
+    {
+     "w": "s'inquiète",
+     "start": 39.52,
+     "end": 40.16
+    },
+    {
+     "w": "Tu",
+     "start": 40.32,
+     "end": 40.48
+    },
+    {
+     "w": "parles",
+     "start": 40.56,
+     "end": 40.8
+    },
+    {
+     "w": "tout",
+     "start": 40.8,
+     "end": 40.88
+    },
+    {
+     "w": "seul",
+     "start": 40.96,
+     "end": 41.2
+    },
+    {
+     "w": "le",
+     "start": 41.28,
+     "end": 41.36
+    },
+    {
+     "w": "soir",
+     "start": 41.44,
+     "end": 41.68
+    }
+   ]
+  },
+  {
+   "section": "Couplet 1",
+   "text": "« Non maman, je calcule un moment fléchissant ! »",
+   "start": 41.84,
+   "end": 44.96,
+   "words": [
+    {
+     "w": "Non",
+     "start": 41.84,
+     "end": 42.08
+    },
+    {
+     "w": "maman",
+     "start": 42.24,
+     "end": 42.64
+    },
+    {
+     "w": "je",
+     "start": 42.72,
+     "end": 42.8
+    },
+    {
+     "w": "calcule",
+     "start": 43.04,
+     "end": 43.52
+    },
+    {
+     "w": "un",
+     "start": 43.6,
+     "end": 43.68
+    },
+    {
+     "w": "moment",
+     "start": 43.76,
+     "end": 44.08
+    },
+    {
+     "w": "fléchissant",
+     "start": 44.16,
+     "end": 44.96
+    }
+   ]
+  },
+  {
+   "section": "Couplet 1",
+   "text": "Elle appelle le marabout, elle dit que c'est grave maintenant !",
+   "start": 45.04,
+   "end": 48.24,
+   "words": [
+    {
+     "w": "Elle",
+     "start": 45.04,
+     "end": 45.12
+    },
+    {
+     "w": "appelle",
+     "start": 45.28,
+     "end": 45.68
+    },
+    {
+     "w": "le",
+     "start": 45.76,
+     "end": 45.84
+    },
+    {
+     "w": "marabout",
+     "start": 45.92,
+     "end": 46.56
+    },
+    {
+     "w": "elle",
+     "start": 46.64,
+     "end": 46.88
+    },
+    {
+     "w": "dit",
+     "start": 46.88,
+     "end": 47.04
+    },
+    {
+     "w": "que",
+     "start": 47.04,
+     "end": 47.12
+    },
+    {
+     "w": "c'est",
+     "start": 47.12,
+     "end": 47.44
+    },
+    {
+     "w": "grave",
+     "start": 47.52,
+     "end": 47.76
+    },
+    {
+     "w": "maintenant",
+     "start": 47.84,
+     "end": 48.24
+    }
+   ]
+  },
+  {
+   "section": "Refrain",
+   "text": "Pitié, pitié, Monsieur le Directeur !",
+   "start": 48.64,
+   "end": 51.6,
+   "words": [
+    {
+     "w": "Pitié",
+     "start": 48.64,
+     "end": 49.68
+    },
+    {
+     "w": "pitié",
+     "start": 49.84,
+     "end": 50.24
+    },
+    {
+     "w": "Monsieur",
+     "start": 50.4,
+     "end": 50.8
+    },
+    {
+     "w": "le",
+     "start": 50.8,
+     "end": 50.88
+    },
+    {
+     "w": "Directeur",
+     "start": 50.96,
+     "end": 51.6
+    }
+   ]
+  },
+  {
+   "section": "Refrain",
+   "text": "On est fatigués, on n'a même plus d'heures !",
+   "start": 52.08,
+   "end": 55.28,
+   "words": [
+    {
+     "w": "On",
+     "start": 52.08,
+     "end": 52.4
+    },
+    {
+     "w": "est",
+     "start": 52.48,
+     "end": 52.56
+    },
+    {
+     "w": "fatigués",
+     "start": 52.64,
+     "end": 53.36
+    },
+    {
+     "w": "on",
+     "start": 53.6,
+     "end": 53.68
+    },
+    {
+     "w": "n'a",
+     "start": 53.84,
+     "end": 54.16
+    },
+    {
+     "w": "même",
+     "start": 54.16,
+     "end": 54.48
+    },
+    {
+     "w": "plus",
+     "start": 54.56,
+     "end": 54.64
+    },
+    {
+     "w": "d'heures",
+     "start": 54.72,
+     "end": 55.28
+    }
+   ]
+  },
+  {
+   "section": "Refrain",
+   "text": "Nos têtes sont cassées, nos cahiers sont pleins,",
+   "start": 55.36,
+   "end": 58.64,
+   "words": [
+    {
+     "w": "Nos",
+     "start": 55.36,
+     "end": 55.68
+    },
+    {
+     "w": "têtes",
+     "start": 55.68,
+     "end": 56.08
+    },
+    {
+     "w": "sont",
+     "start": 56.08,
+     "end": 56.24
+    },
+    {
+     "w": "cassées",
+     "start": 56.24,
+     "end": 56.8
+    },
+    {
+     "w": "nos",
+     "start": 57.44,
+     "end": 57.6
+    },
+    {
+     "w": "cahiers",
+     "start": 57.6,
+     "end": 58.08
+    },
+    {
+     "w": "sont",
+     "start": 58.08,
+     "end": 58.24
+    },
+    {
+     "w": "pleins",
+     "start": 58.24,
+     "end": 58.64
+    }
+   ]
+  },
+  {
+   "section": "Refrain",
+   "text": "L'E-N-E-T-P fabrique des guerriers chaque matin !",
+   "start": 59.04,
+   "end": 62.08,
+   "words": [
+    {
+     "w": "L'ENETP",
+     "start": 59.04,
+     "end": 59.84
+    },
+    {
+     "w": "fabrique",
+     "start": 60.08,
+     "end": 60.48
+    },
+    {
+     "w": "des",
+     "start": 60.56,
+     "end": 60.64
+    },
+    {
+     "w": "guerriers",
+     "start": 60.72,
+     "end": 61.28
+    },
+    {
+     "w": "chaque",
+     "start": 61.36,
+     "end": 61.6
+    },
+    {
+     "w": "matin",
+     "start": 61.68,
+     "end": 62.08
+    }
+   ]
+  },
+  {
+   "section": "Couplet 2",
+   "text": "Physique mécanique m'a giflé en session,",
+   "start": 62.4,
+   "end": 65.52,
+   "words": [
+    {
+     "w": "Physique",
+     "start": 62.4,
+     "end": 62.96
+    },
+    {
+     "w": "mécanique",
+     "start": 63.04,
+     "end": 63.6
+    },
+    {
+     "w": "m'a",
+     "start": 64.08,
+     "end": 64.32
+    },
+    {
+     "w": "giflé",
+     "start": 64.4,
+     "end": 64.96
+    },
+    {
+     "w": "en",
+     "start": 65.04,
+     "end": 65.12
+    },
+    {
+     "w": "session",
+     "start": 65.12,
+     "end": 65.52
+    }
+   ]
+  },
+  {
+   "section": "Couplet 2",
+   "text": "Mécanique rationnelle, R-D-M, sans sommation,",
+   "start": 65.84,
+   "end": 68.96,
+   "words": [
+    {
+     "w": "Mécanique",
+     "start": 65.84,
+     "end": 66.48
+    },
+    {
+     "w": "rationnelle",
+     "start": 66.56,
+     "end": 67.12
+    },
+    {
+     "w": "RDM",
+     "start": 67.2,
+     "end": 67.84
+    },
+    {
+     "w": "sans",
+     "start": 68.16,
+     "end": 68.4
+    },
+    {
+     "w": "sommation",
+     "start": 68.4,
+     "end": 68.96
+    }
+   ]
+  },
+  {
+   "section": "Couplet 2",
+   "text": "Le béton armé m'a coulé sans pitié,",
+   "start": 69.44,
+   "end": 72.32,
+   "words": [
+    {
+     "w": "Le",
+     "start": 69.44,
+     "end": 69.52
+    },
+    {
+     "w": "béton",
+     "start": 69.6,
+     "end": 70.08
+    },
+    {
+     "w": "armé",
+     "start": 70.08,
+     "end": 70.48
+    },
+    {
+     "w": "m'a",
+     "start": 70.96,
+     "end": 71.2
+    },
+    {
+     "w": "coulé",
+     "start": 71.28,
+     "end": 71.68
+    },
+    {
+     "w": "sans",
+     "start": 71.68,
+     "end": 72.0
+    },
+    {
+     "w": "pitié",
+     "start": 72.0,
+     "end": 72.32
+    }
+   ]
+  },
+  {
+   "section": "Couplet 2",
+   "text": "Calcul des structures : ma structure s'est effondrée !",
+   "start": 72.72,
+   "end": 76.0,
+   "words": [
+    {
+     "w": "Calcul",
+     "start": 72.72,
+     "end": 73.12
+    },
+    {
+     "w": "des",
+     "start": 73.2,
+     "end": 73.28
+    },
+    {
+     "w": "structures",
+     "start": 73.28,
+     "end": 74.0
+    },
+    {
+     "w": "ma",
+     "start": 74.08,
+     "end": 74.16
+    },
+    {
+     "w": "structure",
+     "start": 74.32,
+     "end": 74.88
+    },
+    {
+     "w": "s'est",
+     "start": 74.96,
+     "end": 75.28
+    },
+    {
+     "w": "effondrée",
+     "start": 75.28,
+     "end": 76.0
+    }
+   ]
+  },
+  {
+   "section": "Couplet 2",
+   "text": "En salle des profs, il y a un championnat :",
+   "start": 76.0,
+   "end": 78.4,
+   "words": [
+    {
+     "w": "En",
+     "start": 76.0,
+     "end": 76.08
+    },
+    {
+     "w": "salle",
+     "start": 76.08,
+     "end": 76.32
+    },
+    {
+     "w": "des",
+     "start": 76.4,
+     "end": 76.48
+    },
+    {
+     "w": "profs",
+     "start": 76.64,
+     "end": 76.96
+    },
+    {
+     "w": "il",
+     "start": 77.12,
+     "end": 77.2
+    },
+    {
+     "w": "y",
+     "start": 77.2,
+     "end": 77.28
+    },
+    {
+     "w": "a",
+     "start": 77.36,
+     "end": 77.44
+    },
+    {
+     "w": "un",
+     "start": 77.52,
+     "end": 77.6
+    },
+    {
+     "w": "championnat",
+     "start": 77.6,
+     "end": 78.4
+    }
+   ]
+  },
+  {
+   "section": "Couplet 2",
+   "text": "« Moi j'en ai mis cinquante ! » « Moi toute la promo, c'est moi ! »",
+   "start": 78.48,
+   "end": 82.08,
+   "words": [
+    {
+     "w": "Moi",
+     "start": 78.48,
+     "end": 78.72
+    },
+    {
+     "w": "j'en",
+     "start": 78.8,
+     "end": 79.12
+    },
+    {
+     "w": "ai",
+     "start": 79.12,
+     "end": 79.28
+    },
+    {
+     "w": "mis",
+     "start": 79.28,
+     "end": 79.44
+    },
+    {
+     "w": "cinquante",
+     "start": 79.52,
+     "end": 80.16
+    },
+    {
+     "w": "Moi",
+     "start": 80.24,
+     "end": 80.56
+    },
+    {
+     "w": "toute",
+     "start": 80.56,
+     "end": 80.72
+    },
+    {
+     "w": "la",
+     "start": 80.8,
+     "end": 80.88
+    },
+    {
+     "w": "promo",
+     "start": 80.88,
+     "end": 81.28
+    },
+    {
+     "w": "c'est",
+     "start": 81.52,
+     "end": 81.84
+    },
+    {
+     "w": "moi",
+     "start": 81.84,
+     "end": 82.08
+    }
+   ]
+  },
+  {
+   "section": "Couplet 2",
+   "text": "Ils comptent leurs buts comme en finale de coupe,",
+   "start": 82.56,
+   "end": 85.36,
+   "words": [
+    {
+     "w": "Ils",
+     "start": 82.56,
+     "end": 82.72
+    },
+    {
+     "w": "comptent",
+     "start": 82.8,
+     "end": 83.04
+    },
+    {
+     "w": "leurs",
+     "start": 83.12,
+     "end": 83.36
+    },
+    {
+     "w": "buts",
+     "start": 83.36,
+     "end": 83.84
+    },
+    {
+     "w": "comme",
+     "start": 84.0,
+     "end": 84.08
+    },
+    {
+     "w": "en",
+     "start": 84.32,
+     "end": 84.4
+    },
+    {
+     "w": "finale",
+     "start": 84.48,
+     "end": 84.8
+    },
+    {
+     "w": "de",
+     "start": 84.88,
+     "end": 84.96
+    },
+    {
+     "w": "coupe",
+     "start": 85.04,
+     "end": 85.36
+    }
+   ]
+  },
+  {
+   "section": "Couplet 2",
+   "text": "Et nous, on est le ballon !",
+   "start": 85.6,
+   "end": 86.96,
+   "words": [
+    {
+     "w": "Et",
+     "start": 85.6,
+     "end": 85.84
+    },
+    {
+     "w": "nous",
+     "start": 85.84,
+     "end": 85.92
+    },
+    {
+     "w": "on",
+     "start": 86.08,
+     "end": 86.16
+    },
+    {
+     "w": "est",
+     "start": 86.24,
+     "end": 86.32
+    },
+    {
+     "w": "le",
+     "start": 86.56,
+     "end": 86.64
+    },
+    {
+     "w": "ballon",
+     "start": 86.64,
+     "end": 86.96
+    }
+   ]
+  },
+  {
+   "section": "Refrain",
+   "text": "Pitié, pitié, Monsieur le Directeur !",
+   "start": 87.04,
+   "end": 89.84,
+   "words": [
+    {
+     "w": "Pitié",
+     "start": 87.04,
+     "end": 87.6
+    },
+    {
+     "w": "pitié",
+     "start": 88.16,
+     "end": 88.56
+    },
+    {
+     "w": "Monsieur",
+     "start": 88.64,
+     "end": 89.12
+    },
+    {
+     "w": "le",
+     "start": 89.12,
+     "end": 89.2
+    },
+    {
+     "w": "Directeur",
+     "start": 89.28,
+     "end": 89.84
+    }
+   ]
+  },
+  {
+   "section": "Refrain",
+   "text": "On est fatigués, on n'a même plus d'heures !",
+   "start": 90.4,
+   "end": 93.68,
+   "words": [
+    {
+     "w": "On",
+     "start": 90.4,
+     "end": 90.64
+    },
+    {
+     "w": "est",
+     "start": 90.72,
+     "end": 90.8
+    },
+    {
+     "w": "fatigués",
+     "start": 90.88,
+     "end": 91.76
+    },
+    {
+     "w": "on",
+     "start": 91.92,
+     "end": 92.0
+    },
+    {
+     "w": "n'a",
+     "start": 92.16,
+     "end": 92.4
+    },
+    {
+     "w": "même",
+     "start": 92.48,
+     "end": 92.8
+    },
+    {
+     "w": "plus",
+     "start": 92.88,
+     "end": 92.96
+    },
+    {
+     "w": "d'heures",
+     "start": 93.04,
+     "end": 93.68
+    }
+   ]
+  },
+  {
+   "section": "Refrain",
+   "text": "Nos têtes sont cassées, nos cahiers sont pleins,",
+   "start": 93.68,
+   "end": 96.8,
+   "words": [
+    {
+     "w": "Nos",
+     "start": 93.68,
+     "end": 93.92
+    },
+    {
+     "w": "têtes",
+     "start": 94.0,
+     "end": 94.4
+    },
+    {
+     "w": "sont",
+     "start": 94.4,
+     "end": 94.56
+    },
+    {
+     "w": "cassées",
+     "start": 94.56,
+     "end": 95.12
+    },
+    {
+     "w": "nos",
+     "start": 95.52,
+     "end": 95.68
+    },
+    {
+     "w": "cahiers",
+     "start": 95.68,
+     "end": 96.24
+    },
+    {
+     "w": "sont",
+     "start": 96.24,
+     "end": 96.4
+    },
+    {
+     "w": "pleins",
+     "start": 96.4,
+     "end": 96.8
+    }
+   ]
+  },
+  {
+   "section": "Refrain",
+   "text": "L'E-N-E-T-P fabrique des guerriers chaque matin !",
+   "start": 97.2,
+   "end": 100.0,
+   "words": [
+    {
+     "w": "L'ENETP",
+     "start": 97.2,
+     "end": 97.92
+    },
+    {
+     "w": "fabrique",
+     "start": 98.24,
+     "end": 98.64
+    },
+    {
+     "w": "des",
+     "start": 98.64,
+     "end": 98.72
+    },
+    {
+     "w": "guerriers",
+     "start": 98.72,
+     "end": 99.28
+    },
+    {
+     "w": "chaque",
+     "start": 99.36,
+     "end": 99.6
+    },
+    {
+     "w": "matin",
+     "start": 99.68,
+     "end": 100.0
+    }
+   ]
+  },
+  {
+   "section": "Couplet 3",
+   "text": "On nous a dit : « Ici, c'est le master »,",
+   "start": 100.08,
+   "end": 102.08,
+   "words": [
+    {
+     "w": "On",
+     "start": 100.08,
+     "end": 100.32
+    },
+    {
+     "w": "nous",
+     "start": 100.4,
+     "end": 100.48
+    },
+    {
+     "w": "a",
+     "start": 100.48,
+     "end": 100.56
+    },
+    {
+     "w": "dit",
+     "start": 100.56,
+     "end": 100.8
+    },
+    {
+     "w": "Ici",
+     "start": 100.88,
+     "end": 101.2
+    },
+    {
+     "w": "c'est",
+     "start": 101.28,
+     "end": 101.6
+    },
+    {
+     "w": "le",
+     "start": 101.6,
+     "end": 101.68
+    },
+    {
+     "w": "master",
+     "start": 101.68,
+     "end": 102.08
+    }
+   ]
+  },
+  {
+   "section": "Couplet 3",
+   "text": "Mais la Licence trois nous retient comme un aimant,",
+   "start": 102.24,
+   "end": 104.24,
+   "words": [
+    {
+     "w": "Mais",
+     "start": 102.24,
+     "end": 102.4
+    },
+    {
+     "w": "la",
+     "start": 102.4,
+     "end": 102.48
+    },
+    {
+     "w": "Licence",
+     "start": 102.48,
+     "end": 102.8
+    },
+    {
+     "w": "trois",
+     "start": 102.88,
+     "end": 103.12
+    },
+    {
+     "w": "nous",
+     "start": 103.2,
+     "end": 103.28
+    },
+    {
+     "w": "retient",
+     "start": 103.28,
+     "end": 103.68
+    },
+    {
+     "w": "comme",
+     "start": 103.68,
+     "end": 103.76
+    },
+    {
+     "w": "un",
+     "start": 103.84,
+     "end": 103.92
+    },
+    {
+     "w": "aimant",
+     "start": 103.92,
+     "end": 104.24
+    }
+   ]
+  },
+  {
+   "section": "Couplet 3",
+   "text": "Tellement de crédits, même Excel a abandonné,",
+   "start": 104.32,
+   "end": 107.04,
+   "words": [
+    {
+     "w": "Tellement",
+     "start": 104.32,
+     "end": 104.72
+    },
+    {
+     "w": "de",
+     "start": 104.8,
+     "end": 104.88
+    },
+    {
+     "w": "crédits",
+     "start": 104.88,
+     "end": 105.36
+    },
+    {
+     "w": "même",
+     "start": 105.44,
+     "end": 105.68
+    },
+    {
+     "w": "Excel",
+     "start": 105.76,
+     "end": 106.16
+    },
+    {
+     "w": "a",
+     "start": 106.24,
+     "end": 106.32
+    },
+    {
+     "w": "abandonné",
+     "start": 106.4,
+     "end": 107.04
+    }
+   ]
+  },
+  {
+   "section": "Couplet 3",
+   "text": "On dirait qu'ils veulent qu'on se marie en Licence trois !",
+   "start": 107.04,
+   "end": 109.68,
+   "words": [
+    {
+     "w": "On",
+     "start": 107.04,
+     "end": 107.28
+    },
+    {
+     "w": "dirait",
+     "start": 107.28,
+     "end": 107.52
+    },
+    {
+     "w": "qu'ils",
+     "start": 107.52,
+     "end": 107.84
+    },
+    {
+     "w": "veulent",
+     "start": 107.84,
+     "end": 108.16
+    },
+    {
+     "w": "qu'on",
+     "start": 108.24,
+     "end": 108.56
+    },
+    {
+     "w": "se",
+     "start": 108.56,
+     "end": 108.64
+    },
+    {
+     "w": "marie",
+     "start": 108.64,
+     "end": 108.88
+    },
+    {
+     "w": "en",
+     "start": 108.96,
+     "end": 109.04
+    },
+    {
+     "w": "Licence",
+     "start": 109.04,
+     "end": 109.36
+    },
+    {
+     "w": "trois",
+     "start": 109.44,
+     "end": 109.68
+    }
+   ]
+  },
+  {
+   "section": "Couplet 3",
+   "text": "Je suis venu en rêvant d'être ingénieur,",
+   "start": 110.08,
+   "end": 112.24,
+   "words": [
+    {
+     "w": "Je",
+     "start": 110.08,
+     "end": 110.32
+    },
+    {
+     "w": "suis",
+     "start": 110.4,
+     "end": 110.64
+    },
+    {
+     "w": "venu",
+     "start": 110.64,
+     "end": 110.8
+    },
+    {
+     "w": "en",
+     "start": 110.96,
+     "end": 111.04
+    },
+    {
+     "w": "rêvant",
+     "start": 111.04,
+     "end": 111.44
+    },
+    {
+     "w": "d'être",
+     "start": 111.44,
+     "end": 111.76
+    },
+    {
+     "w": "ingénieur",
+     "start": 111.76,
+     "end": 112.24
+    }
+   ]
+  },
+  {
+   "section": "Couplet 3",
+   "text": "On m'a dit : « Petit, ici on forme des enseignants. »",
+   "start": 112.4,
+   "end": 114.96,
+   "words": [
+    {
+     "w": "On",
+     "start": 112.4,
+     "end": 112.56
+    },
+    {
+     "w": "m'a",
+     "start": 112.56,
+     "end": 112.88
+    },
+    {
+     "w": "dit",
+     "start": 112.88,
+     "end": 113.04
+    },
+    {
+     "w": "Petit",
+     "start": 113.04,
+     "end": 113.36
+    },
+    {
+     "w": "ici",
+     "start": 113.36,
+     "end": 113.68
+    },
+    {
+     "w": "on",
+     "start": 113.84,
+     "end": 113.92
+    },
+    {
+     "w": "forme",
+     "start": 114.0,
+     "end": 114.16
+    },
+    {
+     "w": "des",
+     "start": 114.24,
+     "end": 114.32
+    },
+    {
+     "w": "enseignants",
+     "start": 114.32,
+     "end": 114.96
+    }
+   ]
+  },
+  {
+   "section": "Couplet 3",
+   "text": "Mon oncle croit que je construis des ponts…",
+   "start": 115.04,
+   "end": 117.2,
+   "words": [
+    {
+     "w": "Mon",
+     "start": 115.04,
+     "end": 115.2
+    },
+    {
+     "w": "oncle",
+     "start": 115.2,
+     "end": 115.52
+    },
+    {
+     "w": "croit",
+     "start": 115.6,
+     "end": 115.84
+    },
+    {
+     "w": "que",
+     "start": 115.92,
+     "end": 116.0
+    },
+    {
+     "w": "je",
+     "start": 116.0,
+     "end": 116.08
+    },
+    {
+     "w": "construis",
+     "start": 116.08,
+     "end": 116.64
+    },
+    {
+     "w": "des",
+     "start": 116.72,
+     "end": 116.8
+    },
+    {
+     "w": "ponts",
+     "start": 116.8,
+     "end": 117.2
+    }
+   ]
+  },
+  {
+   "section": "Couplet 3",
+   "text": "Je construis des ponts, tonton… dans la tête des gens !",
+   "start": 117.36,
+   "end": 120.48,
+   "words": [
+    {
+     "w": "Je",
+     "start": 117.36,
+     "end": 117.6
+    },
+    {
+     "w": "construis",
+     "start": 117.6,
+     "end": 118.16
+    },
+    {
+     "w": "des",
+     "start": 118.16,
+     "end": 118.24
+    },
+    {
+     "w": "ponts",
+     "start": 118.32,
+     "end": 118.64
+    },
+    {
+     "w": "tonton",
+     "start": 118.88,
+     "end": 119.28
+    },
+    {
+     "w": "dans",
+     "start": 119.36,
+     "end": 119.44
+    },
+    {
+     "w": "la",
+     "start": 119.52,
+     "end": 119.6
+    },
+    {
+     "w": "tête",
+     "start": 119.6,
+     "end": 119.92
+    },
+    {
+     "w": "des",
+     "start": 120.0,
+     "end": 120.08
+    },
+    {
+     "w": "gens",
+     "start": 120.16,
+     "end": 120.48
+    }
+   ]
+  },
+  {
+   "section": "Communiqué parlé",
+   "text": "Communiqué des étudiants :",
+   "start": 121.68,
+   "end": 123.6,
+   "words": [
+    {
+     "w": "Communiqué",
+     "start": 121.68,
+     "end": 122.56
+    },
+    {
+     "w": "des",
+     "start": 122.64,
+     "end": 122.72
+    },
+    {
+     "w": "étudiants",
+     "start": 122.88,
+     "end": 123.6
+    }
+   ]
+  },
+  {
+   "section": "Communiqué parlé",
+   "text": "Article un : interdit de causer au trottoir, interdit de s'asseoir par groupe, interdit d'écrire sur les tables…",
+   "start": 123.92,
+   "end": 131.28,
+   "words": [
+    {
+     "w": "Article",
+     "start": 123.92,
+     "end": 124.56
+    },
+    {
+     "w": "un",
+     "start": 124.64,
+     "end": 124.72
+    },
+    {
+     "w": "interdit",
+     "start": 125.28,
+     "end": 126.0
+    },
+    {
+     "w": "de",
+     "start": 126.0,
+     "end": 126.08
+    },
+    {
+     "w": "causer",
+     "start": 126.08,
+     "end": 126.48
+    },
+    {
+     "w": "au",
+     "start": 126.48,
+     "end": 126.56
+    },
+    {
+     "w": "trottoir",
+     "start": 126.56,
+     "end": 127.2
+    },
+    {
+     "w": "interdit",
+     "start": 127.28,
+     "end": 127.76
+    },
+    {
+     "w": "de",
+     "start": 127.76,
+     "end": 127.84
+    },
+    {
+     "w": "s'asseoir",
+     "start": 127.84,
+     "end": 128.64
+    },
+    {
+     "w": "par",
+     "start": 128.64,
+     "end": 128.8
+    },
+    {
+     "w": "groupe",
+     "start": 128.8,
+     "end": 129.12
+    },
+    {
+     "w": "interdit",
+     "start": 129.36,
+     "end": 129.92
+    },
+    {
+     "w": "d'écrire",
+     "start": 129.92,
+     "end": 130.56
+    },
+    {
+     "w": "sur",
+     "start": 130.56,
+     "end": 130.72
+    },
+    {
+     "w": "les",
+     "start": 130.72,
+     "end": 130.8
+    },
+    {
+     "w": "tables",
+     "start": 130.88,
+     "end": 131.28
+    }
+   ]
+  },
+  {
+   "section": "Communiqué parlé",
+   "text": "On ne citera pas de nom. Tout le monde sait qui.",
+   "start": 131.76,
+   "end": 134.32,
+   "words": [
+    {
+     "w": "On",
+     "start": 131.76,
+     "end": 132.08
+    },
+    {
+     "w": "ne",
+     "start": 132.08,
+     "end": 132.16
+    },
+    {
+     "w": "citera",
+     "start": 132.32,
+     "end": 132.72
+    },
+    {
+     "w": "pas",
+     "start": 132.8,
+     "end": 132.88
+    },
+    {
+     "w": "de",
+     "start": 132.96,
+     "end": 133.04
+    },
+    {
+     "w": "nom",
+     "start": 133.12,
+     "end": 133.28
+    },
+    {
+     "w": "Tout",
+     "start": 133.36,
+     "end": 133.6
+    },
+    {
+     "w": "le",
+     "start": 133.6,
+     "end": 133.68
+    },
+    {
+     "w": "monde",
+     "start": 133.68,
+     "end": 133.92
+    },
+    {
+     "w": "sait",
+     "start": 134.0,
+     "end": 134.16
+    },
+    {
+     "w": "qui",
+     "start": 134.24,
+     "end": 134.32
+    }
+   ]
+  },
+  {
+   "section": "Communiqué parlé",
+   "text": "Article deux : le championnat des rattrapages est officiellement annulé.",
+   "start": 134.64,
+   "end": 139.76,
+   "words": [
+    {
+     "w": "Article",
+     "start": 134.64,
+     "end": 135.28
+    },
+    {
+     "w": "deux",
+     "start": 135.36,
+     "end": 135.68
+    },
+    {
+     "w": "le",
+     "start": 136.24,
+     "end": 136.32
+    },
+    {
+     "w": "championnat",
+     "start": 136.48,
+     "end": 137.2
+    },
+    {
+     "w": "des",
+     "start": 137.28,
+     "end": 137.36
+    },
+    {
+     "w": "rattrapages",
+     "start": 137.44,
+     "end": 138.16
+    },
+    {
+     "w": "est",
+     "start": 138.24,
+     "end": 138.32
+    },
+    {
+     "w": "officiellement",
+     "start": 138.48,
+     "end": 139.2
+    },
+    {
+     "w": "annulé",
+     "start": 139.2,
+     "end": 139.76
+    }
+   ]
+  },
+  {
+   "section": "Communiqué parlé",
+   "text": "Article trois : celui qui dit que c'est facile viendra faire béton armé avec nous… un dimanche.",
+   "start": 139.92,
+   "end": 146.32,
+   "words": [
+    {
+     "w": "Article",
+     "start": 139.92,
+     "end": 140.48
+    },
+    {
+     "w": "trois",
+     "start": 140.56,
+     "end": 140.88
+    },
+    {
+     "w": "celui",
+     "start": 141.12,
+     "end": 141.52
+    },
+    {
+     "w": "qui",
+     "start": 141.6,
+     "end": 141.68
+    },
+    {
+     "w": "dit",
+     "start": 141.76,
+     "end": 142.0
+    },
+    {
+     "w": "que",
+     "start": 142.08,
+     "end": 142.16
+    },
+    {
+     "w": "c'est",
+     "start": 142.16,
+     "end": 142.48
+    },
+    {
+     "w": "facile",
+     "start": 142.48,
+     "end": 142.88
+    },
+    {
+     "w": "viendra",
+     "start": 142.96,
+     "end": 143.36
+    },
+    {
+     "w": "faire",
+     "start": 143.44,
+     "end": 143.68
+    },
+    {
+     "w": "béton",
+     "start": 143.68,
+     "end": 144.08
+    },
+    {
+     "w": "armé",
+     "start": 144.16,
+     "end": 144.56
+    },
+    {
+     "w": "avec",
+     "start": 144.72,
+     "end": 144.8
+    },
+    {
+     "w": "nous",
+     "start": 144.96,
+     "end": 145.04
+    },
+    {
+     "w": "un",
+     "start": 145.6,
+     "end": 145.68
+    },
+    {
+     "w": "dimanche",
+     "start": 145.92,
+     "end": 146.32
+    }
+   ]
+  },
+  {
+   "section": "Couplet 4",
+   "text": "Mais entre nous, faut dire la vérité :",
+   "start": 146.64,
+   "end": 148.4,
+   "words": [
+    {
+     "w": "Mais",
+     "start": 146.64,
+     "end": 146.88
+    },
+    {
+     "w": "entre",
+     "start": 146.88,
+     "end": 147.2
+    },
+    {
+     "w": "nous",
+     "start": 147.28,
+     "end": 147.36
+    },
+    {
+     "w": "faut",
+     "start": 147.44,
+     "end": 147.6
+    },
+    {
+     "w": "dire",
+     "start": 147.76,
+     "end": 147.92
+    },
+    {
+     "w": "la",
+     "start": 147.92,
+     "end": 148.0
+    },
+    {
+     "w": "vérité",
+     "start": 148.0,
+     "end": 148.4
+    }
+   ]
+  },
+  {
+   "section": "Couplet 4",
+   "text": "Nos profs sont sévères, mais vraiment forts,",
+   "start": 148.48,
+   "end": 150.32,
+   "words": [
+    {
+     "w": "Nos",
+     "start": 148.48,
+     "end": 148.72
+    },
+    {
+     "w": "profs",
+     "start": 148.72,
+     "end": 148.96
+    },
+    {
+     "w": "sont",
+     "start": 148.96,
+     "end": 149.12
+    },
+    {
+     "w": "sévères",
+     "start": 149.12,
+     "end": 149.52
+    },
+    {
+     "w": "mais",
+     "start": 149.52,
+     "end": 149.6
+    },
+    {
+     "w": "vraiment",
+     "start": 149.68,
+     "end": 150.0
+    },
+    {
+     "w": "forts",
+     "start": 150.08,
+     "end": 150.32
+    }
+   ]
+  },
+  {
+   "section": "Couplet 4",
+   "text": "Ils cassent nos têtes pour mieux les construire,",
+   "start": 150.32,
+   "end": 152.24,
+   "words": [
+    {
+     "w": "Ils",
+     "start": 150.32,
+     "end": 150.48
+    },
+    {
+     "w": "cassent",
+     "start": 150.48,
+     "end": 150.88
+    },
+    {
+     "w": "nos",
+     "start": 150.88,
+     "end": 151.04
+    },
+    {
+     "w": "têtes",
+     "start": 151.04,
+     "end": 151.36
+    },
+    {
+     "w": "pour",
+     "start": 151.44,
+     "end": 151.52
+    },
+    {
+     "w": "mieux",
+     "start": 151.52,
+     "end": 151.76
+    },
+    {
+     "w": "les",
+     "start": 151.76,
+     "end": 151.84
+    },
+    {
+     "w": "construire",
+     "start": 151.84,
+     "end": 152.24
+    }
+   ]
+  },
+  {
+   "section": "Couplet 4",
+   "text": "Ce qu'on souffre aujourd'hui, demain c'est notre trésor.",
+   "start": 152.24,
+   "end": 154.56,
+   "words": [
+    {
+     "w": "Ce",
+     "start": 152.24,
+     "end": 152.4
+    },
+    {
+     "w": "qu'on",
+     "start": 152.4,
+     "end": 152.64
+    },
+    {
+     "w": "souffre",
+     "start": 152.64,
+     "end": 152.96
+    },
+    {
+     "w": "aujourd'hui",
+     "start": 152.96,
+     "end": 153.6
+    },
+    {
+     "w": "demain",
+     "start": 153.6,
+     "end": 153.84
+    },
+    {
+     "w": "c'est",
+     "start": 153.84,
+     "end": 154.08
+    },
+    {
+     "w": "notre",
+     "start": 154.08,
+     "end": 154.24
+    },
+    {
+     "w": "trésor",
+     "start": 154.24,
+     "end": 154.56
+    }
+   ]
+  },
+  {
+   "section": "Couplet 4",
+   "text": "Un jour maman me verra devant le tableau,",
+   "start": 154.56,
+   "end": 156.64,
+   "words": [
+    {
+     "w": "Un",
+     "start": 154.56,
+     "end": 154.8
+    },
+    {
+     "w": "jour",
+     "start": 154.8,
+     "end": 154.96
+    },
+    {
+     "w": "maman",
+     "start": 155.04,
+     "end": 155.28
+    },
+    {
+     "w": "me",
+     "start": 155.28,
+     "end": 155.36
+    },
+    {
+     "w": "verra",
+     "start": 155.44,
+     "end": 155.76
+    },
+    {
+     "w": "devant",
+     "start": 155.84,
+     "end": 156.16
+    },
+    {
+     "w": "le",
+     "start": 156.16,
+     "end": 156.24
+    },
+    {
+     "w": "tableau",
+     "start": 156.24,
+     "end": 156.64
+    }
+   ]
+  },
+  {
+   "section": "Couplet 4",
+   "text": "Et dira : « Mon fils n'était pas fou… il était à l'E-N-E-T-P ! »",
+   "start": 156.88,
+   "end": 160.88,
+   "words": [
+    {
+     "w": "Et",
+     "start": 156.88,
+     "end": 157.12
+    },
+    {
+     "w": "dira",
+     "start": 157.12,
+     "end": 157.44
+    },
+    {
+     "w": "Mon",
+     "start": 157.68,
+     "end": 157.92
+    },
+    {
+     "w": "fils",
+     "start": 158.0,
+     "end": 158.24
+    },
+    {
+     "w": "n'était",
+     "start": 158.32,
+     "end": 158.8
+    },
+    {
+     "w": "pas",
+     "start": 158.8,
+     "end": 158.88
+    },
+    {
+     "w": "fou",
+     "start": 158.96,
+     "end": 159.12
+    },
+    {
+     "w": "il",
+     "start": 159.36,
+     "end": 159.44
+    },
+    {
+     "w": "était",
+     "start": 159.6,
+     "end": 159.68
+    },
+    {
+     "w": "à",
+     "start": 159.84,
+     "end": 159.92
+    },
+    {
+     "w": "l'ENETP",
+     "start": 159.92,
+     "end": 160.88
+    }
+   ]
+  },
+  {
+   "section": "Refrain final",
+   "text": "Merci, merci, nos chers professeurs !",
+   "start": 161.68,
+   "end": 164.72,
+   "words": [
+    {
+     "w": "Merci",
+     "start": 161.68,
+     "end": 162.56
+    },
+    {
+     "w": "merci",
+     "start": 162.88,
+     "end": 163.12
+    },
+    {
+     "w": "nos",
+     "start": 163.36,
+     "end": 163.68
+    },
+    {
+     "w": "chers",
+     "start": 163.68,
+     "end": 164.0
+    },
+    {
+     "w": "professeurs",
+     "start": 164.0,
+     "end": 164.72
+    }
+   ]
+  },
+  {
+   "section": "Refrain final",
+   "text": "Vous êtes durs, mais vous êtes les meilleurs !",
+   "start": 165.2,
+   "end": 168.32,
+   "words": [
+    {
+     "w": "Vous",
+     "start": 165.2,
+     "end": 165.44
+    },
+    {
+     "w": "êtes",
+     "start": 165.52,
+     "end": 165.76
+    },
+    {
+     "w": "durs",
+     "start": 165.84,
+     "end": 166.56
+    },
+    {
+     "w": "mais",
+     "start": 166.64,
+     "end": 166.72
+    },
+    {
+     "w": "vous",
+     "start": 166.8,
+     "end": 166.88
+    },
+    {
+     "w": "êtes",
+     "start": 166.96,
+     "end": 167.2
+    },
+    {
+     "w": "les",
+     "start": 167.28,
+     "end": 167.36
+    },
+    {
+     "w": "meilleurs",
+     "start": 167.6,
+     "end": 168.32
+    }
+   ]
+  },
+  {
+   "section": "Refrain final",
+   "text": "Nos têtes sont cassées, mais nos têtes sont pleines,",
+   "start": 168.48,
+   "end": 171.68,
+   "words": [
+    {
+     "w": "Nos",
+     "start": 168.48,
+     "end": 168.72
+    },
+    {
+     "w": "têtes",
+     "start": 168.72,
+     "end": 169.12
+    },
+    {
+     "w": "sont",
+     "start": 169.12,
+     "end": 169.28
+    },
+    {
+     "w": "cassées",
+     "start": 169.28,
+     "end": 169.84
+    },
+    {
+     "w": "mais",
+     "start": 170.24,
+     "end": 170.32
+    },
+    {
+     "w": "nos",
+     "start": 170.48,
+     "end": 170.64
+    },
+    {
+     "w": "têtes",
+     "start": 170.64,
+     "end": 170.96
+    },
+    {
+     "w": "sont",
+     "start": 171.04,
+     "end": 171.2
+    },
+    {
+     "w": "pleines",
+     "start": 171.28,
+     "end": 171.68
+    }
+   ]
+  },
+  {
+   "section": "Refrain final",
+   "text": "E-N-E-T-P, Kabala… qui maîtrise enseigne !",
+   "start": 172.16,
+   "end": 175.52,
+   "words": [
+    {
+     "w": "ENETP",
+     "start": 172.16,
+     "end": 172.96
+    },
+    {
+     "w": "Kabala",
+     "start": 173.28,
+     "end": 173.84
+    },
+    {
+     "w": "qui",
+     "start": 174.0,
+     "end": 174.08
+    },
+    {
+     "w": "maîtrise",
+     "start": 174.32,
+     "end": 174.88
+    },
+    {
+     "w": "enseigne",
+     "start": 174.96,
+     "end": 175.52
+    }
+   ]
+  }
+ ]
+}
