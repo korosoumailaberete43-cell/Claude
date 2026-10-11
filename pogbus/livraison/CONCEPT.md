@@ -67,6 +67,29 @@ Une lettre construite sur une grille fait tout cela, et reste celle de son fonda
 - Les cinq métiers se déclinent plus tard **en changeant la seule couleur d'accent** :
   un groupe, une lettre, cinq teintes.
 
+## 7. L'emblème PG
+
+Au-dessus du nom, un emblème qui porte les deux initiales du groupe — **P et G** —
+sans les afficher comme un sigle. De loin c'est un signe plein, compact, qui tient
+dans un rond d'avatar. De près, ce sont deux lettres.
+
+Trois choses s'y jouent, et aucune n'est décorative :
+
+- **Le P passe devant le G.** L'homme devant la structure. Paul Pogbus a créé le
+  groupe, pas l'inverse — et c'est le P qui porte l'or.
+- **Les deux lettres ne fusionnent pas.** Un jeu de découpe les sépare là où elles
+  se croisent. Elles se touchent, elles tiennent ensemble, mais chacune reste
+  entière : le fondateur ne se dissout pas dans son groupe, et le groupe ne se
+  réduit pas à un homme. C'est là que se lit **sortir du lot** — en se superposant
+  sans se confondre.
+- **Les lettres ne sont pas redessinées.** Le P et le G de l'emblème sont
+  exactement ceux du mot, repris tels quels. L'emblème n'est pas un signe ajouté
+  à côté du nom : c'est le début du nom, agrandi.
+
+Il se décline en trois usages : posé au-dessus du mot (logo vertical), seul
+(avatar, tampon, marque de page), ou dans un écusson octogonal pour les formats
+ronds des réseaux sociaux.
+
 ---
 
 ## Repères techniques
