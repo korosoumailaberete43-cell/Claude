@@ -18,10 +18,8 @@ def planche():
          f'<rect y="{MI}" width="{L}" height="{MI}" fill="{NOIR}"/>']
     for haut, corps, fond_txt in ((0, NOIR, "#8A8A8A"), (MI, BLANC, "#8A8A8A")):
         g, lg, ht = logo(corps, OR)
-        p.append(placer(g, lg, ht, L / 2, haut + MI * 0.40, 1120))
-        sy, lgs, hts = symbole(OR if corps == BLANC else NOIR)
-        p.append(placer(sy, lgs, hts, L / 2, haut + MI * 0.70, 92))
-        p.append(f'<text x="{L/2}" y="{haut + MI * 0.845:.0f}" text-anchor="middle" '
+        p.append(placer(g, lg, ht, L / 2, haut + MI * 0.46, 1160))
+        p.append(f'<text x="{L/2}" y="{haut + MI * 0.855:.0f}" text-anchor="middle" '
                  f'font-family="DejaVu Sans" font-size="21" letter-spacing="5" '
                  f'fill="{fond_txt}">{"FOND CLAIR" if corps == NOIR else "FOND SOMBRE"}</text>')
     return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {L} {Ht}">' + "".join(p) + "</svg>"
