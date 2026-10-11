@@ -61,9 +61,9 @@ def monogramme(cap_p=16.0, cap_g=16.0, recouvre=0.30, jeu=0.52,
     return g, dx + w_g, haut
 
 
-def ecusson(cap=13.0, marge=2.6, coupe=3.2, c_fond=NOIR, c_p=OR, c_g=BLANC):
+def ecusson(cap=13.0, marge=2.6, coupe=3.2, c_fond=NOIR, c_p=OR, c_g=BLANC, **kw):
     """Le monogramme posé dans un écusson octogonal."""
-    g, w, h = monogramme(cap, cap, c_p=c_p, c_g=c_g)
+    g, w, h = monogramme(cap, cap, c_p=c_p, c_g=c_g, **kw)
     cote_x, cote_y = w + 2 * marge, h + 2 * marge
     fond = f'<path d="{d(oct_rect(0, 0, cote_x, cote_y, coupe, TOUS))}" fill="{c_fond}"/>'
     return fond + f'<g transform="translate({marge*U:.3f} {marge*U:.3f})">{g}</g>', cote_x, cote_y

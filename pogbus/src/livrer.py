@@ -7,16 +7,25 @@ from grille import U
 OR, NOIR, BLANC = F.OR, F.NOIR, F.BLANC
 D = pathlib.Path("../livraison")
 
-CAP_EMBLEME, RECOUVRE = 16.0, 0.30
+CAP_EMBLEME, RECOUVRE, JEU = 16.0, 0.30, 0.52
+# En monochrome, la couleur ne sépare plus les deux lettres : le P se lit « F ».
+# On réduit alors le recouvrement pour que chaque lettre reste entière.
+RECOUVRE_MONO, JEU_MONO = 0.08, 0.80
 HAUT_EMBLEME, ECART = 26.0, 5.4        # dans le verrouillage vertical, en modules du mot
 
 
 def embleme(c_p=OR, c_g=NOIR):
-    return M.monogramme(CAP_EMBLEME, CAP_EMBLEME, recouvre=RECOUVRE, c_p=c_p, c_g=c_g)
+    mono = (c_p == c_g)
+    return M.monogramme(CAP_EMBLEME, CAP_EMBLEME,
+                        recouvre=RECOUVRE_MONO if mono else RECOUVRE,
+                        jeu=JEU_MONO if mono else JEU, c_p=c_p, c_g=c_g)
 
 
 def tuile(c_fond=NOIR, c_p=OR, c_g=BLANC):
-    return M.ecusson(cap=13.0, c_fond=c_fond, c_p=c_p, c_g=c_g)
+    mono = (c_p == c_g)
+    return M.ecusson(cap=13.0, c_fond=c_fond, c_p=c_p, c_g=c_g,
+                     recouvre=RECOUVRE_MONO if mono else RECOUVRE,
+                     jeu=JEU_MONO if mono else JEU)
 
 
 def vertical(corps=NOIR, accent=OR, c_g=None):
