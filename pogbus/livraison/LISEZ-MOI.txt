@@ -1,0 +1,37 @@
+POGBUS GROUP — logo
+===================
+
+FICHIERS
+  POGBUS_presentation.png          la planche à envoyer (fond blanc + fond noir)
+
+  pogbus_logo_couleur.svg/.png     logo principal, fond clair  (P or, texte noir)
+  pogbus_logo_blanc_sur_fonce.*    logo pour fond sombre       (P or, texte blanc)
+  pogbus_logo_noir.svg/.png        monochrome noir             (tampon, fax, gravure)
+  pogbus_logo_blanc.svg            monochrome blanc            (fond sombre, 1 couleur)
+
+  pogbus_symbole_or / _noir / _blanc        le P seul (avatar, favicon, marque de page)
+  pogbus_symbole_tuile_or_sur_noir.svg      avatar carré à coins coupés
+  pogbus_symbole_tuile_noir_sur_or.svg      idem, inversé
+
+  CONCEPT.md                       l'explication du concept
+
+COULEURS
+  Or POGBUS    #BE8A22     (3,1:1 sur blanc — 6,5:1 sur noir)
+  Noir POGBUS  #111111
+  Blanc        #FFFFFF
+
+TYPOGRAPHIE
+  Aucune police à installer : toutes les lettres sont des tracés vectoriels,
+  dessinés sur mesure pour la marque (grille de 12 modules, coupes à 45 degres).
+
+ZONE DE PROTECTION
+  Laisser autour du logo un vide au moins egal a la hauteur du P.
+
+TAILLE MINIMALE
+  Logo complet : 30 mm de large en impression, 120 px a l'ecran.
+  Symbole seul : 16 px.
+
+A NE PAS FAIRE
+  Ne pas deformer, ne pas incliner, ne pas ajouter d'ombre ni de contour,
+  ne pas recolorer le P dans une autre teinte que l'or de la marque,
+  ne pas poser le logo couleur sur un fond ni tres clair ni tres sombre.
