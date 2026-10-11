@@ -1,0 +1,53 @@
+POGBUS GROUP — logo
+===================
+
+PLANCHES
+  POGBUS_presentation_vertical.png   emblème + mot, fond blanc et fond noir
+  POGBUS_presentation.png            le mot seul, fond blanc et fond noir
+
+LOGO VERTICAL  (emblème PG au-dessus, POGBUS GROUP en dessous)
+  pogbus_vertical_couleur.*          fond clair
+  pogbus_vertical_blanc_sur_fonce.*  fond sombre
+  pogbus_vertical_noir.*             monochrome noir
+  pogbus_vertical_blanc.svg          monochrome blanc
+
+LOGO HORIZONTAL  (le mot seul, quand la hauteur manque)
+  pogbus_logo_couleur.*              fond clair
+  pogbus_logo_blanc_sur_fonce.*      fond sombre
+  pogbus_logo_noir.*                 monochrome noir
+  pogbus_logo_blanc.svg              monochrome blanc
+
+EMBLEME SEUL  (avatar, tampon, marque de page)
+  pogbus_embleme_PG_couleur.*        P or + G noir, fond clair
+  pogbus_embleme_PG_sur_fonce.svg    P or + G blanc, fond sombre
+  pogbus_embleme_PG_noir.*           monochrome noir
+  pogbus_embleme_PG_blanc.svg        monochrome blanc
+  pogbus_embleme_tuile_sur_noir.*    écusson octogonal, pour les avatars ronds
+  pogbus_embleme_tuile_sur_or.svg    écusson inversé
+
+LE P SEUL  (favicon, très petites tailles)
+  pogbus_symbole_P_or / _noir / _blanc
+
+COULEURS
+  Or POGBUS    #BE8A22     (3,1:1 sur blanc — 6,5:1 sur noir)
+  Noir POGBUS  #111111
+  Blanc        #FFFFFF
+
+TYPOGRAPHIE
+  Aucune police a installer : toutes les lettres sont des traces vectoriels,
+  dessines sur mesure pour la marque (grille de 12 modules, coupes a 45 degres).
+
+ZONE DE PROTECTION
+  Laisser autour du logo un vide au moins egal a la hauteur du P du mot.
+
+TAILLE MINIMALE
+  Logo vertical    : 45 mm de large en impression, 150 px a l ecran.
+  Logo horizontal  : 30 mm de large, 120 px a l ecran.
+  Embleme seul     : 32 px.
+  Le P seul        : 16 px.
+
+A NE PAS FAIRE
+  Ne pas deformer, ne pas incliner, ne pas ajouter d ombre ni de contour.
+  Ne pas recolorer le P dans une autre teinte que l or de la marque.
+  Ne pas separer l embleme du mot pour les recomposer autrement.
+  Ne pas poser le logo couleur sur un fond ni tres clair ni tres sombre.

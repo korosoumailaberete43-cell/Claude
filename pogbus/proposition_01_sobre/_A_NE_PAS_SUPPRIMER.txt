@@ -1,0 +1,12 @@
+PROPOSITION 1 — « LE MONOGRAMME SOBRE »
+Validée dans ses formes, mise de côté le temps d'explorer une piste plus riche.
+
+Ce dossier est figé. Les scripts de génération écrivent dans ../livraison/,
+jamais ici. Rien ne peut l'écraser.
+
+Contenu : logo vertical et horizontal, emblème PG, le P seul, les planches
+de présentation, le nuancier, le guide des supports, le concept et le
+message WhatsApp.
+
+Reste disponible à tout moment : c'est une proposition complète et prête
+à envoyer.

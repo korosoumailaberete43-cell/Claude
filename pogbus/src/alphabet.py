@@ -115,7 +115,73 @@ def L_S(s, c, w=8.9):
     return [(d(p), "nonzero")], w
 
 
-LETTRES = {"O": L_O, "G": L_G, "P": L_P, "R": L_R, "B": L_B, "U": L_U, "S": L_S}
+
+
+# ---- lettres ajoutées pour la devise « L'AUDACIEUX » --------------------
+def L_D(s, c, w=9.2):
+    """D : le P dont la panse descend sur toute la hauteur."""
+    ci = creux(c, s)
+    fut = d([(0, 0), (s, 0), (s, H), (0, H)])
+    panse = d(oct_rect(0, 0, w, H, c, DROITE)) + d(oct_rect(s, s, w - s, H - s, ci, DROITE))
+    return [(fut, "nonzero"), (panse, "evenodd")], w
+
+
+def L_C(s, c, w=9.4):
+    """C : l'anneau du G, ouvert plus largement et sans barre."""
+    ci = creux(c, s)
+    anneau = (d(oct_rect(0, 0, w, H, c, TOUS))
+              + d(oct_rect(s, s, w - s, H - s, ci, TOUS))
+              + d([(w - s, H * 0.235), (w, H * 0.235), (w, H * 0.765), (w - s, H * 0.765)]))
+    return [(anneau, "evenodd")], w
+
+
+def L_L(s, c, w=8.2):
+    """L : fût et barre de pied, coins libres coupés."""
+    p = [(0, 0), (s, 0), (s, H - s), (w, H - s), (w, H - c), (w - c, H), (c, H), (0, H - c)]
+    return [(d(p), "nonzero")], w
+
+
+def L_I(s, c, w=2.05):
+    return [(d([(0, 0), (s, 0), (s, H), (0, H)]), "nonzero")], max(w, s)
+
+
+def L_E(s, c, w=8.6):
+    """E : fût et trois barres ; la médiane est légèrement plus courte."""
+    sb = s * 0.92
+    m = (H - sb) / 2
+    w2 = w - 1.0
+    p = [(0, 0), (w - c, 0), (w, c), (w, s), (s, s), (s, m), (w2, m), (w2, m + sb),
+         (s, m + sb), (s, H - s), (w, H - s), (w, H - c), (w - c, H), (c, H), (0, H - c)]
+    return [(d(p), "nonzero")], w
+
+
+def L_A(s, c, w=9.4):
+    """A : montants verticaux, tête coupée à 45°, traverse basse."""
+    sb = s * 0.92
+    m = H * 0.60
+    ext = [(c, 0), (w - c, 0), (w, c), (w, H), (w - s, H), (w - s, m + sb),
+           (s, m + sb), (s, H), (0, H), (0, c)]
+    ci = creux(c, s)
+    inn = oct_rect(s, s, w - s, m, ci, (1, 1, 0, 0))
+    return [(d(ext) + d(inn), "evenodd")], w
+
+
+def L_X(s, c, w=9.8):
+    """X : deux bandes croisées. Les extrémités sont coupées à l'horizontale."""
+    dx = s * 0.62
+    b1 = d([(0, 0), (dx * 2, 0), (w, H), (w - dx * 2, H)])
+    b2 = d([(w - dx * 2, 0), (w, 0), (dx * 2, H), (0, H)])
+    return [(b1 + b2, "nonzero")], w
+
+
+def L_APOS(s, c, w=2.6):
+    """Apostrophe : un éclat incliné, posé en tête de capitale."""
+    return [(d([(0.3, 0), (s + 0.3, 0), (s * 0.55 + 0.3, H * 0.33), (0.0, H * 0.33)]), "nonzero")], w
+
+
+LETTRES = {"O": L_O, "G": L_G, "P": L_P, "R": L_R, "B": L_B, "U": L_U, "S": L_S,
+           "D": L_D, "C": L_C, "L": L_L, "I": L_I, "E": L_E, "A": L_A, "X": L_X,
+           "'": L_APOS}
 
 
 CRENAGE = {("P", "O"): -0.75, ("P", "G"): -0.75, ("P", "U"): -0.55,
