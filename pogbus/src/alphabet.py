@@ -57,7 +57,7 @@ def L_O(s, c, w=9.4):
 
 
 
-def L_P(s, c, w=8.9, bh=7.0):
+def L_P(s, c, w=8.9, bh=6.8):
     ci = creux(c, s)
     fut = d([(0, 0), (s, 0), (s, H), (0, H)])
     panse = d(oct_rect(0, 0, w, bh, c, DROITE)) + d(oct_rect(s, s, w - s, bh - s, ci, DROITE))
@@ -73,7 +73,7 @@ def L_R(s, c, w=9.1, bh=6.8):
 
 
 def L_B(s, c, w=9.0):
-    ci, taille = creux(c, s), H / 2 + s * 0.25
+    ci, taille = creux(c, s), 6.8   # alignée sur le bas de panse du P et du R
     fut = d([(0, 0), (s, 0), (s, H), (0, H)])
     haut = d(oct_rect(0, 0, w - 0.7, taille, c, DROITE)) + d(oct_rect(s, s, w - 0.7 - s, taille - s, ci, DROITE))
     bas = d(oct_rect(0, taille - s, w, H, c, DROITE)) + d(oct_rect(s, taille, w - s, H - s, ci, DROITE))
@@ -106,7 +106,7 @@ def L_U(s, c, w=9.2):
 
 def L_S(s, c, w=8.9):
     """S : polygone unique, terminaisons coupées à 45°. Pas de contour intérieur."""
-    t = s * 0.75
+    t = c   # une seule valeur de coupe dans tout l'alphabet
     mid, dm = H / 2, s / 2
     p = [(t, 0), (w - t, 0), (w, t), (w, s), (s, s), (s, mid - dm),
          (w - c, mid - dm), (w, mid - dm + c), (w, H - t), (w - t, H),

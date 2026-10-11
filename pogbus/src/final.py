@@ -17,6 +17,8 @@ BLANC = "#FFFFFF"
 
 S_MOT, C_MOT, APPRO = 2.05, 1.60, 1.45
 CAP_BASE, ECART_BASE, APPRO_BASE = 3.4, 1.9, 7.0
+# GROUP : mêmes proportions que POGBUS, allégé pour compenser l'interlettrage
+S_BASE, C_BASE = 1.85, 1.60
 
 
 def _lettre(ch, x, couleur, accent=None):
@@ -49,7 +51,7 @@ def logo(couleur=NOIR, accent=OR, baseline=True):
     if baseline:
         # GROUP : interlettrage fixe et mesuré, bloc centré sous POGBUS
         kb = CAP_BASE / H
-        gb, wb = mot("GROUP", s=2.6, c=1.0, appro=APPRO_BASE, couleur=couleur)
+        gb, wb = mot("GROUP", s=S_BASE, c=C_BASE, appro=APPRO_BASE, couleur=couleur)
         dx = (larg - wb * kb) / 2
         y = H + ECART_BASE
         parts.append(f'<g transform="translate({dx * U:.3f} {y * U:.3f}) scale({kb:.5f})">{gb}</g>')
