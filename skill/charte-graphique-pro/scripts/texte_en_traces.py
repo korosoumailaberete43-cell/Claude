@@ -29,6 +29,11 @@ def texte_en_traces(police, texte, taille, interlettrage=0.0):
     f = _police(police)
     upm = f["head"].unitsPerEm
     gs, cmap, hmtx = f.getGlyphSet(), f.getBestCmap(), f["hmtx"]
+    absents = sorted({ch for ch in texte if ord(ch) not in cmap})
+    if absents:
+        # une police « latin » ne contient pas tous les caractères (ex. ✓, œ dans certaines subsets)
+        raise ValueError(f"caractères absents de {police} : {''.join(absents)!r} "
+                         "(utiliser une autre police, ou remplacer le caractère)")
     s = taille / upm
     x, parts = 0.0, []
     for i, ch in enumerate(texte):

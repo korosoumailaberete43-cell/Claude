@@ -20,3 +20,7 @@
 | Pack trop lourd | images embarquées à 4× | ~300 DPI de la taille affichée, JPEG 86-88 |
 | Suppression refusée (`rm -f $DOSSIER/*`) | garde-fou contre une variable vide | `rm -f "${DOSSIER:?}"/*` ou chemin littéral |
 | L'outil Bash ne répond plus (« no safety verdict ») | incident passager côté serveur | continuer avec Write/Edit/Read, relancer plus tard ; ne pas insister en boucle |
+| `Cannot find module 'playwright'` avec `node scripts/rendu_pdf.js` | module global non résolu hors du projet | `export NODE_PATH="$(npm root -g)"` avant le script |
+| `verifier_pptx.py` : « zone non vérifiée » | police non précisée dans le .pptx (héritée du thème) ou absente du dossier | préciser la police dans le modèle, ou ajouter son fichier ; le compte est donné en fin de rapport |
+| `apercu_pptx.py` : « groupe ignoré » ou « tableau ou graphique non rendu » | ces éléments ne sont pas rendus par l'aperçu | dégrouper dans le modèle, ou vérifier ces zones dans PowerPoint |
+| `ValueError: caractères absents de …` (texte_en_traces) | la subset « latin » de la police n'a pas le caractère (ex. ✓) | remplacer le caractère par une forme SVG, ou choisir une police complète |

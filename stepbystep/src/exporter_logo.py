@@ -5,6 +5,8 @@
 --marge  : zone de protection transparente ajoutée autour (unités du viewBox, 0 pour aucune)
 --fond-jpeg : le JPEG n'a pas de transparence ; poser les versions blanches sur une couleur sombre
 
+Le nom de fichier est pris tel quel : « Logo_v1.0 » donne Logo_v1.0.svg, Logo_v1.0.pdf…
+
 Dépendances : pip install cairosvg pillow   (cairosvg utilise libcairo, présent sur la plupart des systèmes).
 cairosvg.svg2eps écrit une BoundingBox correcte (contrairement à `rsvg-convert -f eps`).
 """
@@ -16,11 +18,17 @@ import re
 import cairosvg
 from PIL import Image
 
+NOMBRE = r"[-+]?(?:\d+\.?\d*|\.\d+)(?:[eE][-+]?\d+)?"
+
 
 def elargir(svg, marge):
-    m = re.search(r'viewBox="([-\d.]+) ([-\d.]+) ([\d.]+) ([\d.]+)"', svg)
+    """Ajoute `marge` de chaque côté du viewBox. Accepte virgules et espaces comme séparateurs."""
+    m = re.search(rf'viewBox="\s*({NOMBRE})[\s,]+({NOMBRE})[\s,]+({NOMBRE})[\s,]+({NOMBRE})\s*"', svg)
+    if not m:
+        raise ValueError("SVG sans attribut viewBox : impossible d'ajouter la zone de protection")
     x, y, w, h = map(float, m.groups())
-    return svg.replace(m.group(0), f'viewBox="{x - marge} {y - marge} {w + 2 * marge} {h + 2 * marge}"', 1)
+    nouveau = f'viewBox="{x - marge:g} {y - marge:g} {w + 2 * marge:g} {h + 2 * marge:g}"'
+    return svg.replace(m.group(0), nouveau, 1)
 
 
 def exporter(svg, dossier, nom, fond_jpeg="#FFFFFF", png=3000, marge=0):
@@ -29,17 +37,21 @@ def exporter(svg, dossier, nom, fond_jpeg="#FFFFFF", png=3000, marge=0):
     if marge:
         svg = elargir(svg, marge)
     b = svg.encode()
-    base = dossier / nom
-    base.with_suffix(".svg").write_bytes(b)
-    cairosvg.svg2pdf(bytestring=b, write_to=str(base.with_suffix(".pdf")))
-    cairosvg.svg2eps(bytestring=b, write_to=str(base.with_suffix(".eps")))
+
+    def fichier(ext):
+        # pas de with_suffix() : il remplacerait « .0 » dans « Logo_v1.0 »
+        return dossier / f"{nom}.{ext}"
+
+    fichier("svg").write_bytes(b)
+    cairosvg.svg2pdf(bytestring=b, write_to=str(fichier("pdf")))
+    cairosvg.svg2eps(bytestring=b, write_to=str(fichier("eps")))
     data = cairosvg.svg2png(bytestring=b, output_width=png)
-    base.with_suffix(".png").write_bytes(data)
+    fichier("png").write_bytes(data)
     im = Image.open(io.BytesIO(data)).convert("RGBA")
     fond = Image.new("RGBA", im.size, fond_jpeg)
     fond.alpha_composite(im)
-    fond.convert("RGB").save(base.with_suffix(".jpg"), quality=90, dpi=(300, 300))
-    bbox = next((l for l in base.with_suffix(".eps").read_text(errors="ignore").splitlines() if l.startswith("%%BoundingBox")), "?")
+    fond.convert("RGB").save(fichier("jpg"), quality=90, dpi=(300, 300))
+    bbox = next((l for l in fichier("eps").read_text(errors="ignore").splitlines() if l.startswith("%%BoundingBox")), "?")
     return bbox
 
 
